@@ -29,4 +29,7 @@ void darkfield(const Message& msg, Adafruit_Protomatter& matrix);
 // Draw a half moon pattern on the LED matrix.
 void halfMoon(const Message& msg, Adafruit_Protomatter& matrix);
 
+// Draw a ring pattern on the LED matrix.
+void ring(const Message& msg, Adafruit_Protomatter& matrix);
+
 #endif // #DRAWING_H

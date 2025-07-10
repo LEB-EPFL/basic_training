@@ -15,6 +15,7 @@ void messageInit(Message& msg) {
   msg.x = 0;
   msg.y = 0;
   msg.r = 0;
+  msg.r2 = 0;
   msg.variant = 0;
   msg.level = 0;
   msg.isValid = false;
@@ -110,6 +111,9 @@ void parseMessage(const String& input, Message& msg) {
   } else if (verbStr.equalsIgnoreCase("halfMoon")) {
     msg.cmd = Command::halfMoon;
     parseHalfMoonArgs(argStr, msg);
+  } else if (verbStr.equalsIgnoreCase("ring")) {
+    msg.cmd = Command::ring;
+    parseRingArgs(argStr, msg);
   } else if (verbStr.equalsIgnoreCase("help")) {
     msg.cmd = Command::help;
   } else {
@@ -182,5 +186,24 @@ void parseHalfMoonArgs(const String& args, Message& msg) {
     msg.level = level;
   } else {
     msg.isValid = false;
+  }
+}
+
+void parseRingArgs(const String& args, Message& msg) {
+  int x, y, r, r2, level;
+  int n = sscanf(args.c_str(), "%d %d %d %d %d", &x, &y, &r, &r2, &level);
+  if (n == 5) {
+    msg.x = x;
+    msg.y = y;
+    msg.r = r;
+    msg.r2 = r2;
+    msg.level = level;
+  } else {
+    msg.isValid = false;
+  }
+
+  if (msg.r >= msg.r2) {
+    msg.isValid = false;
+    msg.errorMsg = "Ring inner diameter must be less than outer diameter";
   }
 }

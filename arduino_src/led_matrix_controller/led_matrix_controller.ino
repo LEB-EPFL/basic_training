@@ -28,6 +28,7 @@ void printHelp() {
   Serial.println(F("  brightfield <x> <y> <r> (0 - 255)\\n"));
   Serial.println(F("  darkfield <x> <y> <r> (0 - 255)\\n"));
   Serial.println(F("  halfMoon <x> <y> <r> (0 - 3) (0 - 255)\\n"));
+  Serial.println(F("  ring <x> <y> <r> <r2> (0 - 255)\\n"));
   Serial.println(F("  help\\n"));
   Serial.println(F(""));
   Serial.println("Note: commands must be terminated with a \\n character.");
@@ -85,6 +86,9 @@ void doAction(const Message& msg, Adafruit_Protomatter& matrix) {
       break;
     case Command::halfMoon:
       halfMoon(msg, matrix);
+      break;
+    case Command::ring:
+      ring(msg, matrix);
       break;
     case Command::help:
       printHelp();

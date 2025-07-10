@@ -14,7 +14,7 @@ const size_t CHAR_LIMIT = 32;
 const char LINE_TERMINATOR = '\n';
 
 // The set of possible commands that can be sent to the LED matrix.
-enum class Command {draw, fill, brightfield, darkfield, halfMoon, help};
+enum class Command {draw, fill, brightfield, darkfield, halfMoon, ring, help};
 
 // Message data after parsing the serial input.
 // Each LED matrix command uses a non-exclusive subset of the fields.
@@ -23,6 +23,7 @@ typedef struct {
   int x;
   int y;
   int r;
+  int r2; // Ring outer diameter
   int variant;
   int level; // 0 - 255
   bool isValid;
@@ -59,5 +60,8 @@ void parseDarkfieldArgs(const String& args, Message& msg);
 
 // Parse the arguments for the halfMoon command
 void parseHalfMoonArgs(const String& args, Message& msg);
+
+// Parse the arguments for the ring command
+void parseRingArgs(const String& args, Message& msg);
 
 #endif // #COMMS_H

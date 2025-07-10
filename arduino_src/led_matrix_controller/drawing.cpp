@@ -60,3 +60,12 @@ void halfMoon(const Message& msg, Adafruit_Protomatter& matrix) {
 
   matrix.show();
 }
+
+void ring(const Message& msg, Adafruit_Protomatter& matrix) {
+  clearMatrix(matrix);
+
+  matrix.fillCircle(msg.x, msg.y, msg.r2, matrix.color565(msg.level, msg.level, msg.level));
+  matrix.fillCircle(msg.x, msg.y, msg.r, 0);
+  matrix.show();
+}
+
