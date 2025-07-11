@@ -1,0 +1,5 @@
+[book]
+authors = ["Kyle M. Douglass"]
+language = "en"
+src = "src"
+title = "Microscopy Basic Training"
