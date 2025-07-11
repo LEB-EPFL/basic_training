@@ -8,7 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><a href="chapter_intro/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_intro/learning_outcomes.html"><strong aria-hidden="true">1.1.</strong> Learning Outcomes</a></li></ol></li></ol>';
+        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><a href="chapter_intro/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_intro/learning_outcomes.html"><strong aria-hidden="true">1.1.</strong> Learning Outcomes</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_image_acquisition/index.html"><strong aria-hidden="true">2.</strong> Image Acquisition</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_image_acquisition/microscope_components.html"><strong aria-hidden="true">2.1.</strong> Microscope Components</a></li><li class="chapter-item expanded "><a href="chapter_image_acquisition/camera.html"><strong aria-hidden="true">2.2.</strong> Set up the Camera</a></li><li class="chapter-item expanded "><a href="chapter_image_acquisition/micro-manager.html"><strong aria-hidden="true">2.3.</strong> Set up Micro-Manager</a></li></ol></li></ol>';
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString().split("#")[0].split("?")[0];
         if (current_page.endsWith("/")) {
