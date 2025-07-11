@@ -5,7 +5,7 @@ on:
   - pull_request
 
 jobs:
-  compile-sketches:
+  compile-led-matrix-controller:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,3 +19,13 @@ jobs:
             - arduino_src/led_matrix_controller
           libraries: |
             - name: "Adafruit Protomatter"
+
+  compile-led-pwm-driver:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/compile-sketches@v1
+        with:
+          fqbn: "arduino:megaavr:nona4809"
+          sketch-paths: |
+            - arduino_src/led_pwm_driver
