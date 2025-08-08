@@ -16,4 +16,11 @@ Once logged in, you will see a page that looks like the following. Be sure to se
 
 ![Select "previous versions" in the Spinnaker SDK download page](spinnaker_download.png)
 
-Download the Windows installation of the **version 2.3.0.77** installer.
+Download the **Windows version 2.3.0.77** installer. Unzip the file, and launch the installation with the `x64` version of the installer[^1]. When prompted, select `Applicaton development,` though `Camera evaluation` should work as well. There is no need to install the GigE camera driver[^2]. Any other settings may be left with their default values.
+
+## Acquire an Image
+
+After installation has finished, attach the camera to the PC with the blue USB cable and start the SpinView software.
+
+[^1]: The `x64` version is for 64 bit operating systems. The `x86` version is for 32 bit operating systems. Nearly all modern computers used in the lab are 64 bit.
+[^2]: GigE is an interface standard for transmitting image data over ethernet.
