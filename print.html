@@ -37,6 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -93,10 +94,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -147,7 +151,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -219,16 +228,75 @@
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="image-acquisition"><a class="header" href="#image-acquisition">Image Acquisition</a></h1>
 <p>In this chapter we begin construction of a custom-built microscope for epifluorescence and transillumination imaging of cell culture samples.</p>
-<p>We begin by explaining the basic components of a microscope and their layout. Then, we start the practical work by interfacing our microscope's camera with the computer, installing the necessary drivers and capture software. As you will see in the chapters to come, a working camera will be essential for aligning the microscope's optical components.</p>
+<p>We begin by explaining the basic components of a microscope and their layout. Then, we start the practical work by interfacing our microscope's camera with the computer, installing the necessary drivers and capture software. As you will see, a working camera will be essential for aligning the microscope's optical components.</p>
 <p>Following this, we assemble our camera and tube lens into a simple, fixed focal length imaging system for imaging far away objects. We will align the camera and lens such that objects at infinity<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> will be imaged onto the camera.</p>
 <p>Finally, we set up <a href="https://micro-manager.org/">Micro-Manager</a> to control our camera. Using Micro-Manager will allow us to design and execute complex microscopy acquisitions that we otherwise could not do with the camera's capture software.</p>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
 <p>The meaning of this phrase will be explained later in this chapter. For now, you can think of it as meaning objects that are far away. <a href="#fr-1-1">↩</a></p>
 </li>
-</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="microscope-components"><a class="header" href="#microscope-components">Microscope Components</a></h1>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="the-epifluorescence-microscope"><a class="header" href="#the-epifluorescence-microscope">The Epifluorescence Microscope</a></h1>
+<p>Microscopes come in many different shapes, sizes, and arrangements. Broadly speaking, we may classify a microscope according to two different characteristics:</p>
+<ol>
+<li>The contrast mechanism</li>
+<li>The probe</li>
+</ol>
+<p>Contrast refers to the variations of intensity within an image. Higher contrast means a greater degree of these variations, which is almost always desirable for seeing small features. We can refine this definition and go into much greater detail about what contrast means for different types of microscopes, but this would distract from our main purpose at this point, which is learning about practical microscopy.</p>
+<p>Contrast mechanism is the physical process by which variations in intensity are generated in a microscope image. It can be either intrinsic, such as the absorption and scattering of light or other types of radiation from the sample itself, or extrinsic, such as fluorescent labels that we attach to our samples.</p>
+<p>In nearly all forms of microscopy we need to probe our samples in order to see them. In atomic force microscopy, for example, we bring a sharp tip close to a sample's surface to measure its height profile. In this case the probe is a very real and tangible thing. Most forms of microscopy, however, use directed beams of radiation such as light or electrons as the probe. The interaction between the radiation and the sample is ultimately what creates contrast in the image.</p>
+<p>Light microscopy in particular refers to all forms of microscopy that use visible and near infrared light as the probe. It is probably the form of microscopy that is most used by cell biologists because light is relatively easy to manipulate and can generate very detailed images of cells with good contrast. It is also comparatively gentle on samples, enabling live cell time lapse imaging for long periods of time.</p>
+<p>Typically there are two ways to deliver light to the sample. One is to stick the sample directly between a light source and the microscope to record the light signal that is transmitted through the sample. This geometry is called transillumination and is almost always used to probe a sample's intrinsic contrast. The other is to illuminate and collect light from the sample through the same optical elements. This is called epi-illumination, and nearly all flourescence microscopes use it because it is much easier to separate the probe light from the fluorscence signal than it is in transillumination.</p>
+<p>In this course you will construct and operate what is known as an epifluorescence microscope, i.e. a light microscope that illuminates the sample by epi-illumination and uses fluorescence as the extrinsic contrast mechanism.</p>
+<h2 id="principle-components-of-an-epifluorescence-microscope"><a class="header" href="#principle-components-of-an-epifluorescence-microscope">Principle Components of an Epifluorescence Microscope</a></h2>
+<p>The diagram below illustrates the layout of a typical epifluorescence microscope.</p>
+<p><img src="chapter_image_acquisition/epifluorescence-microscope.svg" alt="Layout of an epifluorescence microscope" /></p>
+<p>You can see right away that there are two distinct, partially overlapping light paths, and the components of this microscope are positioned relative to these two paths.</p>
+<h3 id="the-illumination-light-path"><a class="header" href="#the-illumination-light-path">The Illumination Light Path</a></h3>
+<p>The illumination path delivers excitation light to the sample. It is called excitation light because this light excites the flourophores to a higher energetic state, often called an excited state. The fluorophores will in turn emit fluorescence light when they relax from the excited state to the ground state.</p>
+<p>The illumination path starts at the light source, which can be a LED, a laser, a lamp, or any other bright source of visible light. A series of optics directs this light through an excitation filter. The excitation filter absorbs light with wavelengths that are outside of the filter's passband and transmits light with wavelengths that are inside the passband. The purpose of the excitation filter is to narrow the spectrum of the light that eventually reaches the sample. By narrowing the spectrum, we</p>
+<ol>
+<li>reduce any unwanted background signal that might leak towards the camera, and</li>
+<li>can better control which fluorophores are excited in the case of multi-color imaging.</li>
+</ol>
+<p>Next, the light is redirected by a dichroic mirror that reflects light of some wavelengths and transmits others. The excitation light then passes through the objective lens where it is focused onto the sample to the excite fluorescence.</p>
+<h3 id="the-fluorescence-light-path"><a class="header" href="#the-fluorescence-light-path">The Fluorescence Light Path</a></h3>
+<p>Fluorescence light is collected from the sample by the objective where it traverses the illumination light path in reverse. Fluorescence light has a longer wavelength than the excitation light, so it passes through the dichroic mirror instead of reflecting. An emission filter further helps remove any residual excitation light that might be traveling along this path. A normal mirror redirects the light into a different direction, though this is not necessary and is used only to reduce the overall size of the microscope.</p>
+<p>Finally, a tube lens collects the fluorescent light and forms the image of the sample on the camera.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-the-camera"><a class="header" href="#set-up-the-camera">Set up the Camera</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
+<p>We start construction of the microscope by installing the camera software and making sure that it works correctly.</p>
+<p>The camera used in this course is a Flir Grasshopper GS3-U3-51S5M-C. It is one of several small form factor cameras that are often referred to as industrial CMOS cameras in the literature. Industrial CMOS cameras are relatively cheap and compatible with fluorescence microscopes, but their noise characteristics and sensitivities are worse than more expensive scientific CMOS, or sCMOS, cameras. While most of our research is done with sCMOS camers, industrial CMOS cameras are still sufficient for applications in basic fluorescence microscopy.</p>
+<h2 id="install-the-drivers-and-capture-software"><a class="header" href="#install-the-drivers-and-capture-software">Install the Drivers and Capture Software</a></h2>
+<p>To begin, we will install Flir's Spinnaker software that includes the necessary camera drivers and the SpinView capture software. <strong>For reasons that will become apparent in a later section, you must install version 2.3.0.77.</strong></p>
+<p>Navigate to <a href="https://www.teledynevisionsolutions.com/products/spinnaker-sdk">https://www.teledynevisionsolutions.com/products/spinnaker-sdk</a> in your web browser and select the Download button. Product software pages change frequently, so if the page has changed since this was written, you will need to search for the Spinnaker SDK (software developer kit) and find it on your own.</p>
+<p>You will be asked to create an account or sign in after clicking the Download button. Go ahead and do so.</p>
+<p>Once logged in, you will see a page that looks like the following. Be sure to select the link for previous versions!</p>
+<p><img src="chapter_image_acquisition/spinnaker_download.png" alt="Select &quot;previous versions&quot; in the Spinnaker SDK download page" /></p>
+<p>Download the <strong>Windows version 2.3.0.77</strong> installer. Unzip the file, and launch the installation with the <code>x64</code> version of the installer<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>. When prompted, select <code>Applicaton development,</code> though <code>Camera evaluation</code> should work as well. There is no need to install the GigE camera driver<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. Any other settings may be left with their default values.</p>
+<h2 id="acquire-an-image"><a class="header" href="#acquire-an-image">Acquire an Image</a></h2>
+<p>After installation has finished, attach the camera to the PC with the blue USB cable and start the SpinView software.</p>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>The <code>x64</code> version is for 64 bit operating systems. The <code>x86</code> version is for 32 bit operating systems. Nearly all modern computers used in the lab are 64 bit. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>GigE is an interface standard for transmitting image data over ethernet. <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
+<ol>
+<li>
+<p>What is the difference between an excitation filter and a dichroic mirror?</p>
+</li>
+<li>
+<p>Why do we use an emission filter in addition to a dichroic mirror in the fluorescence light path?</p>
+</li>
+<li>
+<p>True of false: fluorescence light has a shorter wavelength than that of the excitation light.</p>
+</li>
+<li>
+<p>What are the differences between industrial CMOS and scientific CMOS (sCMOS) cameras?</p>
+</li>
+</ol>
 
                     </main>
 
@@ -270,6 +338,7 @@
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>

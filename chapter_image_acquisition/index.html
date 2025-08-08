@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -146,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -168,7 +177,7 @@
                     <main>
                         <h1 id="image-acquisition"><a class="header" href="#image-acquisition">Image Acquisition</a></h1>
 <p>In this chapter we begin construction of a custom-built microscope for epifluorescence and transillumination imaging of cell culture samples.</p>
-<p>We begin by explaining the basic components of a microscope and their layout. Then, we start the practical work by interfacing our microscope's camera with the computer, installing the necessary drivers and capture software. As you will see in the chapters to come, a working camera will be essential for aligning the microscope's optical components.</p>
+<p>We begin by explaining the basic components of a microscope and their layout. Then, we start the practical work by interfacing our microscope's camera with the computer, installing the necessary drivers and capture software. As you will see, a working camera will be essential for aligning the microscope's optical components.</p>
 <p>Following this, we assemble our camera and tube lens into a simple, fixed focal length imaging system for imaging far away objects. We will align the camera and lens such that objects at infinity<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> will be imaged onto the camera.</p>
 <p>Finally, we set up <a href="https://micro-manager.org/">Micro-Manager</a> to control our camera. Using Micro-Manager will allow us to design and execute complex microscopy acquisitions that we otherwise could not do with the camera's capture software.</p>
 <hr>
@@ -222,6 +231,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

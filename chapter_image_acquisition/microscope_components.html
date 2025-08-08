@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Microscope Components - Microscopy Basic Training</title>
+        <title>The Epifluorescence Microscope - Microscopy Basic Training</title>
 
 
         <!-- Custom HTML head -->
@@ -36,6 +36,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -146,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -166,7 +175,33 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="microscope-components"><a class="header" href="#microscope-components">Microscope Components</a></h1>
+                        <h1 id="the-epifluorescence-microscope"><a class="header" href="#the-epifluorescence-microscope">The Epifluorescence Microscope</a></h1>
+<p>Microscopes come in many different shapes, sizes, and arrangements. Broadly speaking, we may classify a microscope according to two different characteristics:</p>
+<ol>
+<li>The contrast mechanism</li>
+<li>The probe</li>
+</ol>
+<p>Contrast refers to the variations of intensity within an image. Higher contrast means a greater degree of these variations, which is almost always desirable for seeing small features. We can refine this definition and go into much greater detail about what contrast means for different types of microscopes, but this would distract from our main purpose at this point, which is learning about practical microscopy.</p>
+<p>Contrast mechanism is the physical process by which variations in intensity are generated in a microscope image. It can be either intrinsic, such as the absorption and scattering of light or other types of radiation from the sample itself, or extrinsic, such as fluorescent labels that we attach to our samples.</p>
+<p>In nearly all forms of microscopy we need to probe our samples in order to see them. In atomic force microscopy, for example, we bring a sharp tip close to a sample's surface to measure its height profile. In this case the probe is a very real and tangible thing. Most forms of microscopy, however, use directed beams of radiation such as light or electrons as the probe. The interaction between the radiation and the sample is ultimately what creates contrast in the image.</p>
+<p>Light microscopy in particular refers to all forms of microscopy that use visible and near infrared light as the probe. It is probably the form of microscopy that is most used by cell biologists because light is relatively easy to manipulate and can generate very detailed images of cells with good contrast. It is also comparatively gentle on samples, enabling live cell time lapse imaging for long periods of time.</p>
+<p>Typically there are two ways to deliver light to the sample. One is to stick the sample directly between a light source and the microscope to record the light signal that is transmitted through the sample. This geometry is called transillumination and is almost always used to probe a sample's intrinsic contrast. The other is to illuminate and collect light from the sample through the same optical elements. This is called epi-illumination, and nearly all flourescence microscopes use it because it is much easier to separate the probe light from the fluorscence signal than it is in transillumination.</p>
+<p>In this course you will construct and operate what is known as an epifluorescence microscope, i.e. a light microscope that illuminates the sample by epi-illumination and uses fluorescence as the extrinsic contrast mechanism.</p>
+<h2 id="principle-components-of-an-epifluorescence-microscope"><a class="header" href="#principle-components-of-an-epifluorescence-microscope">Principle Components of an Epifluorescence Microscope</a></h2>
+<p>The diagram below illustrates the layout of a typical epifluorescence microscope.</p>
+<p><img src="epifluorescence-microscope.svg" alt="Layout of an epifluorescence microscope" /></p>
+<p>You can see right away that there are two distinct, partially overlapping light paths, and the components of this microscope are positioned relative to these two paths.</p>
+<h3 id="the-illumination-light-path"><a class="header" href="#the-illumination-light-path">The Illumination Light Path</a></h3>
+<p>The illumination path delivers excitation light to the sample. It is called excitation light because this light excites the flourophores to a higher energetic state, often called an excited state. The fluorophores will in turn emit fluorescence light when they relax from the excited state to the ground state.</p>
+<p>The illumination path starts at the light source, which can be a LED, a laser, a lamp, or any other bright source of visible light. A series of optics directs this light through an excitation filter. The excitation filter absorbs light with wavelengths that are outside of the filter's passband and transmits light with wavelengths that are inside the passband. The purpose of the excitation filter is to narrow the spectrum of the light that eventually reaches the sample. By narrowing the spectrum, we</p>
+<ol>
+<li>reduce any unwanted background signal that might leak towards the camera, and</li>
+<li>can better control which fluorophores are excited in the case of multi-color imaging.</li>
+</ol>
+<p>Next, the light is redirected by a dichroic mirror that reflects light of some wavelengths and transmits others. The excitation light then passes through the objective lens where it is focused onto the sample to the excite fluorescence.</p>
+<h3 id="the-fluorescence-light-path"><a class="header" href="#the-fluorescence-light-path">The Fluorescence Light Path</a></h3>
+<p>Fluorescence light is collected from the sample by the objective where it traverses the illumination light path in reverse. Fluorescence light has a longer wavelength than the excitation light, so it passes through the dichroic mirror instead of reflecting. An emission filter further helps remove any residual excitation light that might be traveling along this path. A normal mirror redirects the light into a different direction, though this is not necessary and is used only to reduce the overall size of the microscope.</p>
+<p>Finally, a tube lens collects the fluorescent light and forms the image of the sample on the camera.</p>
 
                     </main>
 
@@ -214,6 +249,7 @@
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>
