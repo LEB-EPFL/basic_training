@@ -22,5 +22,5 @@ Download the **Windows version 2.3.0.77** installer. Unzip the file, and launch 
 
 After installation has finished, attach the camera to the PC with the blue USB cable and start the SpinView software.
 
-[^1]: The `x64` version is for 64 bit operating systems. The `x86` version is for 32 bit operating systems. Nearly all modern computers used in the lab are 64 bit.
+[^1]: The `x64` version is for 64 bit operating systems. The `x86` version is for 32 bit operating systems. Nearly all modern computers used in the lab are 64 bit. The most relevant difference between the two is that 32 bit operating systems are limited to using only 4 GB of memory, while 64 bit systems currently have no practical limit. There is however a theoretical limit of about 16 exabytes.
 [^2]: GigE is an interface standard for transmitting image data over ethernet.
