@@ -264,7 +264,7 @@
 <p>Finally, a tube lens collects the fluorescent light and forms the image of the sample on the camera.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-the-camera"><a class="header" href="#set-up-the-camera">Set up the Camera</a></h1>
 <p>We start construction of the microscope by installing the camera software and making sure that it works correctly.</p>
-<p>The camera used in this course is a Flir Grasshopper GS3-U3-51S5M-C. It is one of several small form factor cameras that are often referred to as industrial CMOS cameras in the literature. Industrial CMOS cameras are relatively cheap and compatible with fluorescence microscopes, but their noise characteristics and sensitivities are worse than more expensive scientific CMOS, or sCMOS, cameras. While most of our research is done with sCMOS camers, industrial CMOS cameras are still sufficient for applications in basic fluorescence microscopy.</p>
+<p>The camera used in this course is a Flir Grasshopper GS3-U3-51S5M. It is one of several small form factor cameras that are often referred to as industrial CMOS cameras in the literature. Industrial CMOS cameras are relatively cheap and compatible with fluorescence microscopes, but their noise characteristics and sensitivities are worse than more expensive scientific CMOS, or sCMOS, cameras. While most of our research is done with sCMOS camers, industrial CMOS cameras are still sufficient for applications in basic fluorescence microscopy.</p>
 <h2 id="install-the-drivers-and-capture-software"><a class="header" href="#install-the-drivers-and-capture-software">Install the Drivers and Capture Software</a></h2>
 <p>To begin, we will install Flir's Spinnaker software that includes the necessary camera drivers and the SpinView capture software. <strong>For reasons that will become apparent in a later section, you must install version 2.3.0.77.</strong></p>
 <p>Navigate to <a href="https://www.teledynevisionsolutions.com/products/spinnaker-sdk">https://www.teledynevisionsolutions.com/products/spinnaker-sdk</a> in your web browser and select the Download button. Product software pages change frequently, so if the page has changed since this was written, you will need to search for the Spinnaker SDK (software developer kit) and find it on your own.</p>
@@ -294,6 +294,23 @@
 <p>GigE is an interface standard for transmitting image data over ethernet. <a href="#fr-2-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="align-the-camera-and-tube-lens"><a class="header" href="#align-the-camera-and-tube-lens">Align the Camera and Tube Lens</a></h1>
+<p>In this section we build a fixed focal length camera that will serve as the base for building the rest of the microscope.</p>
+<h2 id="parts-list"><a class="header" href="#parts-list">Parts List</a></h2>
+<p>Below is the parts list for this section of the basic training course. Note that some of the parts used in the course are now obsolete. In these cases the parts listed below are the closest current match to the obsolete parts.</p>
+<div class="table-wrapper"><table><thead><tr><th>Part</th><th>Manf. Part No.</th><th>Quantity</th><th>URL</th></tr></thead><tbody>
+<tr><td>Camera</td><td>Grasshopper3 GS3-U3-51S5M</td><td>1</td><td><a href="https://www.teledynevisionsolutions.com/en-150/products/grasshopper3-usb3/?model=GS3-U3-51S5M-C&amp;vertical=machine%20vision&amp;segment=iis">https://www.teledynevisionsolutions.com/en-150/products/grasshopper3-usb3/?model=GS3-U3-51S5M-C&amp;vertical=machine%20vision&amp;segment=iis</a></td></tr>
+<tr><td>Camera USB Cable</td><td></td><td>1</td><td></td></tr>
+<tr><td>Cage Assembly Rod, 10" Long, Ø6 mm</td><td>ER10</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER10">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER10</a></td></tr>
+<tr><td>30 mm to 60 mm Cage Adapter, 0.5" Thick</td><td>LCP33/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP33/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP33/M</a></td></tr>
+<tr><td>Adapter with External SM1 Threads and Internal SM2 Threads</td><td>SM1A2</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A2">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A2</a></td></tr>
+<tr><td>Tube Lens, f = 200 mm, ARC: 350 - 700 nm, External M38 x 0.5 Threads</td><td>TTL200</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=TTL200">https://www.thorlabs.com/thorproduct.cfm?partnumber=TTL200</a></td></tr>
+<tr><td>Adapter with External SM2 Threads and Internal M38 x 0.5 Threads</td><td>SM2A20</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM2A20">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM2A20</a></td></tr>
+<tr><td>60 mm Cage Plate, SM2 Threads, 0.5" Thick, M4 Tap</td><td>LCP34/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP34/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP34/M</a></td></tr>
+<tr><td>SM1 Quick-Release Adapter Set</td><td>SM1QA</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1QA">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1QA</a></td></tr>
+<tr><td>Adapter with External C-Mount Threads and External SM1 Threads, 3.2 mm Spacer</td><td>SM1A39</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A39">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A39</a></td></tr>
+</tbody></table>
+</div>
+<p><img src="chapter_image_acquisition/./fixed_focal_length_camera_parts.jpg" alt="The parts for a fixed focal length camera" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
 <ol>
