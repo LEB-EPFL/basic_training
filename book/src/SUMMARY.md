@@ -5,5 +5,6 @@
 - [Image Acquisition](./chapter_image_acquisition/README.md)
   - [The Epifluorescence Microscope](./chapter_image_acquisition/microscope_components.md)
   - [Set up the Camera](./chapter_image_acquisition/camera.md)
+  - [Align the Camera and Tube Lens](./chapter_image_acquisition/camera_tube_lens_alignment.md)
   - [Set up Micro-Manager](./chapter_image_acquisition/micro-manager.md)
   - [Questions](./chapter_image_acquisition/questions.md)
