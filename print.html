@@ -272,8 +272,20 @@
 <p>Once logged in, you will see a page that looks like the following. Be sure to select the link for previous versions!</p>
 <p><img src="chapter_image_acquisition/spinnaker_download.png" alt="Select &quot;previous versions&quot; in the Spinnaker SDK download page" /></p>
 <p>Download the <strong>Windows version 2.3.0.77</strong> installer. Unzip the file, and launch the installation with the <code>x64</code> version of the installer<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>. When prompted, select <code>Applicaton development,</code> though <code>Camera evaluation</code> should work as well. There is no need to install the GigE camera driver<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. Any other settings may be left with their default values.</p>
-<h2 id="acquire-an-image"><a class="header" href="#acquire-an-image">Acquire an Image</a></h2>
-<p>After installation has finished, attach the camera to the PC with the blue USB cable and start the SpinView software.</p>
+<h2 id="start-device-acquisition"><a class="header" href="#start-device-acquisition">Start Device Acquisition</a></h2>
+<p>After installation has finished, attach the camera to the PC with the blue USB cable and start the SpinView software. You will see a screen that looks like the following:</p>
+<p><img src="chapter_image_acquisition/spinview_welcome.png" alt="SpinView screen after startup" /></p>
+<p>Confirm that the camera is recognized by the computer by finding it in the list of devices in the upper left panel of the screen. The camera used in this lab is a <strong>Grasshopper3 GS3-U3-51S5M</strong>. Select the camera in the list to enable its controls.</p>
+<p>To acquire a live stream from the camera, click the green arrow at the top of the main image window. It should display the tooltip <code>Start device acquisition</code> when hovered over with the mouse. If all goes well, you should see a continuous stream of camera frames in the main window.</p>
+<h3 id="verify-the-camera-works-as-expected"><a class="header" href="#verify-the-camera-works-as-expected">Verify the Camera Works as Expected</a></h3>
+<p>You will not be able to see anything resembling a real image in the live stream. (Do you know why this is?) Regardless, we can do a few basic sanity checks to ensure that the camera works as expected. Try the following:</p>
+<ul>
+<li>Take the cap off of the camera and wave it in front of a light. Verify that you see changes in brightness in the feed at the same time.</li>
+<li>Try to change the exposure time, frame rate, and gain. (Changing the frame rate requires changing more than one setting in the SpinView software.)</li>
+<li>Change the size of the region-of-interest (ROI) acquired by the camera.</li>
+<li>Change the format of the pixels from 8 to 16 bits.</li>
+</ul>
+<p>Once you are satisfied that you understand the camera's basic operation, we can move onto the next step.</p>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
 <p>The <code>x64</code> version is for 64 bit operating systems. The <code>x86</code> version is for 32 bit operating systems. Nearly all modern computers used in the lab are 64 bit. The most relevant difference between the two is that 32 bit operating systems are limited to using only 4 GB of memory, while 64 bit systems currently have no practical limit. There is however a theoretical limit of about 16 exabytes. <a href="#fr-1-1">↩</a></p>
@@ -281,7 +293,8 @@
 <li id="footnote-2">
 <p>GigE is an interface standard for transmitting image data over ethernet. <a href="#fr-2-1">↩</a></p>
 </li>
-</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="align-the-camera-and-tube-lens"><a class="header" href="#align-the-camera-and-tube-lens">Align the Camera and Tube Lens</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
 <ol>
 <li>
@@ -291,10 +304,13 @@
 <p>Why do we use an emission filter in addition to a dichroic mirror in the fluorescence light path?</p>
 </li>
 <li>
-<p>True of false: fluorescence light has a shorter wavelength than that of the excitation light.</p>
+<p>True or false: fluorescence light has a shorter wavelength than that of the excitation light.</p>
 </li>
 <li>
 <p>What are the differences between industrial CMOS and scientific CMOS (sCMOS) cameras?</p>
+</li>
+<li>
+<p>True or false: A camera with an exposure time of 20 ms necessarily acquires frames at a rate of 50 frames per second.</p>
 </li>
 </ol>
 
