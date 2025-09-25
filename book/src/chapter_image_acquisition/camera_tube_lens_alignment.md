@@ -117,4 +117,38 @@ Loosen the set screws of the camera. Carefully adjust the position of the camera
 
 Depending on the lighting conditions, the image may not have good contrast. This does not matter. Just make the far away object in focus by finding the correct position of the camera.
 
-Tighten the set screws once you have found it.
+Tighten the set screws once the image is in focus.
+
+### 11
+
+Attach the cage plate to the end of the cage rods. This will be used to mount the camera/tube lens assembly to the optical table in a later page.
+
+## Discussion
+
+### Infinity Corrected Optics
+
+Nearly all microscopes that you will encounter within our research lab use infinity corrected optics, so it is important to understand what this means.
+
+By design, the sample is located at the front focal plane of an infinity corrected objective. This means that the image of the sample is formed an infinite distance away from the objective on the other side. An image at infinity cannot be seen with a camera[^1], so we require a second a lens to form a real image in the camera plane. This second lens is known as the tube lens.
+
+But why is the image of the sample formed at infinity by the objective in the first place? Recall the thin lens formula from your introductory physics class:
+
+\\[ \frac{1}{s} + \frac{1}{s'} = \frac{1}{f} \\]
+
+Here, \\( s \\) is the distance from the lens to the object, \\( s' \\) is the distance from the lens to the image, and \\( f \\) is the focal length of the lens. If the object distance is equal to the focal length, then \\( s = f \\). But then we have
+
+\\[ \frac{1}{s'} = 0 \\]
+
+The only way to satisfy this equation is by requiring that the image distance be infinitely large. This is what we mean when we say that the image is "at infinity."
+
+### The Camera Sensor is in the Focal Plane of the Tube Lens
+
+By the same logic, the camera sensor must be in the focal plane of the tube lens of a properly aligned, infinity corrected system. The image at infinity created by the objective serves as the object for the tube lens so that we have
+
+\\[ \frac{1}{\infty} + \frac{1}{s'} = \frac{1}{f} \\]
+
+or \\( s' = f \\).
+
+https://phys.libretexts.org/Bookshelves/Optics/BSc_Optics_(Konijnenberg_Adam_and_Urbach)/02%3A_Geometrical_Optics/2.06%3A_Gaussian_Geometrical_Optics
+
+[^1]: An image at infinity can be seen by eye, however. Do you know why?

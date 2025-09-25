@@ -3,3 +3,6 @@ authors = ["Kyle M. Douglass"]
 language = "en"
 src = "src"
 title = "Microscopy Basic Training"
+
+[output.html]
+mathjax-support = true
