@@ -103,5 +103,18 @@ One example for how to do this is illustrated below. It is not the only way.
 
 ![](./step_20.jpg)
 
+### 10
+
+At the beginning, you will likely see an out-of-focus image like the one below.
+
 ![An out-of-focus image of clouds.](./clouds_out_of_focus.jpeg)
+
+Loosen the set screws of the camera. Carefully adjust the position of the camera along the cage rods until an in focus image is formed.
+
+![](./step_21.jpg)
+
 ![An in focus image of clouds](./clouds_in_focus.jpeg)
+
+Depending on the lighting conditions, the image may not have good contrast. This does not matter. Just make the far away object in focus by finding the correct position of the camera.
+
+Tighten the set screws once you have found it.
