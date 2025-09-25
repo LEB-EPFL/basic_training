@@ -25,23 +25,83 @@ In addition, you will need 2 mm and 0.05" Allen screwdrivers.
 
 ## Instructions
 
+### 0
+
+Remove the protective cap from the camera.
+
 ![](./step_0.jpg)
+
+### 1
+
+Attach the C-mount to SM1 external threads adapter to the camera.
+
 ![](./step_1.jpg)
 ![](./step_2.jpg)
 ![](./step_3.jpg)
+
+
+### 2
+
+Attach the SM1 quick-release adapter set to the camera.
+
 ![](./step_4.jpg)
 ![](./step_5.jpg)
+
+### 3
+
+Attach one 30 mm to 60 mm cage adapter to the other end of the quick-release adapter via the SM1 threaded hole.
+
 ![](./step_6.jpg)
 ![](./step_7.jpg)
+
+### 4
+
+Use a 0.05" hex driver to loosen the set screw on the quick-release adapter set. Rotate the camera until its body is aligned with the cage rod holes in the 30 mm to 60 mm cage adapter.
+
 ![](./step_8.jpg)
 ![](./step_9.jpg)
+
+### 5
+
+Loosen one of the set screws on the outer set of holes for the cage rods using a 0.05" hex driver. Insert a cage rod and tighten the screw.
+
+Repeat for all four cage rods.
+
+For the older 30 mm to 60 mm cage adapters with 0.05" set screws, it is OK if one of the two screws is missing.
+
 ![](./step_10.jpg)
 ![](./step_11.jpg)
 ![](./step_12.jpg)
+
+### 6
+
+Thread the 200 mm tube lens into the SM2A20 tube lens holder if it is not already. Attach an externally threaded SM1 to interally threaded SM2 adapter to the tube lens holder on the side facing the objective.
+
 ![](./step_13.jpg)
 ![](./step_14.jpg)
 ![](./step_15.jpg)
+
+### 7
+
+Thread a 30 mm to 60 mm cage adapter onto the external SM1 threads of assembly from the previous step.
+
 ![](./step_16.jpg)
 ![](./step_17.jpg)
+
+### 8
+
+Slide the assembly from the previous step onto the other end of the cage rods and tighten the set screws so that the assembly does not slide along the rods.
+
 ![](./step_18.jpg)
 ![](./step_19.jpg)
+
+### 9
+
+Plug in the camera and launch the SpinView software installed in the [previous page](./camera.md). Take the lens assembly and PC to a room with a window with a view of far away objects, e.g. clouds or mountains. Start a live image feed and adjust the settings so that the image is not saturated.
+
+One example for how to do this is illustrated below. It is not the only way.
+
+![](./step_20.jpg)
+
+![An out-of-focus image of clouds.](./clouds_out_of_focus.jpeg)
+![An in focus image of clouds](./clouds_in_focus.jpeg)
