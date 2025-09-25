@@ -22,3 +22,26 @@ Below is the parts list for this section of the basic training course. Note that
 ![The parts for a fixed focal length camera](./fixed_focal_length_camera_parts.jpg)
 
 In addition, you will need 2 mm and 0.05" Allen screwdrivers.
+
+## Instructions
+
+![](./step_0.jpg)
+![](./step_1.jpg)
+![](./step_2.jpg)
+![](./step_3.jpg)
+![](./step_4.jpg)
+![](./step_5.jpg)
+![](./step_6.jpg)
+![](./step_7.jpg)
+![](./step_8.jpg)
+![](./step_9.jpg)
+![](./step_10.jpg)
+![](./step_11.jpg)
+![](./step_12.jpg)
+![](./step_13.jpg)
+![](./step_14.jpg)
+![](./step_15.jpg)
+![](./step_16.jpg)
+![](./step_17.jpg)
+![](./step_18.jpg)
+![](./step_19.jpg)
