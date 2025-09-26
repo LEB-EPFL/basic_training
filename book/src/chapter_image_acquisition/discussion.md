@@ -59,6 +59,12 @@ Prior to the development of infinity corrected systems, microscope objectives fo
 
 Infinity corrected systems do not suffer from these problems because the intermediate image is located at infinity. As a result, the final image will not change the position when additonal elements are inserted into the infinity space between the objective and tube lens.
 
+## Think in Terms of Conjugate Planes
+
+Consider the planes denoted by the dashed lines in the above figure. These denote the sample plane and its image. Rays from one point in one of these planes are mapped to a single point in another.
+
+Any pair of planes that satisfies this mapping are called conjugate planes. Another set of important conjugate planes corresponds to the back focal plane (BFP) of the objective and its images. Schematics of microscopes can almost always be understood by asking where the conjugates are for the sample and objective BFP are.
+
 ## The Thin Lens Equation is Compatible with the Principal Planes
 
 Can we really use the thin lens equation if we are dealing with thick lenses represented as principal planes?
