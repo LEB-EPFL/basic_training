@@ -368,27 +368,53 @@
 <p>Depending on the lighting conditions, the image may not have good contrast. This does not matter. Just make the far away object in focus by finding the correct position of the camera.</p>
 <p>Tighten the set screws once the image is in focus.</p>
 <h3 id="11"><a class="header" href="#11">11</a></h3>
-<p>Attach the cage plate to the end of the cage rods. This will be used to mount the camera/tube lens assembly to the optical table in a later page.</p>
-<h2 id="discussion"><a class="header" href="#discussion">Discussion</a></h2>
-<h3 id="infinity-corrected-optics"><a class="header" href="#infinity-corrected-optics">Infinity Corrected Optics</a></h3>
+<p>Attach the cage plate to the end of the cage rods. This will be used to mount the camera/tube lens assembly to the optical table in a later chapter.</p>
+<p><img src="chapter_image_acquisition/./step_22.jpg" alt="" /></p>
+<p>You should now have a fully assembled, fixed focal length camera system.</p>
+<p><img src="chapter_image_acquisition/./step_23.jpg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="discussion"><a class="header" href="#discussion">Discussion</a></h1>
+<h2 id="infinity-corrected-optics"><a class="header" href="#infinity-corrected-optics">Infinity Corrected Optics</a></h2>
 <p>Nearly all microscopes that you will encounter within our research lab use infinity corrected optics, so it is important to understand what this means.</p>
 <p>By design, the sample is located at the front focal plane of an infinity corrected objective. This means that the image of the sample is formed an infinite distance away from the objective on the other side. An image at infinity cannot be seen with a camera<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>, so we require a second a lens to form a real image in the camera plane. This second lens is known as the tube lens.</p>
-<p>But why is the image of the sample formed at infinity by the objective in the first place? Recall the thin lens formula from your introductory physics class:</p>
+<p>But why is the image of the sample formed at infinity in the first place? Recall the thin lens formula from your introductory physics class:</p>
 <p>\[ \frac{1}{s} + \frac{1}{s'} = \frac{1}{f} \]</p>
 <p>Here, \( s \) is the distance from the lens to the object, \( s' \) is the distance from the lens to the image, and \( f \) is the focal length of the lens. If the object distance is equal to the focal length, then \( s = f \). But then we have</p>
 <p>\[ \frac{1}{s'} = 0 \]</p>
 <p>The only way to satisfy this equation is by requiring that the image distance be infinitely large. This is what we mean when we say that the image is "at infinity."</p>
-<h3 id="the-camera-sensor-is-in-the-focal-plane-of-the-tube-lens"><a class="header" href="#the-camera-sensor-is-in-the-focal-plane-of-the-tube-lens">The Camera Sensor is in the Focal Plane of the Tube Lens</a></h3>
+<p>The situation is illustrated below. An object lies at a distance \( s = f \) from a thin lens with a positive focal length, which is drawn as a vertical line with arrows at each end. Rays from a single object point emerge from the lens parallel to one another. The image plane is defined as the plane where the rays intersect one another. But the rays are parallel, so they intersect at infinity.</p>
+<p><img src="chapter_image_acquisition/./thin_lens_object_in_focal_plane.svg" alt="" /></p>
+<h2 id="the-camera-sensor-is-in-the-focal-plane-of-the-tube-lens"><a class="header" href="#the-camera-sensor-is-in-the-focal-plane-of-the-tube-lens">The Camera Sensor is in the Focal Plane of the Tube Lens</a></h2>
 <p>By the same logic, the camera sensor must be in the focal plane of the tube lens of a properly aligned, infinity corrected system. The image at infinity created by the objective serves as the object for the tube lens so that we have</p>
 <p>\[ \frac{1}{\infty} + \frac{1}{s'} = \frac{1}{f} \]</p>
 <p>or \( s' = f \).</p>
-<p>https://phys.libretexts.org/Bookshelves/Optics/BSc_Optics_(Konijnenberg_Adam_and_Urbach)/02%3A_Geometrical_Optics/2.06%3A_Gaussian_Geometrical_Optics</p>
+<p>This situation is illustrated below. Parallel rays representing an object at infinity are brought to a focus in the focal plane of a thin lens.</p>
+<p><img src="chapter_image_acquisition/./thin_lens_object_at_infinity.svg" alt="" /></p>
+<h2 id="focusing-on-a-distant-object-aligned-the-camera-sensor-with-the-tube-lens-focal-plane"><a class="header" href="#focusing-on-a-distant-object-aligned-the-camera-sensor-with-the-tube-lens-focal-plane">Focusing on a Distant Object Aligned the Camera Sensor with the Tube Lens Focal Plane</a></h2>
+<p>When we looked at far away clouds or mountains using our fixed focal length camera, we essentially were looking at objects at infinity. By adjusting the separation between the camera and tube lens such that a clear image was formed, we were placing the camera sensor in the focal plane of the tube lens.</p>
+<h2 id="why-cant-i-just-use-a-ruler"><a class="header" href="#why-cant-i-just-use-a-ruler">Why Can't I Just Use a Ruler?</a></h2>
+<p>The tube lens has a 200 mm focal length. Many students are tempted to use a ruler to separate the camera from the tube lens by 200 mm, but this is not the correct way to put the camera sensor in the focal plane of the tube lens for two reasons.</p>
+<ol>
+<li>The camera sensor sits inside the camera housing at a distance of about 17 mm from the opening, so any distance measurement must account for this.</li>
+<li>Focal lengths are measured relative to imaginary planes called the principal planes of a lens. The locations of these planes depend on the details of the lens, i.e. glass surface curvatures, refractive indexes, number of components, etc. We cannot look at any given lens and say with certainty where the principal planes are located without performing calculations.</li>
+</ol>
+<p>So if we don't know where the principal planes are, then we don't know the point from where we need to measure to find the focal plane.</p>
+<p>The advantage to modeling a system with the principal planes is that we can abstract over all the details of a real lens and replace them with just two planes.</p>
+<h2 id="the-space-between-the-objective-and-tube-lens-is-called-infinity-space"><a class="header" href="#the-space-between-the-objective-and-tube-lens-is-called-infinity-space">The Space between the Objective and Tube Lens is called Infinity Space</a></h2>
+<p>In the schematic below, \( O / O' \) and \( T / T' \) are the principal planes for the microscope objective and tube lens, respectively. \( f_{obj} \) and \( f_{TL} \) denote the focal lengths of the objective and tube lens, respectively. Light rays from an off-axis object point are collected by the objective and made parallel after the objective's second prinicpal plane. The same rays are refocused by the tube lens onto the camera sensor.</p>
+<p><img src="chapter_image_acquisition/./infinity_space.svg" alt="" /></p>
+<p>The space between the objective and tube lens is called the infinity space because the image of the sample is located at infinity within this space.</p>
+<p>Prior to the development of infinity corrected systems, microscope objectives formed their images at a fixed distance from the objective, called the tube length. By convention, this distance was usually around 160 mm. A second lens, the eye piece would send this intermediate image to infinity so that it could be viewed by the eye. Modern microscopy requires that additonal optical elements be placed after the objective, such as dichroic mirrors and filters. Upon insertion into the optical path, these additonal elements displace the location of the image formed by a traditional objective due the refractive index difference between the element’s material and air. This in turn forces the microscopist to refocus the image as elements are inserted and removed. It also results in a slightly different magnification for different elements.</p>
+<p>Infinity corrected systems do not suffer from these problems because the intermediate image is located at infinity. As a result, the final image will not change the position when additonal elements are inserted into the infinity space between the objective and tube lens.</p>
+<h2 id="the-thin-lens-equation-is-compatible-with-the-principal-planes"><a class="header" href="#the-thin-lens-equation-is-compatible-with-the-principal-planes">The Thin Lens Equation is Compatible with the Principal Planes</a></h2>
+<p>Can we really use the thin lens equation if we are dealing with thick lenses represented as principal planes?</p>
+<p>In short, yes. While a complete discussion about this goes beyond the scope of this basic training course, one can show that the ray transfer matrix of a thick lens is identical to a thin lens so long as the object space and image space coordinate systems are chosen with respect to origin in the points where the object space and image space prinicpal planes intersect the optical axis, respectively.</p>
+<p>For more information, see section 2.5.7 <a href="https://phys.libretexts.org/Bookshelves/Optics/BSc_Optics_(Konijnenberg_Adam_and_Urbach)/02%3A_Geometrical_Optics/2.06%3A_Gaussian_Geometrical_Optics">here</a>.</p>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
 <p>An image at infinity can be seen by eye, however. Do you know why? <a href="#fr-1-1">↩</a></p>
 </li>
-</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
 <ol>
 <li>
 <p>What is the difference between an excitation filter and a dichroic mirror?</p>
@@ -405,7 +431,11 @@
 <li>
 <p>True or false: A camera with an exposure time of 20 ms necessarily acquires frames at a rate of 50 frames per second.</p>
 </li>
+<li>
+<p>Does the distance between the objective and the tube lens matter? Why or why not?</p>
+</li>
 </ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transillumination"><a class="header" href="#transillumination">Transillumination</a></h1>
 
                     </main>
 
