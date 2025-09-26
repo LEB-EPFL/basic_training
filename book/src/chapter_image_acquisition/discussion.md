@@ -4,6 +4,10 @@
 
 Nearly all microscopes that you will encounter within our research lab use infinity corrected optics, so it is important to understand what this means.
 
+An infinity corrected objective will have an infinity symbol on the barrel like the one in the photo below.
+
+![](./infinity_objective.jpg)
+
 By design, the sample is located at the front focal plane of an infinity corrected objective. This means that the image of the sample is formed an infinite distance away from the objective on the other side. An image at infinity cannot be seen with a camera[^1], so we require a second a lens to form a real image in the camera plane. This second lens is known as the tube lens.
 
 But why is the image of the sample formed at infinity in the first place? Recall the thin lens formula from your introductory physics class:
