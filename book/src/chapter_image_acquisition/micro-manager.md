@@ -66,9 +66,42 @@ Configurations allow you to select hardware and settings for different experimen
 
 In the following section, we will configure Micro-Manager to control the Flir camera for our microscope.
 
+## Create a New Configuration
 
+### 0
 
+Close Micro-Manager if it is already open.
 
+Connect the camera to your PC and launch Micro-Manager. Select `(none)` for the `Hardware Configuration File` and click `Ok`.
 
+![](./mm_startup_none.png)
+
+### 1
+
+In the Micro-Manager control panel, navigate to `Devices` > `Hardware Configuration Wizard...`. Select `Create new configuration` and click `Next >`.
+
+![](./mm_new_configuration.png)
+
+### 2
+
+In the next window, scroll down the list of available devices until you find the device called `SpinnakerCamera`. Expand the item to find our Grasshopper camera. Select it, and click `Add...` and then `OK`. Click`Next >` through the remaining windows. At the end, save the configuration file somewhere that makes sense.
+
+![](./mm_select_spinnaker_camera.png)
+
+#### Troubleshooting
+
+Can't see a device called SpinnakerCamera? The Grasshopper camera does not appear in the list? Do you receive an error immediately after creating the configuration? Try the following things to troubleshoot.
+
+1. Restart Micro-Manager. Devices need to be plugged in **before** Micro-Manager starts for them to be recognized.
+1. Ensure that you installed the correct version of the Spinnaker SDK during [the camera setup](./camera.md).
+1. Be sure that the camera is recognized by SpinView. In general, if a device can't be used by its manufacturer's software, then it will not work in Micro-Manager.
+
+### 3
+
+Once back at the Micro-Manager control panel, click the `Live` button. You should see a live image stream in the preview window and the image inspector showing a histogram of the pixel values.
+
+![](./mm_camera_configured.png)
+
+At this point you have configured Micro-Manager to control the camera. Feel free to play with settings such as the exposure time, or go into the Device Property Browser to see what camera properties can be modified.
 
 [^1]: A new nightly version is created at the end of any day where the source code changes. It's called "nightly" because it used to be built once a day, regardless of whether the source code changed.

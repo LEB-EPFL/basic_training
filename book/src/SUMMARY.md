@@ -9,4 +9,6 @@
   - [Set up Micro-Manager](./chapter_image_acquisition/micro-manager.md)
   - [Discussion](./chapter_image_acquisition/discussion.md)
   - [Questions](./chapter_image_acquisition/questions.md)
-- [Transillumination](./chapter_transillumination/README.md)
+- [Alignment](./chapter_alignment/README.md)
+  - [Construct the Microscope Emission Path](./chapter_alignment/emission_path/README.md)
+  - [Construct the Microscope Excitation Path](./chapter_alignment/excitation_path/README.md)
