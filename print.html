@@ -406,6 +406,28 @@
 <p>The configuration is the set of all devices to be controlled by Micro-Manager, as well as additional settings like desired default values.</p>
 <p>Configurations allow you to select hardware and settings for different experiments.</p>
 <p>In the following section, we will configure Micro-Manager to control the Flir camera for our microscope.</p>
+<h2 id="create-a-new-configuration"><a class="header" href="#create-a-new-configuration">Create a New Configuration</a></h2>
+<h3 id="0-1"><a class="header" href="#0-1">0</a></h3>
+<p>Close Micro-Manager if it is already open.</p>
+<p>Connect the camera to your PC and launch Micro-Manager. Select <code>(none)</code> for the <code>Hardware Configuration File</code> and click <code>Ok</code>.</p>
+<p><img src="chapter_image_acquisition/./mm_startup_none.png" alt="" /></p>
+<h3 id="1-1"><a class="header" href="#1-1">1</a></h3>
+<p>In the Micro-Manager control panel, navigate to <code>Devices</code> &gt; <code>Hardware Configuration Wizard...</code>. Select <code>Create new configuration</code> and click <code>Next &gt;</code>.</p>
+<p><img src="chapter_image_acquisition/./mm_new_configuration.png" alt="" /></p>
+<h3 id="2-1"><a class="header" href="#2-1">2</a></h3>
+<p>In the next window, scroll down the list of available devices until you find the device called <code>SpinnakerCamera</code>. Expand the item to find our Grasshopper camera. Select it, and click <code>Add...</code> and then <code>OK</code>. Click<code>Next &gt;</code> through the remaining windows. At the end, save the configuration file somewhere that makes sense.</p>
+<p><img src="chapter_image_acquisition/./mm_select_spinnaker_camera.png" alt="" /></p>
+<h4 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h4>
+<p>Can't see a device called SpinnakerCamera? The Grasshopper camera does not appear in the list? Do you receive an error immediately after creating the configuration? Try the following things to troubleshoot.</p>
+<ol>
+<li>Restart Micro-Manager. Devices need to be plugged in <strong>before</strong> Micro-Manager starts for them to be recognized.</li>
+<li>Ensure that you installed the correct version of the Spinnaker SDK during <a href="chapter_image_acquisition/./camera.html">the camera setup</a>.</li>
+<li>Be sure that the camera is recognized by SpinView. In general, if a device can't be used by its manufacturer's software, then it will not work in Micro-Manager.</li>
+</ol>
+<h3 id="3-1"><a class="header" href="#3-1">3</a></h3>
+<p>Once back at the Micro-Manager control panel, click the <code>Live</code> button. You should see a live image stream in the preview window and the image inspector showing a histogram of the pixel values.</p>
+<p><img src="chapter_image_acquisition/./mm_camera_configured.png" alt="" /></p>
+<p>At this point you have configured Micro-Manager to control the camera. Feel free to play with settings such as the exposure time, or go into the Device Property Browser to see what camera properties can be modified.</p>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
 <p>A new nightly version is created at the end of any day where the source code changes. It's called "nightly" because it used to be built once a day, regardless of whether the source code changed. <a href="#fr-1-1">↩</a></p>
@@ -477,7 +499,11 @@
 <p>Does the distance between the objective and the tube lens matter? Why or why not?</p>
 </li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="transillumination"><a class="header" href="#transillumination">Transillumination</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="alignment"><a class="header" href="#alignment">Alignment</a></h1>
+<p>In this chapter we will finish the construction of our fluoresence microscope in two parts. In the first, we will finish the fluoresence light path, also known as the emission path.</p>
+<p>In the second part, we will build and align the optics for the excitation light path.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="construct-the-microscope-emission-path"><a class="header" href="#construct-the-microscope-emission-path">Construct the Microscope Emission Path</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="construct-the-microscope-excitation-path"><a class="header" href="#construct-the-microscope-excitation-path">Construct the Microscope Excitation Path</a></h1>
 
                     </main>
 
