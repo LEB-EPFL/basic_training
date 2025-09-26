@@ -178,7 +178,44 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
-
+<p><a href="https://micro-manager.org/">Micro-Manager</a> is open source software for microscope control and automation. It allows you to control and coordinate many types of hardware from different vendors, often with little-to-no additional work.</p>
+<p>As an ImageJ plugin, it also gives you image analysis capabilities on data as it is acquired far beyond what any camera manufacturer's software allows.</p>
+<p>We use Micro-Manager on several of our laboratory instruments. A basic understanding of how to use Micro-Manager is therefore essential to successful operation of these microscopes.</p>
+<h2 id="download-and-install-the-latest-nightly-version"><a class="header" href="#download-and-install-the-latest-nightly-version">Download and Install the Latest Nightly Version</a></h2>
+<p>Micro-Manager comes in both stable and so-called "nightly" versions<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>. You will want to use the latest nightly version because it contains all the latest features and bug fixes.</p>
+<p>Navigate to <a href="https://micro-manager.org/">https://micro-manager.org/</a> and select the hamburger menu, then <code>Downloads &gt; Nightly Builds</code>. Select <code>Version 2.0 (Windows)</code> and click the link to the most recent executable file, which should be at the top of the list.</p>
+<p>Once the file is downloaded, run the installer and select all the default options.</p>
+<h2 id="run-micro-manager"><a class="header" href="#run-micro-manager">Run Micro-Manager</a></h2>
+<p>Launch Micro-Manager. Its startup screen will look something like the following:</p>
+<p><img src="./mm_startup_screen.png" alt="" /></p>
+<p>Select the <code>MMConfig_demo</code> configuration and select <code>OK</code>. You will have two windows open: the first is the ImageJ control panel. The second is the Micro-Manager control panel, as shown below:</p>
+<p><img src="./mm_control_panel.png" alt="" /></p>
+<p>When you click the <code>Live</code> button, you should see a live image stream from the demo camera, which simulates a real camera by displaying a moving sine wave. You will alse see the image inspector window, which provides realtime information on the image's histogram, bit depth, and other information.</p>
+<p>Play with some of the settings in this window to get a feel for what you can do.</p>
+<h2 id="micro-manager-concepts"><a class="header" href="#micro-manager-concepts">Micro-Manager Concepts</a></h2>
+<p>In order to use Micro-Manager at a basic level, it is important to understand the following concepts.</p>
+<h3 id="device"><a class="header" href="#device">Device</a></h3>
+<p>A device is any piece of hardware that Micro-Manager controls. It could be a light source, a camera, a microscope stage, a filter wheel, a shutter, etc.</p>
+<h3 id="device-properties"><a class="header" href="#device-properties">Device Properties</a></h3>
+<p>A device is akin to a state machine. The set of all its properties and their values make up the device's state.</p>
+<p>For example, a camera might have an exposure time property and a bit-depth property. A laser might have an output power property.</p>
+<p>Some properties may be changed by the user, whereas others are read only. An example of a read only property would be a temperature sensor.</p>
+<p>To see a list of all the device properties for all the currently configured devices, navigate to <code>Devices &gt; Device Property Browser...</code>. You may also modify properties in this window.</p>
+<p>The device property browser for the MMDemo configuration is shown below.</p>
+<p><img src="./mm_device_property_browser.png" alt="" /></p>
+<h3 id="device-adapter"><a class="header" href="#device-adapter">Device Adapter</a></h3>
+<p>Device adapters are what make Micro-Manager so powerful. A device adapter is a plugin for a device that allows it to work with Micro-Manager.</p>
+<p>A device adapter must exist for a device to be used with Micro-Manager. If one does not exist, you can write one using the C++ programming language to make it work with Micro-Manager. Writing device adapters is outside the scope of this basic training course, however.</p>
+<p>You may find a partial list of supported devices <a href="https://micro-manager.org/Device_Support">at the Micro-Manager website</a>.</p>
+<h3 id="configuration"><a class="header" href="#configuration">Configuration</a></h3>
+<p>The configuration is the set of all devices to be controlled by Micro-Manager, as well as additional settings like desired default values.</p>
+<p>Configurations allow you to select hardware and settings for different experiments.</p>
+<p>In the following section, we will configure Micro-Manager to control the Flir camera for our microscope.</p>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>A new nightly version is created at the end of any day where the source code changes. It's called "nightly" because it used to be built once a day, regardless of whether the source code changed. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
