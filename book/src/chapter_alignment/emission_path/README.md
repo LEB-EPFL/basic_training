@@ -45,24 +45,92 @@ Below is the parts list for this section of the basic training course. Note that
 
 ### 0
 
+Find the side of the right-angle mirror mount with a dot on it. Take this side to be the bottom.
+
 ![](./step_0.jpg)
+
+### 1
+
+Attach 4, 0.25" cage rods to the right-angle mirror mount as shown.
+
+Attach 4, 1" cage rods to the other side.
+
 ![](./step_1.jpg)
 ![](./step_2.jpg)
+
+### 2
+
+Attach 4 cage rod adapters to the exterior of the 30 mm cage cube as shown.
+
+Screw the lens tube containing the **emission** filter into the SM1 threaded hole on the same side as the cage rod adapters.
+
 ![](./step_3.jpg)
 ![](./step_4.jpg)
+
+### 3
+
+Attach the cage cube to the right-angle mirror mount using the 0.25" cage rods and cage rod adapters. Remember to keep the side of the right-angle mirror mount with the dot facing down.
+
 ![](./step_5.jpg)
+
+### 4
+
+Note the arrow on the side of the dichroic mirror. This arrow points to the side with the dielectric coating and should face towards the sample.
+
+Insert the filter and its kinematic platform into the cage cube.
+
 ![](./step_6.jpg)
 ![](./step_7.jpg)
 ![](./step_8.jpg)
+
+### 5
+
+Rotate the platform by approximately 45 degrees, ensuring that the side of the dichroic mirror with the coating faces **away from the mirror**.
+
+Tighten the screws on the cage cube. (They are imperial in the image shown!)
+
 ![](./step_9.jpg)
+
+###6
+
+Screw the lens tube containing the **excitation** filter into the cage cube.
+
 ![](./step_10.jpg)
 ![](./step_11.jpg)
+
+### 7
+
+Screw the SM1-threaded end cap into the hole on the cage cube that is opposite the excitation filter.
+
 ![](./step_12.jpg)
+
+### 8
+
+Attach 4, 2" long cage rods to the top of the cage cube.
+
 ![](./step_13.jpg)
 ![](./step_14.jpg)
+
+### 9 
+
+Slide the slip plate onto the ends of the cage rods. Lock it into place with the set screws.
+
 ![](./step_15.jpg)
+
+### 10
+
+Attach the cage system covers to the four sides of the 2" cage rod subassembly.
+
 ![](./step_16.jpg)
+
+### 11
+
+Insert the SM1 to M25 thread adapter into the slip plate.
+
 ![](./step_17.jpg)
+
+### 12
+
 ![](./step_18.jpg)
 ![](./step_19.jpg)
 ![](./step_20.jpg)
