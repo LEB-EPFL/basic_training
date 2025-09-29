@@ -131,25 +131,109 @@ Insert the SM1 to M25 thread adapter into the slip plate.
 
 ### 12
 
+Thread pedestals into the bottoms of the two 30 mm long post holders.
+
 ![](./step_18.jpg)
 ![](./step_19.jpg)
+
+### 13
+
+Note that one set screw is shorter than the other in the two, 30 mm long posts.
+
+Attach the one with the shorter set screw to the bottom of the cage cube. Attach the other to the bottom of the right-angle mirror mount.
+
+Use a hex driver and the post hole to lightly tighten the posts.
+
 ![](./step_20.jpg)
 ![](./step_21.jpg)
 ![](./step_22.jpg)
 ![](./step_23.jpg)
+
+### 14
+
+Attach the post holders to the posts.
+
+Make sure that they are at the same height by placing the assembly on a flat surface and checking for any tilt.
+
 ![](./step_24.jpg)
 ![](./step_25.jpg)
+
+### 15
+
+Attach the 20 mm long post to the bottom of the cage plate of the camera and tube lens assembly.
+
+**Not shown:** Slide on a 20 mm long post holder with a pedestal attached.
+
 ![](./step_26.jpg)
+
+### 16
+
+Slide the 30 mm to 60 mm cage adapter from the tube lens/camera assembly onto the 30 mm cage rods of the right-angle mirror.
+
+Tighten the set screws to join the two assemblies together.
+
 ![](./step_27.jpg)
 ![](./step_28.jpg)
+
+### 17
+
+Let \\( ( \text{row} \\, , \text{col} ) \\) denote the row and column coordinates of a screw hole on the base plate. Take the upper left hole of the base plate as the origin (0, 0), with the row coordinate increasing downward and the column coordinate increasing to the right. Do not take the counterbored holes into consideration.
+
+Place the screws for the three clamping forks at the coordinates
+
+| row | col |
+|-----|-----|
+|   9 |   3 |
+|   6 |  16 |
+|   9 |  14 |
+
 ![](./step_29.jpg)
+
+### 18
+
+Slide the pedestals into the clamping forks. Do not tighten them yet.
+
 ![](./step_30.jpg)
+
+### 19
+
+Attach the large right-angle bracket to the base plate as shown using the following screw holes:
+
+| row | col |
+|-----|-----|
+|   3 |   9 |
+|   4 |   9 |
+|   3 |  12 |
+|   4 |  12 |
+
 ![](./step_31.jpg)
 ![](./step_32.jpg)
+
+### 20
+
+Attach the sample positioner to the top of the right-angle bracket.
+
 ![](./step_33.jpg)
+
+### 21
+
+Carefully screw the objective into the SM1 to M25 thread adapter.
+
 ![](./step_34.jpg)
+
+### 22
+
+Place a slide with an easy-to-see sample, such as a blood smear, onto the sample holder. Check its position relative to the objective.
+
 ![](./step_35.jpg)
 ![](./step_36.jpg)
+
+### 23
+
+Gently and carefully move the entire microscope assembly to position the sample approximately 1 or 2 mm from the end of the objective.
+
+Make sure that the holes for the cage rods on the cage cube are not blocked by the right-angle bracket.
+
 ![](./step_37.jpg)
 ![](./step_38.jpg)
 ![](./step_39.jpg)
