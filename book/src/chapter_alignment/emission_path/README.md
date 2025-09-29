@@ -41,6 +41,8 @@ Below is the parts list for this section of the basic training course. Note that
 ![](./parts_list_0.jpg)
 ![](./parts_list_1.jpg)
 
+**Not shown:** 3-Axis NanoMax Stage and Microscopy Slide Holder
+
 ## Instructions
 
 ### 0
@@ -237,3 +239,22 @@ Make sure that the holes for the cage rods on the cage cube are not blocked by t
 ![](./step_37.jpg)
 ![](./step_38.jpg)
 ![](./step_39.jpg)
+
+### 24
+
+Put a smartphone with a flashlight in front of the sample. Connect the camera to the PC and start a live acquisition.
+
+Further adjust the microscope assembly until the image is in focus.
+
+It is OK if the image contrast and quality is poor at this point. Just try to make it in focus.
+
+**Not shown:** Adjust the screws on the right-angle mirror mount if the image is not centered on the camera.
+
+![](./step_40.jpg)
+![](./step_41.jpg)
+
+### 25
+
+Tighten all screws to secure the assembly to the base plate.
+
+![](./step_42.jpg)
