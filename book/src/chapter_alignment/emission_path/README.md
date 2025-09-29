@@ -7,7 +7,9 @@ Below is the parts list for this section of the basic training course. Note that
 | Part | Manf. Part No. | Quantity | URL |
 |------|----------------|----------|-----|
 | Chroma 69002 ET - DAPI/FITC/Texas Red® Filter Set | 69002 | 1 | <https://www.chroma.com/products/sets/69002-et-dapi-fitc-texas-red> |
-| ||||
+| Nikon CFI Plan Achro DL40x Microscope Objective | MRL20402| 1 | <https://www.microscope.healthcare.nikon.com/products/optics/selector/comparison/-1703> |
+| 3-Axis NanoMax Stage, Differential Drives, Closed-Loop Piezos, Metric | MAX311D/M | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=MAX311D/M> |
+| Microscopy Slide Holder | MAX3SLH | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=MAX3SLH> | 
 | Ø1" Broadband Dielectric Mirror, 400 - 750 nm | BB1-E02 | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02> |
 | Right-Angle Kinematic Mirror Mount with Tapped Cage Rod Holes, 30 mm Cage System and SM1 Compatible, M4 and M6 Mounting Holes | KCB1/M | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=KCB1/M> |
 | 30 mm Cage Cube, Ø6 mm Through Holes | C6WR | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=C6WR> |
@@ -28,7 +30,12 @@ Below is the parts list for this section of the basic training course. Note that
 | Adapter with External SM1 Threads and Internal M25 x 0.75 Threads | SM1A12 | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A12> |
 | 30 mm Cage System Cover, 24" Long, Pack of 4 | C30L24 | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=C30L24> |
 | SM1 Lens Tube, 0.30" Thread Depth, One Retaining Ring Included | SM1L03 | 2 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1L03> |
+| Aluminum Breadboard, 300 mm x 450 mm x 12.7 mm, M6 Taps | MB3045/M | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=MB3045/M> |
+| Large Right-Angle Bracket, M6 Holes | AP90RL/M | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=AP90RL/M> |
+| M6 x 1.0 Stainless Steel Cap Screw, 16 mm Long, 25 Pack | SH6MS16 | 6* | <https://www.thorlabs.com/thorproduct.cfm?partnumber=SH6MS16> |
+| 1/4" Washer, M6 Compatible, Stainless Steel, 100 Pack | W25S050 | 6* | <https://www.thorlabs.com/thorproduct.cfm?partnumber=W25S050> |
 
+* *Only a small quantity from larger pack is required.*
 
 
 ![](./parts_list_0.jpg)
