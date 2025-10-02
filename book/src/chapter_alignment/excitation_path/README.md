@@ -26,3 +26,39 @@ Below is the parts list for this section of the basic training course. Note that
 | Clamping Fork for Ø1.25" Pedestal Bases, 44.4 mm Counterbored Slot, M6 x 1.0 Captive Screw | CF175C/M | 2 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M> |
 
 ![](./parts_list_0.jpg)
+
+## Instructions
+
+### 0
+
+![](./step_0.jpg)
+![](./step_1.jpg)
+![](./step_2.jpg)
+![](./step_3.jpg)
+![](./step_4.jpg)
+![](./step_5.jpg)
+![](./step_6.jpg)
+![](./step_7.jpg)
+![](./step_8.jpg)
+![](./step_9.jpg)
+![](./step_10.jpg)
+![](./step_11.jpg)
+![](./step_12.jpg)
+![](./step_13.jpg)
+![](./step_14.jpg)
+![](./step_15.jpg)
+![](./step_16.jpg)
+![](./step_17.jpg)
+![](./step_18.jpg)
+![](./step_19.jpg)
+![](./step_20.jpg)
+![](./step_21.jpg)
+![](./step_22.jpg)
+![](./step_23.jpg)
+![](./step_24.jpg)
+![](./step_25.jpg)
+![](./step_26.jpg)
+![](./step_27.jpg)
+![](./step_28.jpg)
+![](./step_29.jpg)
+![](./step_30.jpg)
