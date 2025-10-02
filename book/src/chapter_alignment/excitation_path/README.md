@@ -27,6 +27,8 @@ Below is the parts list for this section of the basic training course. Note that
 
 ![](./parts_list_0.jpg)
 
+*Not shown: shear plate, CPA1 alignment plates.*
+
 ## Instructions
 
 ### 0
@@ -139,7 +141,7 @@ Attach one mirror mount to the other as shown using the cage rod adapters and 0.
 
 ### 14
 
-Attach the fiber output coupler subassembly to the steering mirrors subassembly by inserting the 2" cage rods into the other set of cage rod adapters.
+Attach the fiber output coupler assembly to the steering mirrors assembly by inserting the 2" cage rods into the other set of cage rod adapters.
 
 ![](./step_21.jpg)
 ![](./step_22.jpg)
@@ -152,10 +154,41 @@ Ensure that the assembly is level by checking the heights of the pedestals relat
 
 ### 16
 
+Insert three, 6" cage rods into the other end of the steering mirror assembly as shown.
+
+Slide the XY translating lens mount onto the cage rods **but do not tighten it yet.**
+
 ![](./step_24.jpg)
 ![](./step_25.jpg)
+
+### 17
+
+Slide the entire assembly into the cage rod holes in the dichroic cube, **taking care not to damage the dichroic inside the mount.** (It obstructs the cage rods from fully passing through the the cube.)
+
+*Not shown:* Tighten the set screws that you can access with a hex driver.
+
 ![](./step_26.jpg)
+
+### 18
+
+Use two clamping forks to attach the excitation path assembly to the base plate.
+
 ![](./step_27.jpg)
+
+### 19
+
+Attach the fiber to the fiber adapter plate.
+
 ![](./step_28.jpg)
+
+### 20
+
+Close the iris.
+
 ![](./step_29.jpg)
+
+### 21
+
+Turn on the laser and observe where the beam hits an alignment plate.
+
 ![](./step_30.jpg)
