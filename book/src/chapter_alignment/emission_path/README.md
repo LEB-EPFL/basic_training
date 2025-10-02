@@ -18,7 +18,7 @@ Below is the parts list for this section of the basic training course. Note that
 | Coarse ±1 mm XY Slip Plate Positioner, 30 mm Cage Compatible, Metric | SPT1C/M | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=SPT1C/M> |
 | Externally SM1-Threaded End Cap | SM1CP2 | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1CP2> |
 | Rod Adapter for Ø6 mm ER Rods, L = 0.27" | ERSCB | 4 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB> |
-| ER025 - Cage Assembly Rod, 1/4" Long, Ø6 mm | ER025 | 4 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025> |
+| Cage Assembly Rod, 1/4" Long, Ø6 mm | ER025 | 4 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025> |
 | Cage Assembly Rod, 1" Long, Ø6 mm | ER1 | 4 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=ER1> |
 | Cage Assembly Rod, 2" Long, Ø6 mm | ER2 | 4 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2> |
 | Ø12.7 mm Optical Post, SS, M4 Setscrew, M6 Tap, L = 20 mm | TR20/M | 1 | <https://www.thorlabs.com/thorproduct.cfm?partnumber=TR20/M> |
