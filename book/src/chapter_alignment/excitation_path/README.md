@@ -31,30 +31,127 @@ Below is the parts list for this section of the basic training course. Note that
 
 ### 0
 
+Thread the FC/PC fiber adapter plate into the XY transaltion mount such that it is recessed as far as the barrel's internal amount will allow.
+
 ![](./step_0.jpg)
+
+### 1
+
+Attach three, 2" cage rods to the translation mount in the manner shown in the photos. Leave one cage rod hole open for the iris that will be installed in a later step.
+
 ![](./step_1.jpg)
 ![](./step_2.jpg)
+
+### 2
+
+Attach a 20 mm post to the bottom of the translation mount. Insert it into a post holder and attach a pedestal base.
+
 ![](./step_3.jpg)
 ![](./step_4.jpg)
+
+### 3
+
+Thread the 45 mm achromat into the cage plate. Ensure that the direction marked as \\( \infty \\) points away from the fiber adapter plate.
+
+Slide this assembly onto the cage rods.
+
+*Note the photo shows a CP02/M cage plate, but a CP33/M will work, too.*
+
 ![](./step_5.jpg)
 ![](./step_6.jpg)
+
+### 4
+
+Attach the assembly to an optical table.
+
 ![](./step_7.jpg)
+
+### 5
+
+Attach the fiber from the laser engine (provided to you) to the fiber adapter plate. Ensure that the key on the fiber connector aligns with the notch on fiber adapter plate.
+
 ![](./step_8.jpg)
 ![](./step_9.jpg)
+
+### 6
+
+Turn on the laser. Position a shear plate in front of the laser beam.
+
+Move the f = 45 mm lens in front of the fiber until the fringes on the shear plate are approximately parallel to the guideline.
+
+The first two images below show the fringe pattern with the lens too close and too far from the fiber. The third image shows the lens position with the fiber in the focal plane of the lens.
+
+Tighten the set screws on the cage plate once the correct position is found to lock it into place.
+
 ![](./step_10.jpg)
 ![](./step_11.jpg)
 ![](./step_12.jpg)
+
+### 7
+
+Slide the iris onto the end of the cage rods.
+
 ![](./step_13.jpg)
+
+### 8
+
+Note the dot on the bottom of the right-angle kinematic mirror mount.
+
+*We assume that there is a mirror already mounted inside the mount.*
+
 ![](./step_14.jpg)
+
+### 9
+
+Attach four cage rod adapters to the mirror mount.
+
+*Metric cage rod adapters are shown, but imperial adapters work equally well.*
+
 ![](./step_15.jpg)
+
+
+### 10
+
+Attach four, 0.25" cage rods to the opposite side of the mirror mount.
+
+*Three cage rods are shown because that was all that we had when this photo was taken.*
+
 ![](./step_16.jpg)
+
+### 11
+
+Attach cage rod adapters and the 30 mm post to the other right-angle kinematic mirror mount.
+
 ![](./step_17.jpg)
 ![](./step_18.jpg)
+
+### 12
+
+Attach a post holder with pedestal base to the mirror mount.
+
 ![](./step_19.jpg)
+
+### 13
+
+Attach one mirror mount to the other as shown using the cage rod adapters and 0.25" cage rods.
+
 ![](./step_20.jpg)
+
+### 14
+
+Attach the fiber output coupler subassembly to the steering mirrors subassembly by inserting the 2" cage rods into the other set of cage rod adapters.
+
 ![](./step_21.jpg)
 ![](./step_22.jpg)
+
+### 15
+
+Ensure that the assembly is level by checking the heights of the pedestals relative to the table. Adjust them if necessary.
+
 ![](./step_23.jpg)
+
+### 16
+
 ![](./step_24.jpg)
 ![](./step_25.jpg)
 ![](./step_26.jpg)
