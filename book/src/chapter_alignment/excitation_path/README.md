@@ -189,6 +189,56 @@ Close the iris.
 
 ### 21
 
-Turn on the laser and observe where the beam hits an alignment plate.
+Turn on the laser and observe where the beam hits an alignment plate
+
+1. just before the excitation filter, and
+1. just after the beam steering mirrors.
+
+The transverse beam positions measured at opposite ends of the cage rods tells you the beam location direction in 3D space.
 
 ![](./step_30.jpg)
+![](./step_31.jpg)
+
+### 22
+
+Align the laser beam to the center of the cage rods. Use the following procedure:
+
+1. Place the alignment plate at the end of the excitation path, just before the excitation filter.
+1. Turn the knobs on the kinematic mirror mount **that is closest to the excitation filter** until the beam is centered on the alignment plate.
+1. Move the alignment plate to the opposite end of the cage rods, just after the second kinematic mirror mount.
+1. Turn the knobs on **the first kinematic mirror mount** to center the beam on the alignment plate.
+1. Go back to step 1 and repeat.
+
+Repeat this procedure few times until the beam is centered on the alignment plate at both positions. The alignment should improve a little after each iteration.
+
+![](./step_32.jpg)
+![](./step_33.jpg)
+
+### 23
+
+Stop when the alignment no longer improves after an iteration.
+
+![](./step_34.jpg)
+
+### 24
+
+Remove the cage plate covers before the objective.
+
+Loosen the screws on the dichroic cube plate. Rotate the entire base plate and adjust the dichroic's pitch until the beam is roughly centered with respect to the cage rods. Use the alignment plates to determine the beam's centration.
+
+It is likely that you will not be able to perfectly center the beam with respect to the cage rods because the cube plate does not have the degrees of freedom necessary for full alignment.
+
+Tighten the screws once you come as close to centration with the cage rods as you can. 
+
+![](./step_35.jpg)
+![](./step_36.jpg)
+
+### 25
+
+Look at the back side of an alignment plate inserted into the 6" cage rods. Look for back reflections from the objective and excitation filter.
+
+One reflection will come from the excitation filter. It will remain stationary as the dichroic or objective is moved.
+
+The other reflections should move with the dichroic or objective. These are from the back reflections from the internal surfaces of the objective.
+
+![](./step_37.jpg)
