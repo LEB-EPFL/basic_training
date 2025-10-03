@@ -237,8 +237,23 @@ Tighten the screws once you come as close to centration with the cage rods as yo
 
 Look at the back side of an alignment plate inserted into the 6" cage rods. Look for back reflections from the objective and excitation filter.
 
-One reflection will come from the excitation filter. It will remain stationary as the dichroic or objective is moved.
+One reflection will come from the excitation filter. It will remain stationary as the dichroic is rotated or the objective is moved.
 
 The other reflections should move with the dichroic or objective. These are from the back reflections from the internal surfaces of the objective.
 
 ![](./step_37.jpg)
+
+
+### 26
+
+To center the back reflections on the alignment plate, you must
+
+1. rotate the dichroic, and
+2. translate the objective using the slip plate.
+
+The objective is well-aligned to the laser beam when the back reflections are centered on the incoming beam.
+
+![](./step_38.jpg)
+![](./step_35.jpg)
+![](./step_39.jpg)
+![](./step_40.jpg)
