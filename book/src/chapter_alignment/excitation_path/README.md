@@ -257,3 +257,55 @@ The objective is well-aligned to the laser beam when the back reflections are ce
 ![](./step_35.jpg)
 ![](./step_39.jpg)
 ![](./step_40.jpg)
+
+### 27
+
+Thread the f = +150 mm achromatic lens into the XY translating lens mount. Ensure that the direction marked \\( \infty \\) is pointed towards the fiber.
+
+![](./step_41.jpg)
+
+### 28
+
+Open the iris in front of the fiber output coupler.
+
+![](./step_42.jpg)
+
+### 29
+
+Put an index card in front of the objective at a distance of about 1 meter or longer.
+
+Slide the f = +150 mm lens along the cage rods until the beam size is minimized.
+
+![](./step_43.jpg)
+![](./step_44.jpg)
+
+### 30
+
+The beam will appear astigmatic due to reflection from the 1 mm thick dichroic. Try to find the lens position. where the beam size is smallest in each direction.
+
+
+![](./step_45.jpg)
+
+### 31
+
+Tighten the set screws to lock the lens in place.
+
+![](./step_46.jpg)
+
+### 32
+
+Stick an alignment plate into the cage system just after the second right-angle turning mirror and observe the back reflections from the f = +150 mm lens.
+
+![](./step_47.jpg)
+
+### 33
+
+Adjust the lens's position until the back reflections are as centered as possible on the incoming beam.
+
+![](./step_48.jpg)
+
+### 34
+
+Reinstall the cage system cover plates before the objective.
+
+![](./step_49.jpg)
