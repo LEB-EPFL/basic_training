@@ -13,3 +13,4 @@
   - [Construct the Microscope Emission Path](./chapter_alignment/emission_path/README.md)
   - [Control the Laser](./chapter_alignment/laser_control/README.md)
   - [Construct the Microscope Excitation Path](./chapter_alignment/excitation_path/README.md)
+  - [Discussion](./chapter_alignment/discussion.md)
