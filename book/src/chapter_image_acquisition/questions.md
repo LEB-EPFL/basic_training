@@ -11,3 +11,5 @@
 1. True or false: A camera with an exposure time of 20 ms necessarily acquires frames at a rate of 50 frames per second.
 
 1. Does the distance between the objective and the tube lens matter? Why or why not?
+
+1. Why do we do fluorescence imaging with epi-illumination and not transillumination?
