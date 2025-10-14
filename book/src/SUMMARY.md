@@ -14,3 +14,5 @@
   - [Control the Laser](./chapter_alignment/laser_control/README.md)
   - [Construct the Microscope Excitation Path](./chapter_alignment/excitation_path/README.md)
   - [Discussion](./chapter_alignment/discussion.md)
+- [Live Cell Fluorescence Imaging of Mitochondria](./chapter_live_cell_mito/README.md)
+  - [Materials](./chapter_live_cell_mito/materials.md)
