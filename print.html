@@ -13,21 +13,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -39,10 +38,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex.js";
+            window.path_to_searchindex_js = "searchindex-82ec191e.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="toc-3e1cb233.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -56,7 +55,7 @@
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -85,12 +84,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -105,39 +104,39 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
                         </button>
                     </div>
 
@@ -145,43 +144,43 @@
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <i class="fa fa-spinner fa-spin"></i>
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
                             </div>
                         </div>
                     </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="microscopy-basic-training"><a class="header" href="#microscopy-basic-training">Microscopy Basic Training</a></h1>
 <p>This is the textbook for the microscopy basic training course that is provided to new members of the <a href="https://www.epfl.ch/labs/leb/">Laboratory of Experimental Biophysics</a> at the École Polytechnique Fédérale de Lausanne (EPFL), Switzerland.</p>
 <p>The course grew out of a yearly survey of lab members asking about problems and inefficiencies in their research. Participants indicated that they felt underprepared to address unexpected technical problems that arise during imaging experiments. These problems are further compounded by the fact that the lab uses a mixture of custom and commercial microscopes and software. In addition, we are a multidisciplinary lab with a range of backgrounds and experience, so our communal knowledge tends to be dispersed among our members. As a result it is often difficult to find the right person to help.</p>
-<p>The EPFL BioImaging and Optics Platform (<a href="https://www.epfl.ch/research/facilities/ptbiop/">BIOP</a>) provides a yearly course in advanced microscopy. At the time of this basic training's conception, those students who had attended the BIOP course felt that it was useful, but too focused on theoretical aspects of microscopy to address the problems identified in the survey. We therefore collectively decided to create our own basic training course that would complement the material covered by the BIOP, focusing on hands-on learning and problem solving.</p>
+<p>The EPFL BioImaging and Optics Platform (<a href="https://www.epfl.ch/research/facilities/ptbiop/">BIOP</a>) provides a yearly course in advanced microscopy. At the time of this basic training’s conception, those students who had attended the BIOP course felt that it was useful, but too focused on theoretical aspects of microscopy to address the problems identified in the survey. We therefore collectively decided to create our own basic training course that would complement the material covered by the BIOP, focusing on hands-on learning and problem solving.</p>
 <h2 id="focus-areas"><a class="header" href="#focus-areas">Focus Areas</a></h2>
 <p>In a follow-up discussion we decided upon a list of areas that the course should emphasize:</p>
 <ul>
@@ -197,15 +196,16 @@
 <h2 id="structure-and-duration"><a class="header" href="#structure-and-duration">Structure and Duration</a></h2>
 <p>The course is intended to last at most two weeks with students spending a few hours per day on the material. It is divided into modules so that</p>
 <ul>
-<li>a set of modules may be chosen according to each student's background and needs</li>
-<li>a module can be studied independently and as needed throughout the course of a student's or post-doc's time in the lab</li>
+<li>a set of modules may be chosen according to each student’s background and needs</li>
+<li>a module can be studied independently and as needed throughout the course of a student’s or post-doc’s time in the lab</li>
 </ul>
 <p>An experienced member of the lab will provide help and feedback during the course, though free time for play is encouraged.</p>
 <h2 id="corrections-and-suggestions"><a class="header" href="#corrections-and-suggestions">Corrections and Suggestions</a></h2>
-<p>Any corrections or suggestions may be made by opening a pull request or issue at this book's GitHub repository: <a href="https://github.com/LEB-EPFL/basic_training">https://github.com/LEB-EPFL/basic_training</a></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="learning-outcomes"><a class="header" href="#learning-outcomes">Learning Outcomes</a></h1>
-<h2 id="core-module"><a class="header" href="#core-module">Core Module</a></h2>
-<p>The core module focuses on fluorescence microscopy because it is the central tool of our lab.</p>
+<p>Any corrections or suggestions may be made by opening a pull request or issue at this book’s GitHub repository: <a href="https://github.com/LEB-EPFL/basic_training">https://github.com/LEB-EPFL/basic_training</a></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="learning-outcomes"><a class="header" href="#learning-outcomes">Learning Outcomes</a></h1>
+<h2 id="fluorescence-core-module"><a class="header" href="#fluorescence-core-module">Fluorescence (Core) Module</a></h2>
+<p>The core module focuses on aspects of fluorescence microscopy because it is the central tool of our lab.</p>
 <p>At the end of this training, a student should be able to:</p>
 <h3 id="identify-the-components-of-an-epifluorescence-microscope"><a class="header" href="#identify-the-components-of-an-epifluorescence-microscope">Identify the components of an epifluorescence microscope</a></h3>
 <ul>
@@ -220,24 +220,32 @@
 <li>The students should know how to remove the effects of camera offset</li>
 <li>The students should know how to perform background subtraction and identify when it is necessary to do so</li>
 <li>The students should be able to estimate how much brighter the signal is in one fluorescence channel vs. another</li>
-<li>The students should be able to estimate relative amounts of proteins, etc. by correcting fluorescence brightness for quantities such as quantum yield and absorption cross sections</li>
 </ul>
-<h3 id="measure-the-degree-of-fluorescence-cross-talk-between-channels"><a class="header" href="#measure-the-degree-of-fluorescence-cross-talk-between-channels">Measure the degree of fluorescence cross talk between channels</a></h3>
+<h3 id="measure-the-degree-of-fluorescence-bleedthrough"><a class="header" href="#measure-the-degree-of-fluorescence-bleedthrough">Measure the degree of fluorescence bleedthrough</a></h3>
 <ul>
-<li>The students should be able to define what fluorescence cross talk is and explain why it is problematic</li>
-<li>The students should be able to perform the necessary measurements to assess cross talk</li>
-<li>The students should be able to explain what steps one might take to alleviate the effects of cross talk</li>
+<li>The students should be able to define what fluorescence bleedthrough is and explain why it is problematic</li>
+<li>The students should be able to perform the necessary measurements to assess bleedthrough</li>
+<li>The students should be able to explain what steps one might take to alleviate the effects of bleedthrough</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="image-acquisition"><a class="header" href="#image-acquisition">Image Acquisition</a></h1>
-<p>In this chapter we begin construction of a custom-built microscope for epifluorescence and transillumination imaging of cell culture samples.</p>
-<p>We begin by explaining the basic components of a microscope and their layout. Then, we start the practical work by interfacing our microscope's camera with the computer, installing the necessary drivers and capture software. As you will see, a working camera will be essential for aligning the microscope's optical components.</p>
-<p>Following this, we assemble our camera and tube lens into a simple, fixed focal length imaging system for imaging far away objects. We will align the camera and lens such that objects at infinity<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> will be imaged onto the camera.</p>
-<p>Finally, we set up <a href="https://micro-manager.org/">Micro-Manager</a> to control our camera. Using Micro-Manager will allow us to design and execute complex microscopy acquisitions that we otherwise could not do with the camera's capture software.</p>
-<hr>
-<ol class="footnote-definition"><li id="footnote-1">
-<p>The meaning of this phrase will be explained later in this chapter. For now, you can think of it as meaning objects that are far away. <a href="#fr-1-1">↩</a></p>
-</li>
-</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="the-epifluorescence-microscope"><a class="header" href="#the-epifluorescence-microscope">The Epifluorescence Microscope</a></h1>
+<h2 id="optics-module"><a class="header" href="#optics-module">Optics Module</a></h2>
+<p>The purpose of the alignment module is to provide hands-on experience to students and post-docs who will build laboratory setups for fluorescence microscopy.</p>
+<p>At the end of the alignment module, a student should be able to:</p>
+<h3 id="build-and-align-optical-systems"><a class="header" href="#build-and-align-optical-systems">Build and Align Optical Systems</a></h3>
+<ul>
+<li>The students should be able to practice basic laser safety</li>
+<li>The students should be able to assemble Thorlabs components into a working optical system</li>
+<li>The students should be able to place a camera in the focal plane of a lens</li>
+<li>The students should be able to align lenses to a reference axis in 3D using a laser beam</li>
+</ul>
+<h3 id="control-microscope-hardware"><a class="header" href="#control-microscope-hardware">Control Microscope Hardware</a></h3>
+<ul>
+<li>The students should be able to install and configure Micro-Manager</li>
+<li>The students should be able to send and receive serial commands from hardware</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="live-cell-fluorescence-imaging-of-mitochondria"><a class="header" href="#live-cell-fluorescence-imaging-of-mitochondria">Live Cell Fluorescence Imaging of Mitochondria</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="the-epifluorescence-microscope"><a class="header" href="#the-epifluorescence-microscope">The Epifluorescence Microscope</a></h1>
 <p>Microscopes come in many different shapes, sizes, and arrangements. Broadly speaking, we may classify a microscope according to two different characteristics:</p>
 <ol>
 <li>The contrast mechanism</li>
@@ -245,17 +253,17 @@
 </ol>
 <p>Contrast refers to the variations of intensity within an image. Higher contrast means a greater degree of these variations, which is almost always desirable for seeing small features. We can refine this definition and go into much greater detail about what contrast means for different types of microscopes, but this would distract from our main purpose at this point, which is learning about practical microscopy.</p>
 <p>Contrast mechanism is the physical process by which variations in intensity are generated in a microscope image. It can be either intrinsic, such as the absorption and scattering of light or other types of radiation from the sample itself, or extrinsic, such as fluorescent labels that we attach to our samples.</p>
-<p>In nearly all forms of microscopy we need to probe our samples in order to see them. In atomic force microscopy, for example, we bring a sharp tip close to a sample's surface to measure its height profile. In this case the probe is a very real and tangible thing. Most forms of microscopy, however, use directed beams of radiation such as light or electrons as the probe. The interaction between the radiation and the sample is ultimately what creates contrast in the image.</p>
+<p>In nearly all forms of microscopy we need to probe our samples in order to see them. In atomic force microscopy, for example, we bring a sharp tip close to a sample’s surface to measure its height profile. In this case the probe is a very real and tangible thing. Most forms of microscopy, however, use directed beams of radiation such as light or electrons as the probe. The interaction between the radiation and the sample is ultimately what creates contrast in the image.</p>
 <p>Light microscopy in particular refers to all forms of microscopy that use visible and near infrared light as the probe. It is probably the form of microscopy that is most used by cell biologists because light is relatively easy to manipulate and can generate very detailed images of cells with good contrast. It is also comparatively gentle on samples, enabling live cell time lapse imaging for long periods of time.</p>
-<p>Typically there are two ways to deliver light to the sample. One is to stick the sample directly between a light source and the microscope to record the light signal that is transmitted through the sample. This geometry is called transillumination and is almost always used to probe a sample's intrinsic contrast. The other is to illuminate and collect light from the sample through the same optical elements. This is called epi-illumination, and nearly all flourescence microscopes use it because it is much easier to separate the probe light from the fluorscence signal than it is in transillumination.</p>
+<p>Typically there are two ways to deliver light to the sample. One is to stick the sample directly between a light source and the microscope to record the light signal that is transmitted through the sample. This geometry is called transillumination and is almost always used to probe a sample’s intrinsic contrast. The other is to illuminate and collect light from the sample through the same optical elements. This is called epi-illumination, and nearly all flourescence microscopes use it because it is much easier to separate the probe light from the fluorscence signal than it is in transillumination.</p>
 <p>In this course you will construct and operate what is known as an epifluorescence microscope, i.e. a light microscope that illuminates the sample by epi-illumination and uses fluorescence as the extrinsic contrast mechanism.</p>
 <h2 id="principle-components-of-an-epifluorescence-microscope"><a class="header" href="#principle-components-of-an-epifluorescence-microscope">Principle Components of an Epifluorescence Microscope</a></h2>
 <p>The diagram below illustrates the layout of a typical epifluorescence microscope.</p>
-<p><img src="chapter_image_acquisition/epifluorescence-microscope.svg" alt="Layout of an epifluorescence microscope" /></p>
+<p><img src="chapter_live_cell_mito/epifluorescence-microscope.svg" alt="Layout of an epifluorescence microscope"></p>
 <p>You can see right away that there are two distinct, partially overlapping light paths, and the components of this microscope are positioned relative to these two paths.</p>
 <h3 id="the-illumination-light-path"><a class="header" href="#the-illumination-light-path">The Illumination Light Path</a></h3>
 <p>The illumination path delivers excitation light to the sample. It is called excitation light because this light excites the flourophores to a higher energetic state, often called an excited state. The fluorophores will in turn emit fluorescence light when they relax from the excited state to the ground state.</p>
-<p>The illumination path starts at the light source, which can be a LED, a laser, a lamp, or any other bright source of visible light. A series of optics directs this light through an excitation filter. The excitation filter absorbs light with wavelengths that are outside of the filter's passband and transmits light with wavelengths that are inside the passband. The purpose of the excitation filter is to narrow the spectrum of the light that eventually reaches the sample. By narrowing the spectrum, we</p>
+<p>The illumination path starts at the light source, which can be a LED, a laser, a lamp, or any other bright source of visible light. A series of optics directs this light through an excitation filter. The excitation filter absorbs light with wavelengths that are outside of the filter’s passband and transmits light with wavelengths that are inside the passband. The purpose of the excitation filter is to narrow the spectrum of the light that eventually reaches the sample. By narrowing the spectrum, we</p>
 <ol>
 <li>reduce any unwanted background signal that might leak towards the camera, and</li>
 <li>can better control which fluorophores are excited in the case of multi-color imaging.</li>
@@ -264,19 +272,35 @@
 <h3 id="the-fluorescence-light-path"><a class="header" href="#the-fluorescence-light-path">The Fluorescence Light Path</a></h3>
 <p>Fluorescence light is collected from the sample by the objective where it traverses the illumination light path in reverse. Fluorescence light has a longer wavelength than the excitation light, so it passes through the dichroic mirror instead of reflecting. An emission filter further helps remove any residual excitation light that might be traveling along this path. A normal mirror redirects the light into a different direction, though this is not necessary and is used only to reduce the overall size of the microscope.</p>
 <p>Finally, a tube lens collects the fluorescent light and forms the image of the sample on the camera.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-the-camera"><a class="header" href="#set-up-the-camera">Set up the Camera</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="materials"><a class="header" href="#materials">Materials</a></h1>
+<p>Add 2 \( \mu \)L of 1 mM Mitotracker Green to 2 mL of DMEM.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="image-acquisition"><a class="header" href="#image-acquisition">Image Acquisition</a></h1>
+<p>In this chapter we begin construction of a custom-built microscope for epifluorescence and transillumination imaging of cell culture samples.</p>
+<p>We begin by explaining the basic components of a microscope and their layout. Then, we start the practical work by interfacing our microscope’s camera with the computer, installing the necessary drivers and capture software. As you will see, a working camera will be essential for aligning the microscope’s optical components.</p>
+<p>Following this, we assemble our camera and tube lens into a simple, fixed focal length imaging system for imaging far away objects. We will align the camera and lens such that objects at infinity<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> will be imaged onto the camera.</p>
+<p>Finally, we set up <a href="https://micro-manager.org/">Micro-Manager</a> to control our camera. Using Micro-Manager will allow us to design and execute complex microscopy acquisitions that we otherwise could not do with the camera’s capture software.</p>
+<hr>
+<ol class="footnote-definition">
+<li id="footnote-1">
+<p>The meaning of this phrase will be explained later in this chapter. For now, you can think of it as meaning objects that are far away. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="set-up-the-camera"><a class="header" href="#set-up-the-camera">Set up the Camera</a></h1>
 <p>We start construction of the microscope by installing the camera software and making sure that it works correctly.</p>
 <p>The camera used in this course is a Flir Grasshopper GS3-U3-51S5M. It is one of several small form factor cameras that are often referred to as industrial CMOS cameras in the literature. Industrial CMOS cameras are relatively cheap and compatible with fluorescence microscopes, but their noise characteristics and sensitivities are worse than more expensive scientific CMOS, or sCMOS, cameras. While most of our research is done with sCMOS camers, industrial CMOS cameras are still sufficient for applications in basic fluorescence microscopy.</p>
 <h2 id="install-the-drivers-and-capture-software"><a class="header" href="#install-the-drivers-and-capture-software">Install the Drivers and Capture Software</a></h2>
-<p>To begin, we will install Flir's Spinnaker software that includes the necessary camera drivers and the SpinView capture software. <strong>For reasons that will become apparent in a later section, you must install version 2.3.0.77.</strong></p>
+<p>To begin, we will install Flir’s Spinnaker software that includes the necessary camera drivers and the SpinView capture software. <strong>For reasons that will become apparent in a later section, you must install version 2.3.0.77.</strong></p>
 <p>Navigate to <a href="https://www.teledynevisionsolutions.com/products/spinnaker-sdk">https://www.teledynevisionsolutions.com/products/spinnaker-sdk</a> in your web browser and select the Download button. Product software pages change frequently, so if the page has changed since this was written, you will need to search for the Spinnaker SDK (software developer kit) and find it on your own.</p>
 <p>You will be asked to create an account or sign in after clicking the Download button. Go ahead and do so.</p>
 <p>Once logged in, you will see a page that looks like the following. Be sure to select the link for previous versions!</p>
-<p><img src="chapter_image_acquisition/spinnaker_download.png" alt="Select &quot;previous versions&quot; in the Spinnaker SDK download page" /></p>
-<p>Download the <strong>Windows version 2.3.0.77</strong> installer. Unzip the file, and launch the installation with the <code>x64</code> version of the installer<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>. When prompted, select <code>Applicaton development,</code> though <code>Camera evaluation</code> should work as well. There is no need to install the GigE camera driver<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. Any other settings may be left with their default values.</p>
+<p><img src="chapter_image_acquisition/spinnaker_download.png" alt="Select “previous versions” in the Spinnaker SDK download page"></p>
+<p>Download the <strong>Windows version 2.3.0.77</strong> installer. Unzip the file, and launch the installation with the <code>x64</code> version of the installer<sup class="footnote-reference" id="fr-1-1-1"><a href="#footnote-1-1">1</a></sup>. When prompted, select <code>Applicaton development,</code> though <code>Camera evaluation</code> should work as well. There is no need to install the GigE camera driver<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. Any other settings may be left with their default values.</p>
 <h2 id="start-device-acquisition"><a class="header" href="#start-device-acquisition">Start Device Acquisition</a></h2>
 <p>After installation has finished, attach the camera to the PC with the blue USB cable and start the SpinView software. You will see a screen that looks like the following:</p>
-<p><img src="chapter_image_acquisition/spinview_welcome.png" alt="SpinView screen after startup" /></p>
+<p><img src="chapter_image_acquisition/spinview_welcome.png" alt="SpinView screen after startup"></p>
 <p>Confirm that the camera is recognized by the computer by finding it in the list of devices in the upper left panel of the screen. The camera used in this lab is a <strong>Grasshopper3 GS3-U3-51S5M</strong>. Select the camera in the list to enable its controls.</p>
 <p>To acquire a live stream from the camera, click the green arrow at the top of the main image window. It should display the tooltip <code>Start device acquisition</code> when hovered over with the mouse. If all goes well, you should see a continuous stream of camera frames in the main window.</p>
 <h3 id="verify-the-camera-works-as-expected"><a class="header" href="#verify-the-camera-works-as-expected">Verify the Camera Works as Expected</a></h3>
@@ -287,117 +311,127 @@
 <li>Change the size of the region-of-interest (ROI) acquired by the camera.</li>
 <li>Change the format of the pixels from 8 to 16 bits.</li>
 </ul>
-<p>Once you are satisfied that you understand the camera's basic operation, we can move onto the next step.</p>
+<p>Once you are satisfied that you understand the camera’s basic operation, we can move onto the next step.</p>
 <hr>
-<ol class="footnote-definition"><li id="footnote-1">
-<p>The <code>x64</code> version is for 64 bit operating systems. The <code>x86</code> version is for 32 bit operating systems. Nearly all modern computers used in the lab are 64 bit. The most relevant difference between the two is that 32 bit operating systems are limited to using only 4 GB of memory, while 64 bit systems currently have no practical limit. There is however a theoretical limit of about 16 exabytes. <a href="#fr-1-1">↩</a></p>
+<ol class="footnote-definition">
+<li id="footnote-1-1">
+<p>The <code>x64</code> version is for 64 bit operating systems. The <code>x86</code> version is for 32 bit operating systems. Nearly all modern computers used in the lab are 64 bit. The most relevant difference between the two is that 32 bit operating systems are limited to using only 4 GB of memory, while 64 bit systems currently have no practical limit. There is however a theoretical limit of about 16 exabytes. <a href="#fr-1-1-1">↩</a></p>
 </li>
 <li id="footnote-2">
 <p>GigE is an interface standard for transmitting image data over ethernet. <a href="#fr-2-1">↩</a></p>
 </li>
-</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="align-the-camera-and-tube-lens"><a class="header" href="#align-the-camera-and-tube-lens">Align the Camera and Tube Lens</a></h1>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="align-the-camera-and-tube-lens"><a class="header" href="#align-the-camera-and-tube-lens">Align the Camera and Tube Lens</a></h1>
 <p>In this section we build a fixed focal length camera that will serve as the base for building the rest of the microscope.</p>
 <h2 id="parts-list"><a class="header" href="#parts-list">Parts List</a></h2>
 <p>Below is the parts list for this section of the basic training course. Note that some of the parts used in the course are now obsolete. In these cases the parts listed below are the closest current match to the obsolete parts.</p>
-<div class="table-wrapper"><table><thead><tr><th>Part</th><th>Manf. Part No.</th><th>Quantity</th><th>URL</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Part</th><th>Manf. Part No.</th><th>Quantity</th><th>URL</th></tr>
+</thead>
+<tbody>
 <tr><td>Camera</td><td>Grasshopper3 GS3-U3-51S5M</td><td>1</td><td><a href="https://www.teledynevisionsolutions.com/en-150/products/grasshopper3-usb3/?model=GS3-U3-51S5M-C">https://www.teledynevisionsolutions.com/en-150/products/grasshopper3-usb3/?model=GS3-U3-51S5M-C</a></td></tr>
 <tr><td>Camera USB Cable</td><td></td><td>1</td><td></td></tr>
-<tr><td>Cage Assembly Rod, 10" Long, Ø6 mm</td><td>ER10</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER10">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER10</a></td></tr>
-<tr><td>30 mm to 60 mm Cage Adapter, 0.5" Thick</td><td>LCP33/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP33/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP33/M</a></td></tr>
+<tr><td>Cage Assembly Rod, 10“ Long, Ø6 mm</td><td>ER10</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER10">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER10</a></td></tr>
+<tr><td>30 mm to 60 mm Cage Adapter, 0.5“ Thick</td><td>LCP33/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP33/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP33/M</a></td></tr>
 <tr><td>Adapter with External SM1 Threads and Internal SM2 Threads</td><td>SM1A2</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A2">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A2</a></td></tr>
 <tr><td>Tube Lens, f = 200 mm, ARC: 350 - 700 nm, External M38 x 0.5 Threads</td><td>TTL200</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=TTL200">https://www.thorlabs.com/thorproduct.cfm?partnumber=TTL200</a></td></tr>
 <tr><td>Adapter with External SM2 Threads and Internal M38 x 0.5 Threads</td><td>SM2A20</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM2A20">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM2A20</a></td></tr>
-<tr><td>60 mm Cage Plate, SM2 Threads, 0.5" Thick, M4 Tap</td><td>LCP34/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP34/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP34/M</a></td></tr>
+<tr><td>60 mm Cage Plate, SM2 Threads, 0.5“ Thick, M4 Tap</td><td>LCP34/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP34/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP34/M</a></td></tr>
 <tr><td>SM1 Quick-Release Adapter Set</td><td>SM1QA</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1QA">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1QA</a></td></tr>
 <tr><td>Adapter with External C-Mount Threads and External SM1 Threads, 3.2 mm Spacer</td><td>SM1A39</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A39">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A39</a></td></tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
-<p><img src="chapter_image_acquisition/./fixed_focal_length_camera_parts.jpg" alt="The parts for a fixed focal length camera" /></p>
-<p>In addition, you will need 2 mm and 0.05" Allen screwdrivers.</p>
+<p><img src="chapter_image_acquisition/fixed_focal_length_camera_parts.jpg" alt="The parts for a fixed focal length camera"></p>
+<p>In addition, you will need 2 mm and 0.05“ Allen screwdrivers.</p>
 <h2 id="instructions"><a class="header" href="#instructions">Instructions</a></h2>
 <h3 id="0"><a class="header" href="#0">0</a></h3>
 <p>Remove the protective cap from the camera.</p>
-<p><img src="chapter_image_acquisition/./step_0.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_0.jpg" alt=""></p>
 <h3 id="1"><a class="header" href="#1">1</a></h3>
 <p>Attach the C-mount to SM1 external threads adapter to the camera.</p>
-<p><img src="chapter_image_acquisition/./step_1.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_2.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_3.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_1.jpg" alt="">
+<img src="chapter_image_acquisition/step_2.jpg" alt="">
+<img src="chapter_image_acquisition/step_3.jpg" alt=""></p>
 <h3 id="2"><a class="header" href="#2">2</a></h3>
 <p>Attach the SM1 quick-release adapter set to the camera.</p>
-<p><img src="chapter_image_acquisition/./step_4.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_5.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_4.jpg" alt="">
+<img src="chapter_image_acquisition/step_5.jpg" alt=""></p>
 <h3 id="3"><a class="header" href="#3">3</a></h3>
 <p>Attach one 30 mm to 60 mm cage adapter to the other end of the quick-release adapter via the SM1 threaded hole.</p>
-<p><img src="chapter_image_acquisition/./step_6.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_7.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_6.jpg" alt="">
+<img src="chapter_image_acquisition/step_7.jpg" alt=""></p>
 <h3 id="4"><a class="header" href="#4">4</a></h3>
-<p>Use a 0.05" hex driver to loosen the set screw on the quick-release adapter set. Rotate the camera until its body is aligned with the cage rod holes in the 30 mm to 60 mm cage adapter.</p>
-<p><img src="chapter_image_acquisition/./step_8.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_9.jpg" alt="" /></p>
+<p>Use a 0.05“ hex driver to loosen the set screw on the quick-release adapter set. Rotate the camera until its body is aligned with the cage rod holes in the 30 mm to 60 mm cage adapter.</p>
+<p><img src="chapter_image_acquisition/step_8.jpg" alt="">
+<img src="chapter_image_acquisition/step_9.jpg" alt=""></p>
 <h3 id="5"><a class="header" href="#5">5</a></h3>
-<p>Loosen one of the set screws on the outer set of holes for the cage rods using a 0.05" hex driver. Insert a cage rod and tighten the screw.</p>
+<p>Loosen one of the set screws on the outer set of holes for the cage rods using a 0.05“ hex driver. Insert a cage rod and tighten the screw.</p>
 <p>Repeat for all four cage rods.</p>
-<p>For the older 30 mm to 60 mm cage adapters with 0.05" set screws, it is OK if one of the two screws is missing.</p>
-<p><img src="chapter_image_acquisition/./step_10.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_11.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_12.jpg" alt="" /></p>
+<p>For the older 30 mm to 60 mm cage adapters with 0.05“ set screws, it is OK if one of the two screws is missing.</p>
+<p><img src="chapter_image_acquisition/step_10.jpg" alt="">
+<img src="chapter_image_acquisition/step_11.jpg" alt="">
+<img src="chapter_image_acquisition/step_12.jpg" alt=""></p>
 <h3 id="6"><a class="header" href="#6">6</a></h3>
 <p>Thread the 200 mm tube lens into the SM2A20 tube lens holder if it is not already. Attach an externally threaded SM1 to interally threaded SM2 adapter to the tube lens holder on the side facing the objective.</p>
-<p><img src="chapter_image_acquisition/./step_13.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_14.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_15.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_13.jpg" alt="">
+<img src="chapter_image_acquisition/step_14.jpg" alt="">
+<img src="chapter_image_acquisition/step_15.jpg" alt=""></p>
 <h3 id="7"><a class="header" href="#7">7</a></h3>
 <p>Thread a 30 mm to 60 mm cage adapter onto the external SM1 threads of assembly from the previous step.</p>
-<p><img src="chapter_image_acquisition/./step_16.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_17.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_16.jpg" alt="">
+<img src="chapter_image_acquisition/step_17.jpg" alt=""></p>
 <h3 id="8"><a class="header" href="#8">8</a></h3>
 <p>Slide the assembly from the previous step onto the other end of the cage rods and tighten the set screws so that the assembly does not slide along the rods.</p>
-<p><img src="chapter_image_acquisition/./step_18.jpg" alt="" />
-<img src="chapter_image_acquisition/./step_19.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_18.jpg" alt="">
+<img src="chapter_image_acquisition/step_19.jpg" alt=""></p>
 <h3 id="9"><a class="header" href="#9">9</a></h3>
-<p>Plug in the camera and launch the SpinView software installed in the <a href="chapter_image_acquisition/./camera.html">previous page</a>. Take the lens assembly and PC to a room with a window with a view of far away objects, e.g. clouds or mountains. Start a live image feed and adjust the settings so that the image is not saturated.</p>
+<p>Plug in the camera and launch the SpinView software installed in the <a href="#set-up-the-camera">previous page</a>. Take the lens assembly and PC to a room with a window with a view of far away objects, e.g. clouds or mountains. Start a live image feed and adjust the settings so that the image is not saturated.</p>
 <p>One example for how to do this is illustrated below. It is not the only way.</p>
-<p><img src="chapter_image_acquisition/./step_20.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_20.jpg" alt=""></p>
 <h3 id="10"><a class="header" href="#10">10</a></h3>
 <p>At the beginning, you will likely see an out-of-focus image like the one below.</p>
-<p><img src="chapter_image_acquisition/./clouds_out_of_focus.jpeg" alt="An out-of-focus image of clouds." /></p>
+<p><img src="chapter_image_acquisition/clouds_out_of_focus.jpeg" alt="An out-of-focus image of clouds."></p>
 <p>Loosen the set screws of the camera. Carefully adjust the position of the camera along the cage rods until an in focus image is formed.</p>
-<p><img src="chapter_image_acquisition/./step_21.jpg" alt="" /></p>
-<p><img src="chapter_image_acquisition/./clouds_in_focus.jpeg" alt="An in focus image of clouds" /></p>
+<p><img src="chapter_image_acquisition/step_21.jpg" alt=""></p>
+<p><img src="chapter_image_acquisition/clouds_in_focus.jpeg" alt="An in focus image of clouds"></p>
 <p>Depending on the lighting conditions, the image may not have good contrast. This does not matter. Just make the far away object in focus by finding the correct position of the camera.</p>
 <p>Tighten the set screws once the image is in focus.</p>
 <h3 id="11"><a class="header" href="#11">11</a></h3>
 <p>Attach the cage plate to the end of the cage rods. This will be used to mount the camera/tube lens assembly to the optical table in a later chapter.</p>
-<p><img src="chapter_image_acquisition/./step_22.jpg" alt="" /></p>
+<p><img src="chapter_image_acquisition/step_22.jpg" alt=""></p>
 <p>You should now have a fully assembled, fixed focal length camera system.</p>
-<p><img src="chapter_image_acquisition/./step_23.jpg" alt="" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
+<p><img src="chapter_image_acquisition/step_23.jpg" alt=""></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="set-up-micro-manager"><a class="header" href="#set-up-micro-manager">Set up Micro-Manager</a></h1>
 <p><a href="https://micro-manager.org/">Micro-Manager</a> is open source software for microscope control and automation. It allows you to control and coordinate many types of hardware from different vendors, often with little-to-no additional work.</p>
-<p>As an ImageJ plugin, it also gives you image analysis capabilities on data as it is acquired far beyond what any camera manufacturer's software allows.</p>
+<p>As an ImageJ plugin, it also gives you image analysis capabilities on data as it is acquired far beyond what any camera manufacturer’s software allows.</p>
 <p>We use Micro-Manager on several of our laboratory instruments. A basic understanding of how to use Micro-Manager is therefore essential to successful operation of these microscopes.</p>
 <h2 id="download-and-install-the-latest-nightly-version"><a class="header" href="#download-and-install-the-latest-nightly-version">Download and Install the Latest Nightly Version</a></h2>
-<p>Micro-Manager comes in both stable and so-called "nightly" versions<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>. You will want to use the latest nightly version because it contains all the latest features and bug fixes.</p>
+<p>Micro-Manager comes in both stable and so-called “nightly” versions<sup class="footnote-reference" id="fr-1-1-2"><a href="#footnote-1-2">1</a></sup>. You will want to use the latest nightly version because it contains all the latest features and bug fixes.</p>
 <p>Navigate to <a href="https://micro-manager.org/">https://micro-manager.org/</a> and select the hamburger menu, then <code>Downloads &gt; Nightly Builds</code>. Select <code>Version 2.0 (Windows)</code> and click the link to the most recent executable file, which should be at the top of the list.</p>
 <p>Once the file is downloaded, run the installer and select all the default options.</p>
 <h2 id="run-micro-manager"><a class="header" href="#run-micro-manager">Run Micro-Manager</a></h2>
 <p>Launch Micro-Manager. Its startup screen will look something like the following:</p>
-<p><img src="chapter_image_acquisition/./mm_startup_screen.png" alt="" /></p>
+<p><img src="chapter_image_acquisition/mm_startup_screen.png" alt=""></p>
 <p>Select the <code>MMConfig_demo</code> configuration and select <code>OK</code>. You will have two windows open: the first is the ImageJ control panel. The second is the Micro-Manager control panel, as shown below:</p>
-<p><img src="chapter_image_acquisition/./mm_control_panel.png" alt="" /></p>
-<p>When you click the <code>Live</code> button, you should see a live image stream from the demo camera, which simulates a real camera by displaying a moving sine wave. You will alse see the image inspector window, which provides realtime information on the image's histogram, bit depth, and other information.</p>
+<p><img src="chapter_image_acquisition/mm_control_panel.png" alt=""></p>
+<p>When you click the <code>Live</code> button, you should see a live image stream from the demo camera, which simulates a real camera by displaying a moving sine wave. You will alse see the image inspector window, which provides realtime information on the image’s histogram, bit depth, and other information.</p>
 <p>Play with some of the settings in this window to get a feel for what you can do.</p>
 <h2 id="micro-manager-concepts"><a class="header" href="#micro-manager-concepts">Micro-Manager Concepts</a></h2>
 <p>In order to use Micro-Manager at a basic level, it is important to understand the following concepts.</p>
 <h3 id="device"><a class="header" href="#device">Device</a></h3>
 <p>A device is any piece of hardware that Micro-Manager controls. It could be a light source, a camera, a microscope stage, a filter wheel, a shutter, etc.</p>
 <h3 id="device-properties"><a class="header" href="#device-properties">Device Properties</a></h3>
-<p>A device is akin to a state machine. The set of all its properties and their values make up the device's state.</p>
+<p>A device is akin to a state machine. The set of all its properties and their values make up the device’s state.</p>
 <p>For example, a camera might have an exposure time property and a bit-depth property. A laser might have an output power property.</p>
 <p>Some properties may be changed by the user, whereas others are read only. An example of a read only property would be a temperature sensor.</p>
 <p>To see a list of all the device properties for all the currently configured devices, navigate to <code>Devices &gt; Device Property Browser...</code>. You may also modify properties in this window.</p>
 <p>The device property browser for the MMDemo configuration is shown below.</p>
-<p><img src="chapter_image_acquisition/./mm_device_property_browser.png" alt="" /></p>
+<p><img src="chapter_image_acquisition/mm_device_property_browser.png" alt=""></p>
 <h3 id="device-adapter"><a class="header" href="#device-adapter">Device Adapter</a></h3>
 <p>Device adapters are what make Micro-Manager so powerful. A device adapter is a plugin for a device that allows it to work with Micro-Manager.</p>
 <p>A device adapter must exist for a device to be used with Micro-Manager. If one does not exist, you can write one using the C++ programming language to make it work with Micro-Manager. Writing device adapters is outside the scope of this basic training course, however.</p>
@@ -410,60 +444,63 @@
 <h3 id="0-1"><a class="header" href="#0-1">0</a></h3>
 <p>Close Micro-Manager if it is already open.</p>
 <p>Connect the camera to your PC and launch Micro-Manager. Select <code>(none)</code> for the <code>Hardware Configuration File</code> and click <code>Ok</code>.</p>
-<p><img src="chapter_image_acquisition/./mm_startup_none.png" alt="" /></p>
+<p><img src="chapter_image_acquisition/mm_startup_none.png" alt=""></p>
 <h3 id="1-1"><a class="header" href="#1-1">1</a></h3>
 <p>In the Micro-Manager control panel, navigate to <code>Devices</code> &gt; <code>Hardware Configuration Wizard...</code>. Select <code>Create new configuration</code> and click <code>Next &gt;</code>.</p>
-<p><img src="chapter_image_acquisition/./mm_new_configuration.png" alt="" /></p>
+<p><img src="chapter_image_acquisition/mm_new_configuration.png" alt=""></p>
 <h3 id="2-1"><a class="header" href="#2-1">2</a></h3>
 <p>In the next window, scroll down the list of available devices until you find the device called <code>SpinnakerCamera</code>. Expand the item to find our Grasshopper camera. Select it, and click <code>Add...</code> and then <code>OK</code>. Click<code>Next &gt;</code> through the remaining windows. At the end, save the configuration file somewhere that makes sense.</p>
-<p><img src="chapter_image_acquisition/./mm_select_spinnaker_camera.png" alt="" /></p>
+<p><img src="chapter_image_acquisition/mm_select_spinnaker_camera.png" alt=""></p>
 <h4 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h4>
-<p>Can't see a device called SpinnakerCamera? The Grasshopper camera does not appear in the list? Do you receive an error immediately after creating the configuration? Try the following things to troubleshoot.</p>
+<p>Can’t see a device called SpinnakerCamera? The Grasshopper camera does not appear in the list? Do you receive an error immediately after creating the configuration? Try the following things to troubleshoot.</p>
 <ol>
 <li>Restart Micro-Manager. Devices need to be plugged in <strong>before</strong> Micro-Manager starts for them to be recognized.</li>
-<li>Ensure that you installed the correct version of the Spinnaker SDK during <a href="chapter_image_acquisition/./camera.html">the camera setup</a>.</li>
-<li>Be sure that the camera is recognized by SpinView. In general, if a device can't be used by its manufacturer's software, then it will not work in Micro-Manager.</li>
+<li>Ensure that you installed the correct version of the Spinnaker SDK during <a href="#set-up-the-camera">the camera setup</a>.</li>
+<li>Be sure that the camera is recognized by SpinView. In general, if a device can’t be used by its manufacturer’s software, then it will not work in Micro-Manager.</li>
 </ol>
 <h3 id="3-1"><a class="header" href="#3-1">3</a></h3>
 <p>Once back at the Micro-Manager control panel, click the <code>Live</code> button. You should see a live image stream in the preview window and the image inspector showing a histogram of the pixel values.</p>
-<p><img src="chapter_image_acquisition/./mm_camera_configured.png" alt="" /></p>
+<p><img src="chapter_image_acquisition/mm_camera_configured.png" alt=""></p>
 <p>At this point you have configured Micro-Manager to control the camera. Feel free to play with settings such as the exposure time, or go into the Device Property Browser to see what camera properties can be modified.</p>
 <hr>
-<ol class="footnote-definition"><li id="footnote-1">
-<p>A new nightly version is created at the end of any day where the source code changes. It's called "nightly" because it used to be built once a day, regardless of whether the source code changed. <a href="#fr-1-1">↩</a></p>
+<ol class="footnote-definition">
+<li id="footnote-1-2">
+<p>A new nightly version is created at the end of any day where the source code changes. It’s called “nightly” because it used to be built once a day, regardless of whether the source code changed. <a href="#fr-1-1-2">↩</a></p>
 </li>
-</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="discussion"><a class="header" href="#discussion">Discussion</a></h1>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="discussion"><a class="header" href="#discussion">Discussion</a></h1>
 <h2 id="infinity-corrected-optics"><a class="header" href="#infinity-corrected-optics">Infinity Corrected Optics</a></h2>
 <p>Nearly all microscopes that you will encounter within our research lab use infinity corrected optics, so it is important to understand what this means.</p>
 <p>An infinity corrected objective will have an infinity symbol on the barrel like the one in the photo below.</p>
-<p><img src="chapter_image_acquisition/./infinity_objective.jpg" alt="" /></p>
-<p>By design, the sample is located at the front focal plane of an infinity corrected objective. This means that the image of the sample is formed an infinite distance away from the objective on the other side. An image at infinity cannot be seen with a camera<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>, so we require a second a lens to form a real image in the camera plane. This second lens is known as the tube lens.</p>
+<p><img src="chapter_image_acquisition/infinity_objective.jpg" alt=""></p>
+<p>By design, the sample is located at the front focal plane of an infinity corrected objective. This means that the image of the sample is formed an infinite distance away from the objective on the other side. An image at infinity cannot be seen with a camera<sup class="footnote-reference" id="fr-1-1-3"><a href="#footnote-1-3">1</a></sup>, so we require a second a lens to form a real image in the camera plane. This second lens is known as the tube lens.</p>
 <p>But why is the image of the sample formed at infinity in the first place? Recall the thin lens formula from your introductory physics class:</p>
-<p>\[ \frac{1}{s} + \frac{1}{s'} = \frac{1}{f} \]</p>
-<p>Here, \( s \) is the distance from the lens to the object, \( s' \) is the distance from the lens to the image, and \( f \) is the focal length of the lens. If the object distance is equal to the focal length, then \( s = f \). But then we have</p>
-<p>\[ \frac{1}{s'} = 0 \]</p>
-<p>The only way to satisfy this equation is by requiring that the image distance be infinitely large. This is what we mean when we say that the image is "at infinity."</p>
+<p>\[ \frac{1}{s} + \frac{1}{s’} = \frac{1}{f} \]</p>
+<p>Here, \( s \) is the distance from the lens to the object, \( s’ \) is the distance from the lens to the image, and \( f \) is the focal length of the lens. If the object distance is equal to the focal length, then \( s = f \). But then we have</p>
+<p>\[ \frac{1}{s’} = 0 \]</p>
+<p>The only way to satisfy this equation is by requiring that the image distance be infinitely large. This is what we mean when we say that the image is “at infinity.”</p>
 <p>The situation is illustrated below. An object lies at a distance \( s = f \) from a thin lens with a positive focal length, which is drawn as a vertical line with arrows at each end. Rays from a single object point emerge from the lens parallel to one another. The image plane is defined as the plane where the rays intersect one another. But the rays are parallel, so they intersect at infinity.</p>
-<p><img src="chapter_image_acquisition/./thin_lens_object_in_focal_plane.svg" alt="" /></p>
+<p><img src="chapter_image_acquisition/thin_lens_object_in_focal_plane.svg" alt=""></p>
 <h2 id="the-camera-sensor-is-in-the-focal-plane-of-the-tube-lens"><a class="header" href="#the-camera-sensor-is-in-the-focal-plane-of-the-tube-lens">The Camera Sensor is in the Focal Plane of the Tube Lens</a></h2>
 <p>By the same logic, the camera sensor must be in the focal plane of the tube lens of a properly aligned, infinity corrected system. The image at infinity created by the objective serves as the object for the tube lens so that we have</p>
-<p>\[ \frac{1}{\infty} + \frac{1}{s'} = \frac{1}{f} \]</p>
-<p>or \( s' = f \).</p>
+<p>\[ \frac{1}{\infty} + \frac{1}{s’} = \frac{1}{f} \]</p>
+<p>or \( s’ = f \).</p>
 <p>This situation is illustrated below. Parallel rays representing an object at infinity are brought to a focus in the focal plane of a thin lens.</p>
-<p><img src="chapter_image_acquisition/./thin_lens_object_at_infinity.svg" alt="" /></p>
+<p><img src="chapter_image_acquisition/thin_lens_object_at_infinity.svg" alt=""></p>
 <h2 id="focusing-on-a-distant-object-aligned-the-camera-sensor-with-the-tube-lens-focal-plane"><a class="header" href="#focusing-on-a-distant-object-aligned-the-camera-sensor-with-the-tube-lens-focal-plane">Focusing on a Distant Object Aligned the Camera Sensor with the Tube Lens Focal Plane</a></h2>
 <p>When we looked at far away clouds or mountains using our fixed focal length camera, we essentially were looking at objects at infinity. By adjusting the separation between the camera and tube lens such that a clear image was formed, we were placing the camera sensor in the focal plane of the tube lens.</p>
-<h2 id="why-cant-i-just-use-a-ruler"><a class="header" href="#why-cant-i-just-use-a-ruler">Why Can't I Just Use a Ruler?</a></h2>
+<h2 id="why-cant-i-just-use-a-ruler"><a class="header" href="#why-cant-i-just-use-a-ruler">Why Can’t I Just Use a Ruler?</a></h2>
 <p>The tube lens has a 200 mm focal length. Many students are tempted to use a ruler to separate the camera from the tube lens by 200 mm, but this is not the correct way to put the camera sensor in the focal plane of the tube lens for two reasons.</p>
 <ol>
 <li>The camera sensor sits inside the camera housing at a distance of about 17 mm from the opening, so any distance measurement must account for this.</li>
 <li>Focal lengths are measured relative to imaginary planes called the principal planes of a lens. The locations of these planes depend on the details of the lens, i.e. glass surface curvatures, refractive indexes, number of components, etc. We cannot look at any given lens and say with certainty where the principal planes are located without performing calculations.</li>
 </ol>
-<p>So if we don't know where the principal planes are, then we don't know the point from where we need to measure to find the focal plane.</p>
+<p>So if we don’t know where the principal planes are, then we don’t know the point from where we need to measure to find the focal plane.</p>
 <p>The advantage to modeling a system with the principal planes is that we can abstract over all the details of a real lens and replace them with just two planes.</p>
 <h2 id="the-space-between-the-objective-and-tube-lens-is-called-infinity-space"><a class="header" href="#the-space-between-the-objective-and-tube-lens-is-called-infinity-space">The Space between the Objective and Tube Lens is called Infinity Space</a></h2>
-<p>In the schematic below, \( O / O' \) and \( T / T' \) are the principal planes for the microscope objective and tube lens, respectively. \( f_{obj} \) and \( f_{TL} \) denote the focal lengths of the objective and tube lens, respectively. Light rays from an off-axis object point are collected by the objective and made parallel after the objective's second prinicpal plane. The same rays are refocused by the tube lens onto the camera sensor.</p>
-<p><img src="chapter_image_acquisition/./infinity_space.svg" alt="" /></p>
+<p>In the schematic below, \( O / O’ \) and \( T / T’ \) are the principal planes for the microscope objective and tube lens, respectively. \( f_{obj} \) and \( f_{TL} \) denote the focal lengths of the objective and tube lens, respectively. Light rays from an off-axis object point are collected by the objective and made parallel after the objective’s second prinicpal plane. The same rays are refocused by the tube lens onto the camera sensor.</p>
+<p><img src="chapter_image_acquisition/infinity_space.svg" alt=""></p>
 <p>The space between the objective and tube lens is called the infinity space because the image of the sample is located at infinity within this space.</p>
 <p>Prior to the development of infinity corrected systems, microscope objectives formed their images at a fixed distance from the objective, called the tube length. By convention, this distance was usually around 160 mm. A second lens, the eye piece would send this intermediate image to infinity so that it could be viewed by the eye. Modern microscopy requires that additonal optical elements be placed after the objective, such as dichroic mirrors and filters. Upon insertion into the optical path, these additonal elements displace the location of the image formed by a traditional objective due the refractive index difference between the element’s material and air. This in turn forces the microscopist to refocus the image as elements are inserted and removed. It also results in a slightly different magnification for different elements.</p>
 <p>Infinity corrected systems do not suffer from these problems because the intermediate image is located at infinity. As a result, the final image will not change the position when additonal elements are inserted into the infinity space between the objective and tube lens.</p>
@@ -475,10 +512,13 @@
 <p>In short, yes. While a complete discussion about this goes beyond the scope of this basic training course, one can show that the ray transfer matrix of a thick lens is identical to a thin lens so long as the object space and image space coordinate systems are chosen with respect to origin in the points where the object space and image space prinicpal planes intersect the optical axis, respectively.</p>
 <p>For more information, see section 2.5.7 <a href="https://phys.libretexts.org/Bookshelves/Optics/BSc_Optics_(Konijnenberg_Adam_and_Urbach)/02%3A_Geometrical_Optics/2.06%3A_Gaussian_Geometrical_Optics">here</a>.</p>
 <hr>
-<ol class="footnote-definition"><li id="footnote-1">
-<p>An image at infinity can be seen by eye, however. Do you know why? <a href="#fr-1-1">↩</a></p>
+<ol class="footnote-definition">
+<li id="footnote-1-3">
+<p>An image at infinity can be seen by eye, however. Do you know why? <a href="#fr-1-1-3">↩</a></p>
 </li>
-</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
 <ol>
 <li>
 <p>What is the difference between an excitation filter and a dichroic mirror?</p>
@@ -502,282 +542,310 @@
 <p>Why do we do fluorescence imaging with epi-illumination and not transillumination?</p>
 </li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="alignment"><a class="header" href="#alignment">Alignment</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="alignment"><a class="header" href="#alignment">Alignment</a></h1>
 <p>In this chapter we will finish the construction of our fluoresence microscope in two parts. In the first, we will finish the fluoresence light path, also known as the emission path.</p>
 <p>In the second part, we will build and align the optics for the excitation light path.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="construct-the-microscope-emission-path"><a class="header" href="#construct-the-microscope-emission-path">Construct the Microscope Emission Path</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="construct-the-microscope-emission-path"><a class="header" href="#construct-the-microscope-emission-path">Construct the Microscope Emission Path</a></h1>
 <h2 id="parts-list-1"><a class="header" href="#parts-list-1">Parts List</a></h2>
 <p>Below is the parts list for this section of the basic training course. Note that some of the parts used in the course are now obsolete. In these cases the parts listed below are the closest current match to the obsolete parts.</p>
-<div class="table-wrapper"><table><thead><tr><th>Part</th><th>Manf. Part No.</th><th>Quantity</th><th>URL</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Part</th><th>Manf. Part No.</th><th>Quantity</th><th>URL</th></tr>
+</thead>
+<tbody>
 <tr><td>Chroma 69002 ET - DAPI/FITC/Texas Red® Filter Set</td><td>69002</td><td>1</td><td><a href="https://www.chroma.com/products/sets/69002-et-dapi-fitc-texas-red">https://www.chroma.com/products/sets/69002-et-dapi-fitc-texas-red</a></td></tr>
 <tr><td>Nikon CFI Plan Achro DL40x Microscope Objective</td><td>MRL20402</td><td>1</td><td><a href="https://www.microscope.healthcare.nikon.com/products/optics/selector/comparison/-1703">https://www.microscope.healthcare.nikon.com/products/optics/selector/comparison/-1703</a></td></tr>
 <tr><td>3-Axis NanoMax Stage, Differential Drives, Closed-Loop Piezos, Metric</td><td>MAX311D/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=MAX311D/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=MAX311D/M</a></td></tr>
 <tr><td>Microscopy Slide Holder</td><td>MAX3SLH</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=MAX3SLH">https://www.thorlabs.com/thorproduct.cfm?partnumber=MAX3SLH</a></td></tr>
-<tr><td>Ø1" Broadband Dielectric Mirror, 400 - 750 nm</td><td>BB1-E02</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02">https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02</a></td></tr>
+<tr><td>Ø1“ Broadband Dielectric Mirror, 400 - 750 nm</td><td>BB1-E02</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02">https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02</a></td></tr>
 <tr><td>Right-Angle Kinematic Mirror Mount with Tapped Cage Rod Holes, 30 mm Cage System and SM1 Compatible, M4 and M6 Mounting Holes</td><td>KCB1/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KCB1/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=KCB1/M</a></td></tr>
 <tr><td>30 mm Cage Cube, Ø6 mm Through Holes</td><td>C6WR</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=C6WR">https://www.thorlabs.com/thorproduct.cfm?partnumber=C6WR</a></td></tr>
 <tr><td>30-mm-Cage-Compatible Rectangular Filter Mount</td><td>FFM1</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=FFM1">https://www.thorlabs.com/thorproduct.cfm?partnumber=FFM1</a></td></tr>
 <tr><td>Kinematic Cage Cube Platform for C4W/C6WR, Metric</td><td>B4C/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=B4C/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=B4C/M</a></td></tr>
 <tr><td>Coarse ±1 mm XY Slip Plate Positioner, 30 mm Cage Compatible, Metric</td><td>SPT1C/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SPT1C/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=SPT1C/M</a></td></tr>
 <tr><td>Externally SM1-Threaded End Cap</td><td>SM1CP2</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1CP2">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1CP2</a></td></tr>
-<tr><td>Rod Adapter for Ø6 mm ER Rods, L = 0.27"</td><td>ERSCB</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB">https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB</a></td></tr>
-<tr><td>Cage Assembly Rod, 1/4" Long, Ø6 mm</td><td>ER025</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025</a></td></tr>
-<tr><td>Cage Assembly Rod, 1" Long, Ø6 mm</td><td>ER1</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER1">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER1</a></td></tr>
-<tr><td>Cage Assembly Rod, 2" Long, Ø6 mm</td><td>ER2</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2</a></td></tr>
+<tr><td>Rod Adapter for Ø6 mm ER Rods, L = 0.27“</td><td>ERSCB</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB">https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB</a></td></tr>
+<tr><td>Cage Assembly Rod, 1/4“ Long, Ø6 mm</td><td>ER025</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025</a></td></tr>
+<tr><td>Cage Assembly Rod, 1“ Long, Ø6 mm</td><td>ER1</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER1">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER1</a></td></tr>
+<tr><td>Cage Assembly Rod, 2“ Long, Ø6 mm</td><td>ER2</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2</a></td></tr>
 <tr><td>Ø12.7 mm Optical Post, SS, M4 Setscrew, M6 Tap, L = 20 mm</td><td>TR20/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=TR20/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=TR20/M</a></td></tr>
 <tr><td>Ø12.7 mm Optical Post, SS, M4 Setscrew, M6 Tap, L = 30 mm</td><td>TR30/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=TR30/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=TR30/M</a></td></tr>
 <tr><td>Ø12.7 mm Post Holder, Spring-Loaded Hex-Locking Thumbscrew, L=20 mm</td><td>PH20/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=PH20/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=PH20/M</a></td></tr>
 <tr><td>Ø12.7 mm Post Holder, Spring-Loaded Hex-Locking Thumbscrew, L=30 mm</td><td>PH30/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=PH30/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=PH30/M</a></td></tr>
-<tr><td>Clamping Fork for Ø1.25" Pedestal Bases, 44.4 mm Counterbored Slot, M6 x 1.0 Captive Screw</td><td>CF175C/M</td><td>3</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M</a></td></tr>
+<tr><td>Clamping Fork for Ø1.25“ Pedestal Bases, 44.4 mm Counterbored Slot, M6 x 1.0 Captive Screw</td><td>CF175C/M</td><td>3</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M</a></td></tr>
 <tr><td>Ø31.8 mm Studded Pedestal Base Adapter, M6 Threads</td><td>BE1/M</td><td>3</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=BE1/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=BE1/M</a></td></tr>
 <tr><td>Adapter with External SM1 Threads and Internal M25 x 0.75 Threads</td><td>SM1A12</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A12">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A12</a></td></tr>
-<tr><td>30 mm Cage System Cover, 24" Long, Pack of 4</td><td>C30L24</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=C30L24">https://www.thorlabs.com/thorproduct.cfm?partnumber=C30L24</a></td></tr>
-<tr><td>SM1 Lens Tube, 0.30" Thread Depth, One Retaining Ring Included</td><td>SM1L03</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1L03">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1L03</a></td></tr>
+<tr><td>30 mm Cage System Cover, 24“ Long, Pack of 4</td><td>C30L24</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=C30L24">https://www.thorlabs.com/thorproduct.cfm?partnumber=C30L24</a></td></tr>
+<tr><td>SM1 Lens Tube, 0.30“ Thread Depth, One Retaining Ring Included</td><td>SM1L03</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1L03">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1L03</a></td></tr>
 <tr><td>Aluminum Breadboard, 300 mm x 450 mm x 12.7 mm, M6 Taps</td><td>MB3045/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=MB3045/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=MB3045/M</a></td></tr>
 <tr><td>Large Right-Angle Bracket, M6 Holes</td><td>AP90RL/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AP90RL/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=AP90RL/M</a></td></tr>
 <tr><td>M6 x 1.0 Stainless Steel Cap Screw, 16 mm Long, 25 Pack</td><td>SH6MS16</td><td>6*</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SH6MS16">https://www.thorlabs.com/thorproduct.cfm?partnumber=SH6MS16</a></td></tr>
-<tr><td>1/4" Washer, M6 Compatible, Stainless Steel, 100 Pack</td><td>W25S050</td><td>6*</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=W25S050">https://www.thorlabs.com/thorproduct.cfm?partnumber=W25S050</a></td></tr>
-</tbody></table>
+<tr><td>1/4“ Washer, M6 Compatible, Stainless Steel, 100 Pack</td><td>W25S050</td><td>6*</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=W25S050">https://www.thorlabs.com/thorproduct.cfm?partnumber=W25S050</a></td></tr>
+</tbody>
+</table>
 </div>
 <ul>
 <li><em>Only a small quantity from larger pack is required.</em></li>
 </ul>
-<p><img src="chapter_alignment/emission_path/./parts_list_0.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./parts_list_1.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/parts_list_0.jpg" alt="">
+<img src="chapter_alignment/emission_path/parts_list_1.jpg" alt=""></p>
 <p><strong>Not shown:</strong> 3-Axis NanoMax Stage and Microscopy Slide Holder</p>
 <h2 id="instructions-1"><a class="header" href="#instructions-1">Instructions</a></h2>
 <h3 id="0-2"><a class="header" href="#0-2">0</a></h3>
 <p>Find the side of the right-angle mirror mount with a dot on it. Take this side to be the bottom.</p>
-<p><img src="chapter_alignment/emission_path/./step_0.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_0.jpg" alt=""></p>
 <h3 id="1-2"><a class="header" href="#1-2">1</a></h3>
-<p>Attach 4, 0.25" cage rods to the right-angle mirror mount as shown.</p>
-<p>Attach 4, 1" cage rods to the other side.</p>
-<p><img src="chapter_alignment/emission_path/./step_1.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_2.jpg" alt="" /></p>
+<p>Attach 4, 0.25“ cage rods to the right-angle mirror mount as shown.</p>
+<p>Attach 4, 1“ cage rods to the other side.</p>
+<p><img src="chapter_alignment/emission_path/step_1.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_2.jpg" alt=""></p>
 <h3 id="2-2"><a class="header" href="#2-2">2</a></h3>
 <p>Attach 4 cage rod adapters to the exterior of the 30 mm cage cube as shown.</p>
 <p>Screw the lens tube containing the <strong>emission</strong> filter into the SM1 threaded hole on the same side as the cage rod adapters.</p>
-<p><img src="chapter_alignment/emission_path/./step_3.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_4.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_3.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_4.jpg" alt=""></p>
 <h3 id="3-2"><a class="header" href="#3-2">3</a></h3>
-<p>Attach the cage cube to the right-angle mirror mount using the 0.25" cage rods and cage rod adapters. Remember to keep the side of the right-angle mirror mount with the dot facing down.</p>
-<p><img src="chapter_alignment/emission_path/./step_5.jpg" alt="" /></p>
+<p>Attach the cage cube to the right-angle mirror mount using the 0.25“ cage rods and cage rod adapters. Remember to keep the side of the right-angle mirror mount with the dot facing down.</p>
+<p><img src="chapter_alignment/emission_path/step_5.jpg" alt=""></p>
 <h3 id="4-1"><a class="header" href="#4-1">4</a></h3>
 <p>Note the arrow on the side of the dichroic mirror. This arrow points to the side with the dielectric coating and should face towards the sample.</p>
 <p>Insert the filter and its kinematic platform into the cage cube.</p>
-<p><img src="chapter_alignment/emission_path/./step_6.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_7.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_8.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_6.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_7.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_8.jpg" alt=""></p>
 <h3 id="5-1"><a class="header" href="#5-1">5</a></h3>
 <p>Rotate the platform by approximately 45 degrees, ensuring that the side of the dichroic mirror with the coating faces <strong>away from the mirror</strong>.</p>
 <p>Tighten the screws on the cage cube. (They are imperial in the image shown!)</p>
-<p><img src="chapter_alignment/emission_path/./step_9.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_9.jpg" alt=""></p>
 <p>###6</p>
 <p>Screw the lens tube containing the <strong>excitation</strong> filter into the cage cube.</p>
-<p><img src="chapter_alignment/emission_path/./step_10.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_11.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_10.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_11.jpg" alt=""></p>
 <h3 id="7-1"><a class="header" href="#7-1">7</a></h3>
 <p>Screw the SM1-threaded end cap into the hole on the cage cube that is opposite the excitation filter.</p>
-<p><img src="chapter_alignment/emission_path/./step_12.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_12.jpg" alt=""></p>
 <h3 id="8-1"><a class="header" href="#8-1">8</a></h3>
-<p>Attach 4, 2" long cage rods to the top of the cage cube.</p>
-<p><img src="chapter_alignment/emission_path/./step_13.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_14.jpg" alt="" /></p>
+<p>Attach 4, 2“ long cage rods to the top of the cage cube.</p>
+<p><img src="chapter_alignment/emission_path/step_13.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_14.jpg" alt=""></p>
 <h3 id="9-1"><a class="header" href="#9-1">9</a></h3>
 <p>Slide the slip plate onto the ends of the cage rods. Lock it into place with the set screws.</p>
-<p><img src="chapter_alignment/emission_path/./step_15.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_15.jpg" alt=""></p>
 <h3 id="10-1"><a class="header" href="#10-1">10</a></h3>
-<p>Attach the cage system covers to the four sides of the 2" cage rod subassembly.</p>
-<p><img src="chapter_alignment/emission_path/./step_16.jpg" alt="" /></p>
+<p>Attach the cage system covers to the four sides of the 2“ cage rod subassembly.</p>
+<p><img src="chapter_alignment/emission_path/step_16.jpg" alt=""></p>
 <h3 id="11-1"><a class="header" href="#11-1">11</a></h3>
 <p>Insert the SM1 to M25 thread adapter into the slip plate.</p>
-<p><img src="chapter_alignment/emission_path/./step_17.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_17.jpg" alt=""></p>
 <h3 id="12"><a class="header" href="#12">12</a></h3>
 <p>Thread pedestals into the bottoms of the two 30 mm long post holders.</p>
-<p><img src="chapter_alignment/emission_path/./step_18.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_19.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_18.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_19.jpg" alt=""></p>
 <h3 id="13"><a class="header" href="#13">13</a></h3>
 <p>Note that one set screw is shorter than the other in the two, 30 mm long posts.</p>
 <p>Attach the one with the shorter set screw to the bottom of the cage cube. Attach the other to the bottom of the right-angle mirror mount.</p>
 <p>Use a hex driver and the post hole to lightly tighten the posts.</p>
-<p><img src="chapter_alignment/emission_path/./step_20.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_21.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_22.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_23.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_20.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_21.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_22.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_23.jpg" alt=""></p>
 <h3 id="14"><a class="header" href="#14">14</a></h3>
 <p>Attach the post holders to the posts.</p>
 <p>Make sure that they are at the same height by placing the assembly on a flat surface and checking for any tilt.</p>
-<p><img src="chapter_alignment/emission_path/./step_24.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_25.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_24.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_25.jpg" alt=""></p>
 <h3 id="15"><a class="header" href="#15">15</a></h3>
 <p>Attach the 20 mm long post to the bottom of the cage plate of the camera and tube lens assembly.</p>
 <p><strong>Not shown:</strong> Slide on a 20 mm long post holder with a pedestal attached.</p>
-<p><img src="chapter_alignment/emission_path/./step_26.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_26.jpg" alt=""></p>
 <h3 id="16"><a class="header" href="#16">16</a></h3>
 <p>Slide the 30 mm to 60 mm cage adapter from the tube lens/camera assembly onto the 30 mm cage rods of the right-angle mirror.</p>
 <p>Tighten the set screws to join the two assemblies together.</p>
-<p><img src="chapter_alignment/emission_path/./step_27.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_28.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_27.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_28.jpg" alt=""></p>
 <h3 id="17"><a class="header" href="#17">17</a></h3>
 <p>Let \( ( \text{row} \, , \text{col} ) \) denote the row and column coordinates of a screw hole on the base plate. Take the upper left hole of the base plate as the origin (0, 0), with the row coordinate increasing downward and the column coordinate increasing to the right. Do not take the counterbored holes into consideration.</p>
 <p>Place the screws for the three clamping forks at the coordinates</p>
-<div class="table-wrapper"><table><thead><tr><th>row</th><th>col</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>row</th><th>col</th></tr>
+</thead>
+<tbody>
 <tr><td>9</td><td>3</td></tr>
 <tr><td>6</td><td>16</td></tr>
 <tr><td>9</td><td>14</td></tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
-<p><img src="chapter_alignment/emission_path/./step_29.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_29.jpg" alt=""></p>
 <h3 id="18"><a class="header" href="#18">18</a></h3>
 <p>Slide the pedestals into the clamping forks. Do not tighten them yet.</p>
-<p><img src="chapter_alignment/emission_path/./step_30.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_30.jpg" alt=""></p>
 <h3 id="19"><a class="header" href="#19">19</a></h3>
 <p>Attach the large right-angle bracket to the base plate as shown using the following screw holes:</p>
-<div class="table-wrapper"><table><thead><tr><th>row</th><th>col</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>row</th><th>col</th></tr>
+</thead>
+<tbody>
 <tr><td>3</td><td>9</td></tr>
 <tr><td>4</td><td>9</td></tr>
 <tr><td>3</td><td>12</td></tr>
 <tr><td>4</td><td>12</td></tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
-<p><img src="chapter_alignment/emission_path/./step_31.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_32.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_31.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_32.jpg" alt=""></p>
 <h3 id="20"><a class="header" href="#20">20</a></h3>
 <p>Attach the sample positioner to the top of the right-angle bracket.</p>
-<p><img src="chapter_alignment/emission_path/./step_33.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_33.jpg" alt=""></p>
 <h3 id="21"><a class="header" href="#21">21</a></h3>
 <p>Carefully screw the objective into the SM1 to M25 thread adapter.</p>
-<p><img src="chapter_alignment/emission_path/./step_34.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_34.jpg" alt=""></p>
 <h3 id="22"><a class="header" href="#22">22</a></h3>
 <p>Place a slide with an easy-to-see sample, such as a blood smear, onto the sample holder. Check its position relative to the objective.</p>
-<p><img src="chapter_alignment/emission_path/./step_35.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_36.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_35.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_36.jpg" alt=""></p>
 <h3 id="23"><a class="header" href="#23">23</a></h3>
 <p>Gently and carefully move the entire microscope assembly to position the sample approximately 1 or 2 mm from the end of the objective.</p>
 <p>Make sure that the holes for the cage rods on the cage cube are not blocked by the right-angle bracket.</p>
-<p><img src="chapter_alignment/emission_path/./step_37.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_38.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_39.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_37.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_38.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_39.jpg" alt=""></p>
 <h3 id="24"><a class="header" href="#24">24</a></h3>
 <p>Put a smartphone with a flashlight in front of the sample. Connect the camera to the PC and start a live acquisition.</p>
 <p>Further adjust the microscope assembly until the image is in focus.</p>
 <p>It is OK if the image contrast and quality is poor at this point. Just try to make it in focus.</p>
 <p><strong>Not shown:</strong> Adjust the screws on the right-angle mirror mount if the image is not centered on the camera.</p>
-<p><img src="chapter_alignment/emission_path/./step_40.jpg" alt="" />
-<img src="chapter_alignment/emission_path/./step_41.jpg" alt="" /></p>
+<p><img src="chapter_alignment/emission_path/step_40.jpg" alt="">
+<img src="chapter_alignment/emission_path/step_41.jpg" alt=""></p>
 <h3 id="25"><a class="header" href="#25">25</a></h3>
 <p>Tighten all screws to secure the assembly to the base plate.</p>
-<p><img src="chapter_alignment/emission_path/./step_42.jpg" alt="" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="control-the-laser"><a class="header" href="#control-the-laser">Control the Laser</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="construct-the-microscope-excitation-path"><a class="header" href="#construct-the-microscope-excitation-path">Construct the Microscope Excitation Path</a></h1>
+<p><img src="chapter_alignment/emission_path/step_42.jpg" alt=""></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="control-the-laser"><a class="header" href="#control-the-laser">Control the Laser</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="construct-the-microscope-excitation-path"><a class="header" href="#construct-the-microscope-excitation-path">Construct the Microscope Excitation Path</a></h1>
 <h2 id="parts-list-2"><a class="header" href="#parts-list-2">Parts List</a></h2>
 <p>Below is the parts list for this section of the basic training course. Note that some of the parts used in the course are now obsolete. In these cases the parts listed below are the closest current match to the obsolete parts.</p>
-<div class="table-wrapper"><table><thead><tr><th>Part</th><th>Manf. Part No.</th><th>Quantity</th><th>URL</th></tr></thead><tbody>
-<tr><td>f=45 mm, Ø1" Achromatic Doublet, SM1-Threaded Mount, ARC: 400-700 nm</td><td>AC254-045-A-ML</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-045-A-ML">https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-045-A-ML</a></td></tr>
-<tr><td>f=150 mm, Ø1" Achromatic Doublet, SM1-Threaded Mount, ARC: 400-700 nm</td><td>AC254-150-A-ML</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-150-A-ML">https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-150-A-ML</a></td></tr>
-<tr><td>Ø1" Broadband Dielectric Mirror, 400 - 750 nm</td><td>BB1-E02</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02">https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02</a></td></tr>
-<tr><td>FC/PC Fiber Adapter Plate with External SM1 (1.035"-40) Threads, Narrow Key (2.0 mm)</td><td>SM1FC2</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1FC2">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1FC2</a></td></tr>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Part</th><th>Manf. Part No.</th><th>Quantity</th><th>URL</th></tr>
+</thead>
+<tbody>
+<tr><td>f=45 mm, Ø1“ Achromatic Doublet, SM1-Threaded Mount, ARC: 400-700 nm</td><td>AC254-045-A-ML</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-045-A-ML">https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-045-A-ML</a></td></tr>
+<tr><td>f=150 mm, Ø1“ Achromatic Doublet, SM1-Threaded Mount, ARC: 400-700 nm</td><td>AC254-150-A-ML</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-150-A-ML">https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-150-A-ML</a></td></tr>
+<tr><td>Ø1“ Broadband Dielectric Mirror, 400 - 750 nm</td><td>BB1-E02</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02">https://www.thorlabs.com/thorproduct.cfm?partnumber=BB1-E02</a></td></tr>
+<tr><td>FC/PC Fiber Adapter Plate with External SM1 (1.035“-40) Threads, Narrow Key (2.0 mm)</td><td>SM1FC2</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1FC2">https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1FC2</a></td></tr>
 <tr><td>XY Translator with Differential Drives, Metric</td><td>ST1XY-D/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ST1XY-D/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=ST1XY-D/M</a></td></tr>
 <tr><td>Right-Angle Kinematic Mirror Mount with Tapped Cage Rod Holes, 30 mm Cage System and SM1 Compatible, M4 and M6 Mounting Holes</td><td>KCB1/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KCB1/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=KCB1/M</a></td></tr>
-<tr><td>30 mm Cage System, XY Translating Lens Mount for Ø1" Optics</td><td>CXY1A</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1A">https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1A</a></td></tr>
+<tr><td>30 mm Cage System, XY Translating Lens Mount for Ø1“ Optics</td><td>CXY1A</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1A">https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1A</a></td></tr>
 <tr><td>30 mm Cage System Iris Diaphragm (Ø0.8 - Ø20 mm)</td><td>CP20D</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CP20D">https://www.thorlabs.com/thorproduct.cfm?partnumber=CP20D</a></td></tr>
-<tr><td>SM1-Threaded 30 mm Cage Plate, 0.35" Thick, 2 Retaining Rings, M4 Tap</td><td>CP33/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CP33/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=CP33/M</a></td></tr>
-<tr><td>Rod Adapter for Ø6 mm ER Rods, L = 0.27"</td><td>ERSCB</td><td>8</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB">https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB</a></td></tr>
-<tr><td>Cage Assembly Rod, 1/4" Long, Ø6 mm</td><td>ER025</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025</a></td></tr>
-<tr><td>Cage Assembly Rod, 2" Long, Ø6 mm</td><td>ER2</td><td>3</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2</a></td></tr>
-<tr><td>Cage Assembly Rod, 6" Long, Ø6 mm</td><td>ER6</td><td>3</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER6">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER6</a></td></tr>
+<tr><td>SM1-Threaded 30 mm Cage Plate, 0.35“ Thick, 2 Retaining Rings, M4 Tap</td><td>CP33/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CP33/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=CP33/M</a></td></tr>
+<tr><td>Rod Adapter for Ø6 mm ER Rods, L = 0.27“</td><td>ERSCB</td><td>8</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB">https://www.thorlabs.com/thorproduct.cfm?partnumber=ERSCB</a></td></tr>
+<tr><td>Cage Assembly Rod, 1/4“ Long, Ø6 mm</td><td>ER025</td><td>4</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER025</a></td></tr>
+<tr><td>Cage Assembly Rod, 2“ Long, Ø6 mm</td><td>ER2</td><td>3</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2</a></td></tr>
+<tr><td>Cage Assembly Rod, 6“ Long, Ø6 mm</td><td>ER6</td><td>3</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ER6">https://www.thorlabs.com/thorproduct.cfm?partnumber=ER6</a></td></tr>
 <tr><td>Ø12.7 mm Optical Post, SS, M4 Setscrew, M6 Tap, L = 20 mm</td><td>TR20/M</td><td>1</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=TR20/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=TR20/M</a></td></tr>
 <tr><td>Ø12.7 mm Optical Post, SS, M4 Setscrew, M6 Tap, L = 30 mm</td><td>TR30/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=TR30/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=TR30/M</a></td></tr>
-<tr><td>Ø1/2" Post Holder, Spring-Loaded Hex-Locking Thumbscrew, L = 1"</td><td>PH1</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=PH1">https://www.thorlabs.com/thorproduct.cfm?partnumber=PH1</a></td></tr>
+<tr><td>Ø1/2“ Post Holder, Spring-Loaded Hex-Locking Thumbscrew, L = 1“</td><td>PH1</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=PH1">https://www.thorlabs.com/thorproduct.cfm?partnumber=PH1</a></td></tr>
 <tr><td>Ø31.8 mm Studded Pedestal Base Adapter, M6 Threads</td><td>BE1/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=BE1/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=BE1/M</a></td></tr>
-<tr><td>Clamping Fork for Ø1.25" Pedestal Bases, 44.4 mm Counterbored Slot, M6 x 1.0 Captive Screw</td><td>CF175C/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M</a></td></tr>
-</tbody></table>
+<tr><td>Clamping Fork for Ø1.25“ Pedestal Bases, 44.4 mm Counterbored Slot, M6 x 1.0 Captive Screw</td><td>CF175C/M</td><td>2</td><td><a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M">https://www.thorlabs.com/thorproduct.cfm?partnumber=CF175C/M</a></td></tr>
+</tbody>
+</table>
 </div>
-<p><img src="chapter_alignment/excitation_path/./parts_list_0.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/parts_list_0.jpg" alt=""></p>
 <p><em>Not shown: shear plate, CPA1 alignment plates.</em></p>
 <h2 id="instructions-2"><a class="header" href="#instructions-2">Instructions</a></h2>
 <h3 id="0-3"><a class="header" href="#0-3">0</a></h3>
-<p>Thread the FC/PC fiber adapter plate into the XY transaltion mount such that it is recessed as far as the barrel's internal amount will allow.</p>
-<p><img src="chapter_alignment/excitation_path/./step_0.jpg" alt="" /></p>
+<p>Thread the FC/PC fiber adapter plate into the XY transaltion mount such that it is recessed as far as the barrel’s internal amount will allow.</p>
+<p><img src="chapter_alignment/excitation_path/step_0.jpg" alt=""></p>
 <h3 id="1-3"><a class="header" href="#1-3">1</a></h3>
-<p>Attach three, 2" cage rods to the translation mount in the manner shown in the photos. Leave one cage rod hole open for the iris that will be installed in a later step.</p>
-<p><img src="chapter_alignment/excitation_path/./step_1.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_2.jpg" alt="" /></p>
+<p>Attach three, 2“ cage rods to the translation mount in the manner shown in the photos. Leave one cage rod hole open for the iris that will be installed in a later step.</p>
+<p><img src="chapter_alignment/excitation_path/step_1.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_2.jpg" alt=""></p>
 <h3 id="2-3"><a class="header" href="#2-3">2</a></h3>
 <p>Attach a 20 mm post to the bottom of the translation mount. Insert it into a post holder and attach a pedestal base.</p>
-<p><img src="chapter_alignment/excitation_path/./step_3.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_4.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_3.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_4.jpg" alt=""></p>
 <h3 id="3-3"><a class="header" href="#3-3">3</a></h3>
 <p>Thread the 45 mm achromat into the cage plate. Ensure that the direction marked as \( \infty \) points away from the fiber adapter plate.</p>
 <p>Slide this assembly onto the cage rods.</p>
 <p><em>Note the photo shows a CP02/M cage plate, but a CP33/M will work, too.</em></p>
-<p><img src="chapter_alignment/excitation_path/./step_5.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_6.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_5.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_6.jpg" alt=""></p>
 <h3 id="4-2"><a class="header" href="#4-2">4</a></h3>
 <p>Attach the assembly to an optical table.</p>
-<p><img src="chapter_alignment/excitation_path/./step_7.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_7.jpg" alt=""></p>
 <h3 id="5-2"><a class="header" href="#5-2">5</a></h3>
 <p>Attach the fiber from the laser engine (provided to you) to the fiber adapter plate. Ensure that the key on the fiber connector aligns with the notch on fiber adapter plate.</p>
-<p><img src="chapter_alignment/excitation_path/./step_8.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_9.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_8.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_9.jpg" alt=""></p>
 <h3 id="6-1"><a class="header" href="#6-1">6</a></h3>
 <p>Turn on the laser. Position a shear plate in front of the laser beam.</p>
 <p>Move the f = 45 mm lens in front of the fiber until the fringes on the shear plate are approximately parallel to the guideline.</p>
 <p>The first two images below show the fringe pattern with the lens too close and too far from the fiber. The third image shows the lens position with the fiber in the focal plane of the lens.</p>
 <p>Tighten the set screws on the cage plate once the correct position is found to lock it into place.</p>
-<p><img src="chapter_alignment/excitation_path/./step_10.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_11.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_12.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_10.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_11.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_12.jpg" alt=""></p>
 <h3 id="7-2"><a class="header" href="#7-2">7</a></h3>
 <p>Slide the iris onto the end of the cage rods.</p>
-<p><img src="chapter_alignment/excitation_path/./step_13.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_13.jpg" alt=""></p>
 <h3 id="8-2"><a class="header" href="#8-2">8</a></h3>
 <p>Note the dot on the bottom of the right-angle kinematic mirror mount.</p>
 <p><em>We assume that there is a mirror already mounted inside the mount.</em></p>
-<p><img src="chapter_alignment/excitation_path/./step_14.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_14.jpg" alt=""></p>
 <h3 id="9-2"><a class="header" href="#9-2">9</a></h3>
 <p>Attach four cage rod adapters to the mirror mount.</p>
 <p><em>Metric cage rod adapters are shown, but imperial adapters work equally well.</em></p>
-<p><img src="chapter_alignment/excitation_path/./step_15.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_15.jpg" alt=""></p>
 <h3 id="10-2"><a class="header" href="#10-2">10</a></h3>
-<p>Attach four, 0.25" cage rods to the opposite side of the mirror mount.</p>
+<p>Attach four, 0.25“ cage rods to the opposite side of the mirror mount.</p>
 <p><em>Three cage rods are shown because that was all that we had when this photo was taken.</em></p>
-<p><img src="chapter_alignment/excitation_path/./step_16.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_16.jpg" alt=""></p>
 <h3 id="11-2"><a class="header" href="#11-2">11</a></h3>
 <p>Attach cage rod adapters and the 30 mm post to the other right-angle kinematic mirror mount.</p>
-<p><img src="chapter_alignment/excitation_path/./step_17.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_18.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_17.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_18.jpg" alt=""></p>
 <h3 id="12-1"><a class="header" href="#12-1">12</a></h3>
 <p>Attach a post holder with pedestal base to the mirror mount.</p>
-<p><img src="chapter_alignment/excitation_path/./step_19.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_19.jpg" alt=""></p>
 <h3 id="13-1"><a class="header" href="#13-1">13</a></h3>
-<p>Attach one mirror mount to the other as shown using the cage rod adapters and 0.25" cage rods.</p>
-<p><img src="chapter_alignment/excitation_path/./step_20.jpg" alt="" /></p>
+<p>Attach one mirror mount to the other as shown using the cage rod adapters and 0.25“ cage rods.</p>
+<p><img src="chapter_alignment/excitation_path/step_20.jpg" alt=""></p>
 <h3 id="14-1"><a class="header" href="#14-1">14</a></h3>
-<p>Attach the fiber output coupler assembly to the steering mirrors assembly by inserting the 2" cage rods into the other set of cage rod adapters.</p>
-<p><img src="chapter_alignment/excitation_path/./step_21.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_22.jpg" alt="" /></p>
+<p>Attach the fiber output coupler assembly to the steering mirrors assembly by inserting the 2“ cage rods into the other set of cage rod adapters.</p>
+<p><img src="chapter_alignment/excitation_path/step_21.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_22.jpg" alt=""></p>
 <h3 id="15-1"><a class="header" href="#15-1">15</a></h3>
 <p>Ensure that the assembly is level by checking the heights of the pedestals relative to the table. Adjust them if necessary.</p>
-<p><img src="chapter_alignment/excitation_path/./step_23.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_23.jpg" alt=""></p>
 <h3 id="16-1"><a class="header" href="#16-1">16</a></h3>
-<p>Insert three, 6" cage rods into the other end of the steering mirror assembly as shown.</p>
+<p>Insert three, 6“ cage rods into the other end of the steering mirror assembly as shown.</p>
 <p>Slide the XY translating lens mount onto the cage rods <strong>but do not tighten it yet.</strong></p>
-<p><img src="chapter_alignment/excitation_path/./step_24.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_25.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_24.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_25.jpg" alt=""></p>
 <h3 id="17-1"><a class="header" href="#17-1">17</a></h3>
 <p>Slide the entire assembly into the cage rod holes in the dichroic cube, <strong>taking care not to damage the dichroic inside the mount.</strong> (It obstructs the cage rods from fully passing through the the cube.)</p>
 <p><em>Not shown:</em> Tighten the set screws that you can access with a hex driver.</p>
-<p><img src="chapter_alignment/excitation_path/./step_26.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_26.jpg" alt=""></p>
 <h3 id="18-1"><a class="header" href="#18-1">18</a></h3>
 <p>Use two clamping forks to attach the excitation path assembly to the base plate.</p>
-<p><img src="chapter_alignment/excitation_path/./step_27.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_27.jpg" alt=""></p>
 <h3 id="19-1"><a class="header" href="#19-1">19</a></h3>
 <p>Attach the fiber to the fiber adapter plate.</p>
-<p><img src="chapter_alignment/excitation_path/./step_28.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_28.jpg" alt=""></p>
 <h3 id="20-1"><a class="header" href="#20-1">20</a></h3>
 <p>Close the iris.</p>
-<p><img src="chapter_alignment/excitation_path/./step_29.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_29.jpg" alt=""></p>
 <h3 id="21-1"><a class="header" href="#21-1">21</a></h3>
 <p>Turn on the laser and observe where the beam hits an alignment plate</p>
 <ol>
@@ -785,8 +853,8 @@
 <li>just after the beam steering mirrors.</li>
 </ol>
 <p>The transverse beam positions measured at opposite ends of the cage rods tells you the beam location direction in 3D space.</p>
-<p><img src="chapter_alignment/excitation_path/./step_30.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_31.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_30.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_31.jpg" alt=""></p>
 <h3 id="22-1"><a class="header" href="#22-1">22</a></h3>
 <p>Align the laser beam to the center of the cage rods. Use the following procedure:</p>
 <ol>
@@ -797,23 +865,23 @@
 <li>Go back to step 1 and repeat.</li>
 </ol>
 <p>Repeat this procedure few times until the beam is centered on the alignment plate at both positions. The alignment should improve a little after each iteration.</p>
-<p><img src="chapter_alignment/excitation_path/./step_32.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_33.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_32.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_33.jpg" alt=""></p>
 <h3 id="23-1"><a class="header" href="#23-1">23</a></h3>
 <p>Stop when the alignment no longer improves after an iteration.</p>
-<p><img src="chapter_alignment/excitation_path/./step_34.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_34.jpg" alt=""></p>
 <h3 id="24-1"><a class="header" href="#24-1">24</a></h3>
 <p>Remove the cage plate covers before the objective.</p>
-<p>Loosen the screws on the dichroic cube plate. Rotate the entire base plate and adjust the dichroic's pitch until the beam is roughly centered with respect to the cage rods. Use the alignment plates to determine the beam's centration.</p>
+<p>Loosen the screws on the dichroic cube plate. Rotate the entire base plate and adjust the dichroic’s pitch until the beam is roughly centered with respect to the cage rods. Use the alignment plates to determine the beam’s centration.</p>
 <p>It is likely that you will not be able to perfectly center the beam with respect to the cage rods because the cube plate does not have the degrees of freedom necessary for full alignment.</p>
 <p>Tighten the screws once you come as close to centration with the cage rods as you can.</p>
-<p><img src="chapter_alignment/excitation_path/./step_35.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_36.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_35.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_36.jpg" alt=""></p>
 <h3 id="25-1"><a class="header" href="#25-1">25</a></h3>
-<p>Look at the back side of an alignment plate inserted into the 6" cage rods. Look for back reflections from the objective and excitation filter.</p>
+<p>Look at the back side of an alignment plate inserted into the 6“ cage rods. Look for back reflections from the objective and excitation filter.</p>
 <p>One reflection will come from the excitation filter. It will remain stationary as the dichroic is rotated or the objective is moved.</p>
 <p>The other reflections should move with the dichroic or objective. These are from the back reflections from the internal surfaces of the objective.</p>
-<p><img src="chapter_alignment/excitation_path/./step_37.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_37.jpg" alt=""></p>
 <h3 id="26"><a class="header" href="#26">26</a></h3>
 <p>To center the back reflections on the alignment plate, you must</p>
 <ol>
@@ -821,45 +889,48 @@
 <li>translate the objective using the slip plate.</li>
 </ol>
 <p>The objective is well-aligned to the laser beam when the back reflections are centered on the incoming beam.</p>
-<p><img src="chapter_alignment/excitation_path/./step_38.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_35.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_39.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_40.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_38.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_35.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_39.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_40.jpg" alt=""></p>
 <h3 id="27"><a class="header" href="#27">27</a></h3>
 <p>Thread the f = +150 mm achromatic lens into the XY translating lens mount. Ensure that the direction marked \( \infty \) is pointed towards the fiber.</p>
-<p><img src="chapter_alignment/excitation_path/./step_41.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_41.jpg" alt=""></p>
 <h3 id="28"><a class="header" href="#28">28</a></h3>
 <p>Open the iris in front of the fiber output coupler.</p>
-<p><img src="chapter_alignment/excitation_path/./step_42.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_42.jpg" alt=""></p>
 <h3 id="29"><a class="header" href="#29">29</a></h3>
 <p>Put an index card in front of the objective at a distance of about 1 meter or longer.</p>
 <p>Slide the f = +150 mm lens along the cage rods until the beam size is minimized.</p>
-<p><img src="chapter_alignment/excitation_path/./step_43.jpg" alt="" />
-<img src="chapter_alignment/excitation_path/./step_44.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_43.jpg" alt="">
+<img src="chapter_alignment/excitation_path/step_44.jpg" alt=""></p>
 <h3 id="30"><a class="header" href="#30">30</a></h3>
 <p>The beam will appear astigmatic due to reflection from the 1 mm thick dichroic. Try to find the lens position. where the beam size is smallest in each direction.</p>
-<p><img src="chapter_alignment/excitation_path/./step_45.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_45.jpg" alt=""></p>
 <h3 id="31"><a class="header" href="#31">31</a></h3>
 <p>Tighten the set screws to lock the lens in place.</p>
-<p><img src="chapter_alignment/excitation_path/./step_46.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_46.jpg" alt=""></p>
 <h3 id="32"><a class="header" href="#32">32</a></h3>
 <p>Stick an alignment plate into the cage system just after the second right-angle turning mirror and observe the back reflections from the f = +150 mm lens.</p>
-<p><img src="chapter_alignment/excitation_path/./step_47.jpg" alt="" /></p>
+<p><img src="chapter_alignment/excitation_path/step_47.jpg" alt=""></p>
 <h3 id="33"><a class="header" href="#33">33</a></h3>
-<p>Adjust the lens's position until the back reflections are as centered as possible on the incoming beam.</p>
-<p><img src="chapter_alignment/excitation_path/./step_48.jpg" alt="" /></p>
+<p>Adjust the lens’s position until the back reflections are as centered as possible on the incoming beam.</p>
+<p><img src="chapter_alignment/excitation_path/step_48.jpg" alt=""></p>
 <h3 id="34"><a class="header" href="#34">34</a></h3>
 <p>Reinstall the cage system cover plates before the objective.</p>
-<p><img src="chapter_alignment/excitation_path/./step_49.jpg" alt="" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="discussion-1"><a class="header" href="#discussion-1">Discussion</a></h1>
+<p><img src="chapter_alignment/excitation_path/step_49.jpg" alt=""></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="discussion-1"><a class="header" href="#discussion-1">Discussion</a></h1>
 <h2 id="astigmatism-in-the-reflected-beam-and-dichroic-thickness"><a class="header" href="#astigmatism-in-the-reflected-beam-and-dichroic-thickness">Astigmatism in the Reflected Beam and Dichroic Thickness</a></h2>
-<p>The laser beam becomes astigmatic after it reflects off of the dichroic. This means that the beam's focal plane in the sample space for one transverse direction is different from its perpendicular direction.</p>
+<p>The laser beam becomes astigmatic after it reflects off of the dichroic. This means that the beam’s focal plane in the sample space for one transverse direction is different from its perpendicular direction.</p>
 <p>This is a common problem for applicatons requiring laser beam shaping. The solution is to buy thicker dichroics, such as 2 mm or even 3 mm dichroics.</p>
 <p>Of course, this comes with tradeoffs. For one, thicker dichroics are more expensive. Additionally, many dichroic mounts are not designed to hold dichroics thicker than 1 mm.</p>
 <p>The <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=FFM1">Thorlabs FFM1</a> filter holder, mounted inside a cage cube, can hold dichroics up to 3 mm thick and is compatible with kinematic base plates which facilitate alignment.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="live-cell-fluorescence-imaging-of-mitochondria"><a class="header" href="#live-cell-fluorescence-imaging-of-mitochondria">Live Cell Fluorescence Imaging of Mitochondria</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="materials"><a class="header" href="#materials">Materials</a></h1>
-<p>Add 2 \( \mu \)L of 1 mM Mitotracker Green to 2 mL of DMEM.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="further-reading"><a class="header" href="#further-reading">Further Reading</a></h1>
+<ul>
+<li>Jost AP, Waters JC. Designing a rigorous microscopy experiment: Validating methods and avoiding bias. J Cell Biol. 2019 May 6;218(5):1452-1466. doi: 10.1083/jcb.201812109. Epub 2019 Mar 20. PMID: 30894402; PMCID: PMC6504886. <a href="https://doi.org/10.1083/jcb.201812109">https://doi.org/10.1083/jcb.201812109</a></li>
+</ul>
 
                     </main>
 
@@ -878,6 +949,11 @@
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -886,13 +962,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 
