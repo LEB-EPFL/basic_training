@@ -4,7 +4,7 @@
   - [Learning Outcomes](./chapter_intro/learning_outcomes.md)
 - [Live Cell Fluorescence Imaging of Mitochondria](./chapter_live_cell_mito/README.md)
   - [The Epifluorescence Microscope](./chapter_live_cell_mito/microscope_components.md)
-  - [Materials](./chapter_live_cell_mito/materials.md)
+  - [Microscope Startup](./chapter_live_cell_mito/startup/README.md)
 - [Microscope Optics and Image Acquisition](./chapter_image_acquisition/README.md)
   - [Set up the Camera](./chapter_image_acquisition/camera.md)
   - [Align the Camera and Tube Lens](./chapter_image_acquisition/camera_tube_lens_alignment.md)
