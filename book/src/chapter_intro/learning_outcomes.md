@@ -20,12 +20,6 @@ At the end of this training, a student should be able to:
 - The students should know how to perform background subtraction and identify when it is necessary to do so
 - The students should be able to estimate how much brighter the signal is in one fluorescence channel vs. another
 
-### Measure the degree of fluorescence bleedthrough
-
-- The students should be able to define what fluorescence bleedthrough is and explain why it is problematic
-- The students should be able to perform the necessary measurements to assess bleedthrough
-- The students should be able to explain what steps one might take to alleviate the effects of bleedthrough
-
 ## Optics Module
 
 The purpose of the alignment module is to provide hands-on experience to students and post-docs who will build laboratory setups for fluorescence microscopy.
