@@ -38,10 +38,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-82ec191e.js";
+            window.path_to_searchindex_js = "searchindex-79ca4d9d.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-3e1cb233.js"></script>
+        <script src="toc-372626d3.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -221,12 +221,6 @@
 <li>The students should know how to perform background subtraction and identify when it is necessary to do so</li>
 <li>The students should be able to estimate how much brighter the signal is in one fluorescence channel vs. another</li>
 </ul>
-<h3 id="measure-the-degree-of-fluorescence-bleedthrough"><a class="header" href="#measure-the-degree-of-fluorescence-bleedthrough">Measure the degree of fluorescence bleedthrough</a></h3>
-<ul>
-<li>The students should be able to define what fluorescence bleedthrough is and explain why it is problematic</li>
-<li>The students should be able to perform the necessary measurements to assess bleedthrough</li>
-<li>The students should be able to explain what steps one might take to alleviate the effects of bleedthrough</li>
-</ul>
 <h2 id="optics-module"><a class="header" href="#optics-module">Optics Module</a></h2>
 <p>The purpose of the alignment module is to provide hands-on experience to students and post-docs who will build laboratory setups for fluorescence microscopy.</p>
 <p>At the end of the alignment module, a student should be able to:</p>
@@ -244,6 +238,7 @@
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="live-cell-fluorescence-imaging-of-mitochondria"><a class="header" href="#live-cell-fluorescence-imaging-of-mitochondria">Live Cell Fluorescence Imaging of Mitochondria</a></h1>
+<p>In this section we will use a Zeiss Axio Observer 7 widefield fluorescence microscope to perform live cell imaging of mitochondria in U2OS cells. The cells have been modified to express <a href="https://www.fpbase.org/protein/staygold/">StayGold</a> fluorescent protein that is targeting the mitochondrial matrix.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="the-epifluorescence-microscope"><a class="header" href="#the-epifluorescence-microscope">The Epifluorescence Microscope</a></h1>
 <p>Microscopes come in many different shapes, sizes, and arrangements. Broadly speaking, we may classify a microscope according to two different characteristics:</p>
@@ -273,8 +268,46 @@
 <p>Fluorescence light is collected from the sample by the objective where it traverses the illumination light path in reverse. Fluorescence light has a longer wavelength than the excitation light, so it passes through the dichroic mirror instead of reflecting. An emission filter further helps remove any residual excitation light that might be traveling along this path. A normal mirror redirects the light into a different direction, though this is not necessary and is used only to reduce the overall size of the microscope.</p>
 <p>Finally, a tube lens collects the fluorescent light and forms the image of the sample on the camera.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="materials"><a class="header" href="#materials">Materials</a></h1>
-<p>Add 2 \( \mu \)L of 1 mM Mitotracker Green to 2 mL of DMEM.</p>
+<h1 id="microscope-startup"><a class="header" href="#microscope-startup">Microscope Startup</a></h1>
+<p>We will begin by starting up the microscope and its components.</p>
+<h2 id="instructions"><a class="header" href="#instructions">Instructions</a></h2>
+<h3 id="step-0"><a class="header" href="#step-0">Step 0</a></h3>
+<p>Turn on the air pump and the environmental controls for the incubator.</p>
+<p>It is good practice to turn these on 10 minutes or more before any experiment so that the environmental controls have a chance to stabilize.</p>
+<p><img src="chapter_live_cell_mito/startup/step_0.jpg" alt="">
+<img src="chapter_live_cell_mito/startup/step_1.jpg" alt=""></p>
+<h3 id="step-1"><a class="header" href="#step-1">Step 1</a></h3>
+<p>Turn on the focus controller for the Zeiss’s Definite Focus system.</p>
+<p>In addition, turn on the Zeiss’s Power Supply 232 and SMC 2009 controllers.</p>
+<p><img src="chapter_live_cell_mito/startup/step_2.jpg" alt=""></p>
+<h3 id="step-2"><a class="header" href="#step-2">Step 2</a></h3>
+<p>Turn on the CoolLED unit.</p>
+<p><img src="chapter_live_cell_mito/startup/step_3.jpg" alt=""></p>
+<h3 id="step-3"><a class="header" href="#step-3">Step 3</a></h3>
+<p>Turn on the camera. You need not wait for the initialization to finish before turning on the control PC because the camera is connected via USB.</p>
+<p><img src="chapter_live_cell_mito/startup/step_4.jpg" alt=""></p>
+<h3 id="step-4"><a class="header" href="#step-4">Step 4</a></h3>
+<p>Wait until the Definite Focus controller’s initialization has finished. (You can tell whether it has finished because it will no longer display a message indicating that it is initializing on its LCD display screen.)</p>
+<p>Turn on the microscope.</p>
+<p><img src="chapter_live_cell_mito/startup/step_5.jpg" alt=""></p>
+<h3 id="step-5"><a class="header" href="#step-5">Step 5</a></h3>
+<p>Log into the computer with your EPFL username.</p>
+<p>Find the shortcut to Micro-Manager on the desktop and double click it.</p>
+<p><em>2025-12-05</em>: This shortcut should point to <code>C:\Program Files\Micro-Manager-2.0\ImageJ.exe</code>. It is a slightly out-of-date version of Micro-Manager that is intended to support the CoolLED light source.</p>
+<p><img src="chapter_live_cell_mito/startup/step_7.jpg" alt="">
+<img src="chapter_live_cell_mito/startup/step_6.jpg" alt=""></p>
+<h3 id="step-6"><a class="header" href="#step-6">Step 6</a></h3>
+<p>After a few seconds or less You will see the Micro-Manager startup screen. Ensure that the <code>231031_ZeissAxioObserver7.cfg</code> configuration file is selected. We have placed it inside the Micro-Manager folder in case you must select it yourself.</p>
+<p>Click <code>OK</code> to continue.</p>
+<p><img src="chapter_live_cell_mito/startup/step_8.jpg" alt=""></p>
+<h3 id="step-7"><a class="header" href="#step-7">Step 7</a></h3>
+<p>After a few more seconds, you will see the Micro-Manager control panel. If you do not see all the configuration settings at first, then expand the window by dragging its border.</p>
+<p><img src="chapter_live_cell_mito/startup/step_9.jpg" alt=""></p>
+<h3 id="step-8"><a class="header" href="#step-8">Step 8</a></h3>
+<p>You can set the channel and objective by selecting the corresponding configuration settings in the control panel.</p>
+<p><img src="chapter_live_cell_mito/startup/step_10.jpg" alt=""></p>
+<h3 id="step-9"><a class="header" href="#step-9">Step 9</a></h3>
+<p>Click the <code>Live</code> button. If you see a noisy image stream appear, then you are ready to proceed to the next steps.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="image-acquisition"><a class="header" href="#image-acquisition">Image Acquisition</a></h1>
 <p>In this chapter we begin construction of a custom-built microscope for epifluorescence and transillumination imaging of cell culture samples.</p>
@@ -347,7 +380,7 @@
 </div>
 <p><img src="chapter_image_acquisition/fixed_focal_length_camera_parts.jpg" alt="The parts for a fixed focal length camera"></p>
 <p>In addition, you will need 2 mm and 0.05“ Allen screwdrivers.</p>
-<h2 id="instructions"><a class="header" href="#instructions">Instructions</a></h2>
+<h2 id="instructions-1"><a class="header" href="#instructions-1">Instructions</a></h2>
 <h3 id="0"><a class="header" href="#0">0</a></h3>
 <p>Remove the protective cap from the camera.</p>
 <p><img src="chapter_image_acquisition/step_0.jpg" alt=""></p>
@@ -593,7 +626,7 @@
 <p><img src="chapter_alignment/emission_path/parts_list_0.jpg" alt="">
 <img src="chapter_alignment/emission_path/parts_list_1.jpg" alt=""></p>
 <p><strong>Not shown:</strong> 3-Axis NanoMax Stage and Microscopy Slide Holder</p>
-<h2 id="instructions-1"><a class="header" href="#instructions-1">Instructions</a></h2>
+<h2 id="instructions-2"><a class="header" href="#instructions-2">Instructions</a></h2>
 <h3 id="0-2"><a class="header" href="#0-2">0</a></h3>
 <p>Find the side of the right-angle mirror mount with a dot on it. Take this side to be the bottom.</p>
 <p><img src="chapter_alignment/emission_path/step_0.jpg" alt=""></p>
@@ -763,7 +796,7 @@
 </div>
 <p><img src="chapter_alignment/excitation_path/parts_list_0.jpg" alt=""></p>
 <p><em>Not shown: shear plate, CPA1 alignment plates.</em></p>
-<h2 id="instructions-2"><a class="header" href="#instructions-2">Instructions</a></h2>
+<h2 id="instructions-3"><a class="header" href="#instructions-3">Instructions</a></h2>
 <h3 id="0-3"><a class="header" href="#0-3">0</a></h3>
 <p>Thread the FC/PC fiber adapter plate into the XY transaltion mount such that it is recessed as far as the barrel’s internal amount will allow.</p>
 <p><img src="chapter_alignment/excitation_path/step_0.jpg" alt=""></p>
