@@ -75,3 +75,26 @@ You can set the channel and objective by selecting the corresponding configurati
 ### Step 9
 
 Click the `Live` button. If you see a noisy image stream appear, then you are ready to proceed to the next steps.
+
+### Step 10
+
+Push back the condenser tower. It is a bit difficult and does not rotate easily.
+
+![](./step_11.jpg)
+
+### Step 11
+
+**Make sure that you are using the 63x oil immersion objective.** If not, use the control panel to switch to it.
+
+Add a small drop of 37 C immersion oil to the lens, and put your sample in the solid bottom plate. Put the plate into the opening in the microscope stage.
+
+Secure the sample dish with a metal clip.
+
+![](./step_00.jpg)
+![](./step_12.jpg)
+
+### Step 12
+
+Cover the sample dish with the CO2 chamber.
+
+![](./step_13.jpg)
