@@ -53,7 +53,6 @@ Be patient; this part takes some time and practice.
 
 Once the field stop is in focus, center it.
 
-![](./step_5.jpg)
 ![](./step_6.jpg)
 ![](./step_7.jpg)
 
