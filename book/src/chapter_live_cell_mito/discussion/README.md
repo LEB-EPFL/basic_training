@@ -42,7 +42,7 @@ Back of the envelope calculations help to pinpoint ranges of parameter values in
 
 ## What Else can I Adjust in my Experiments?
 
-It's not only microscope parameters that can be tuned. Signal-to-background ratio, for example, can be improved through better sample preparation or a change of microscope. For example, a switch from widefield to confocal can help in this scenario. The key is to identify what aspect of the imaging process is preventing you from answering your hypotheses.
+It's not only microscope parameters that can be tuned. Signal-to-background ratio, for example, can be improved through better sample preparation or a change of microscope. A switch from widefield to confocal can help in this scenario in particular. The key is to identify what aspect of the imaging process is preventing you from answering your hypotheses.
 
 ## What about Photobleaching, Phototoxicity, and Spatial Resolution?
 
