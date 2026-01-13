@@ -28,7 +28,7 @@ The answer in this case is straightforward: it's the exposure time that correspo
 
 ![](./optimum.png)
 
-You can of course image at shorter exposure times, but then your SNR will suffer, and there is never a benefit to having images with less SNR.
+You can of course image at shorter exposure times, but then your SNR will suffer.
 
 ## What Parameter Values should I choose?
 
