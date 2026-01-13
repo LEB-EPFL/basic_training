@@ -38,10 +38,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-702d9854.js";
+            window.path_to_searchindex_js = "searchindex-1604bb4f.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-4dee5a7c.js"></script>
+        <script src="toc-420ac955.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -404,6 +404,27 @@
 <h3 id="step-8-1"><a class="header" href="#step-8-1">Step 8:</a></h3>
 <p>Push back the condenser tower. Remove the sample and insert from the stage. Clean the objective with lens cleaning tissue and ethanol as instructed.</p>
 <div style="break-before: page; page-break-before: always;"></div>
+<h1 id="discussion"><a class="header" href="#discussion">Discussion</a></h1>
+<h2 id="imaging-parameters-optimization"><a class="header" href="#imaging-parameters-optimization">Imaging Parameters Optimization</a></h2>
+<p>If all you wanted to do was to maximize the signal-to-noise ratio (SNR) of your images, then you would increase the exposure time and/or light intensity until the histogram was as far to the right of its range as possible without saturating any pixels.</p>
+<p>But what if the intensity is maxed out and you still have room left in the histogram to improve the SNR? You could increase the exposure time still further. But, as a result, doing so would decrease your frame rate. If you also needed to image fast dynamics within the cell, then there would be an upper limit to the value for the exposure time that you can set. Beyond this value, you would not have a high enough frame rate to see the thing that you would like to see; it would be blurred out.</p>
+<p>Ultimately this means that you must sacrifice some SNR to obtain a sufficient temporal resolution. We can visualize the problem like this:</p>
+<p><img src="chapter_live_cell_mito/discussion/snr_frame_rate_vs_exposure_time.png" alt=""></p>
+<p>Do not worry too much about the exact shapes of the curves in the sketch above; what’s important are the trends. SNR increases with exposure time, whereas frame rate decreases. The dynamics that you want to see set a requirement on the minmimum frame rate at which you can image. You can imagine this minimum as follows:</p>
+<p><img src="chapter_live_cell_mito/discussion/minimum_frame_rate.png" alt=""></p>
+<p>But the minimum frame rate imposes a maximum on the exposure time. This value is just the vertical line through the point of intersection of the frame rate curve and its minimum required value.</p>
+<p>Taking this logic one step further, the maximum exposure time also imposes a maximum achieveable SNR, so in the end we have something like this:</p>
+<p><img src="chapter_live_cell_mito/discussion/maximum_snr.png" alt=""></p>
+<p>The frame rate requirement ends up reducing the parameter space of exposure time and, subsequently, the maximum achieveable SNR.</p>
+<p>We have finally arrived at an optimization problem: given the frame rate requirement, what exposure time maximizes SNR?</p>
+<p>The answer in this case is easy: it’s the exposure time that corresponds to the value where the frame rate is <em>just</em> fast enough to see the dynamics that you are after.</p>
+<p><img src="chapter_live_cell_mito/discussion/optimum.png" alt=""></p>
+<p>You can of course image at shorter exposure times, but then your SNR will suffer, and there is never a benefit to having images with less SNR.</p>
+<h3 id="what-parameter-values-should-i-choose"><a class="header" href="#what-parameter-values-should-i-choose">What Parameter Values should I choose?</a></h3>
+<p>So we know that, in the example above, you can’t make the exposure time too large and as a result you will sacrifice some SNR. So what value for the exposure time should you choose?</p>
+<p>The answer is: it depends.</p>
+<p>Microscopy experiments that are performed to ad</p>
+<div style="break-before: page; page-break-before: always;"></div>
 <h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
 <ol>
 <li>
@@ -411,6 +432,12 @@
 </li>
 <li>
 <p>Assume you would like to take a time series acquisition of live cells. You use Micro-Manager and configure a Multi-Dimensional Acquisition with 50 ms exposure time, 10 frames, and 0 time interval between frames. True or false: the total acquisition time is 500 ms. (Hint: what is the readout time for the Photometrics Prime camera?)</p>
+</li>
+<li>
+<p>True or false: the value of a pixel depends only on the rate of photons hitting it.</p>
+</li>
+<li>
+<p>Why do we avoid saturating the pixels when imaging? (A pixel is saturated when its value is equal to its maximum value. For a 16 bit camera, this value is 2^16 - 1 = 65535.)</p>
 </li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
@@ -607,7 +634,7 @@
 </li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="discussion"><a class="header" href="#discussion">Discussion</a></h1>
+<h1 id="discussion-1"><a class="header" href="#discussion-1">Discussion</a></h1>
 <h2 id="infinity-corrected-optics"><a class="header" href="#infinity-corrected-optics">Infinity Corrected Optics</a></h2>
 <p>Nearly all microscopes that you will encounter within our research lab use infinity corrected optics, so it is important to understand what this means.</p>
 <p>An infinity corrected objective will have an infinity symbol on the barrel like the one in the photo below.</p>
@@ -1058,7 +1085,7 @@
 <p>Reinstall the cage system cover plates before the objective.</p>
 <p><img src="chapter_alignment/excitation_path/step_49.jpg" alt=""></p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="discussion-1"><a class="header" href="#discussion-1">Discussion</a></h1>
+<h1 id="discussion-2"><a class="header" href="#discussion-2">Discussion</a></h1>
 <h2 id="astigmatism-in-the-reflected-beam-and-dichroic-thickness"><a class="header" href="#astigmatism-in-the-reflected-beam-and-dichroic-thickness">Astigmatism in the Reflected Beam and Dichroic Thickness</a></h2>
 <p>The laser beam becomes astigmatic after it reflects off of the dichroic. This means that the beam’s focal plane in the sample space for one transverse direction is different from its perpendicular direction.</p>
 <p>This is a common problem for applicatons requiring laser beam shaping. The solution is to buy thicker dichroics, such as 2 mm or even 3 mm dichroics.</p>
