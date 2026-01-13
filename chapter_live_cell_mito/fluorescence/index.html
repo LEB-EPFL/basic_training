@@ -37,10 +37,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../../searchindex-48d9bc18.js";
+            window.path_to_searchindex_js = "../../searchindex-702d9854.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-a7ce29b0.js"></script>
+        <script src="../../toc-4dee5a7c.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -177,6 +177,49 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="image-the-cells-in-fluorescence"><a class="header" href="#image-the-cells-in-fluorescence">Image the Cells in Fluorescence</a></h1>
+<p>This section assumes that the you have performed the steps in the last two sections. Most importantly, you have found the cells and they are in focus.</p>
+<p>We will perform fluorescence imaging of mitochondria in this section. The cells have been modified to express <a href="https://www.fpbase.org/protein/staygold/">StayGold fluorescent protein</a> that is targeting the mitochondrial matrix. No staining is necessary.</p>
+<h2 id="instructions"><a class="header" href="#instructions">Instructions</a></h2>
+<h3 id="step-0"><a class="header" href="#step-0">Step 0</a></h3>
+<p>In the <code>Configuration Settings</code> section of the Micro-Manager control panel, set the <code>Channel</code> to <code>GFP (470 nm)</code>.</p>
+<p>It’s OK to leave the <code>Transmitted Light Intensity</code> at a non-zero value because the transillumination lamp will not turn on when the GFP channel is active.</p>
+<p>Adjust the <code>470 nm Intensity</code> to some non-zero value.</p>
+<p><img src="./step_0.png" alt=""></p>
+<h3 id="step-1"><a class="header" href="#step-1">Step 1</a></h3>
+<p>Click <code>Live</code>. You should see:</p>
+<ol>
+<li>a fluorescence image of the mitochondria in the <code>Live</code> panel, and</li>
+<li>blue light coming from the objective. (There is no need to look directly over top the sample; you should not do this anyway for eye safety reasons.)</li>
+</ol>
+<p><img src="./step_1.png" alt=""></p>
+<h3 id="step-2"><a class="header" href="#step-2">Step 2</a></h3>
+<p>Check the Image Inspector window, which displays a histogram of all the pixel values.</p>
+<p>In the example below, you can see that the histogram lies near the bottom of the range of pixel values (0 - 65535). The minimum is 237 analog-to-digital units (ADU) and the maximum is 1334 ADU, with an average of 704 ADU.</p>
+<p><img src="./step_2.png" alt=""></p>
+<h3 id="step-3"><a class="header" href="#step-3">Step 3</a></h3>
+<p>Increase either the exposure time or the LED intensity. You should see the histogram shift to the right like below.</p>
+<p>The live image should appear less noisy as well, which corresponds to it having higher signal-to-noise ratio (SNR).</p>
+<p>Try to adjust the intensity and the exposure time until the histogram is as far to the right of the range as possible <strong>without saturating any pixels</strong>.</p>
+<p><img src="./step_3.png" alt=""></p>
+<h3 id="step-4"><a class="header" href="#step-4">Step 4</a></h3>
+<p>Select the <code>Multi-D Acq.</code> button in the Micro-Manager control panel. This will open the Multi-Dimensional Acquisition window as shown below.</p>
+<p><img src="./step_4.png" alt=""></p>
+<h3 id="step-5-take-a-time-series-acquisition"><a class="header" href="#step-5-take-a-time-series-acquisition">Step 5: Take a Time-Series Acquisition</a></h3>
+<p>Ensure that <code>Time Points</code> is checked and that <code>Multiple Positions</code>, <code>Z-Stacks</code>, and <code>Channels</code> are unchecked. Set the count to 100 and the interval to zero. (Image as fast as possible.)</p>
+<p>For the directory root, select <code>D:\DATA_Zeiss\&lt;your name&gt;\&lt;YYYYMMDD_experiment_name&gt;</code>. For the name prefix, enter something short and descriptive, such as <code>U2OS_Staygold</code>.</p>
+<p>Ensure that <code>Image stack file</code> is selected, and enter any additional metadata you wish to save in the <code>Acquistion Comments</code>.</p>
+<p>Click <code>Acquire!</code></p>
+<p>You can review the images after they have been acquired.</p>
+<h3 id="step-6-z-stack-acquisition"><a class="header" href="#step-6-z-stack-acquisition">Step 6: Z-Stack Acquisition</a></h3>
+<p>Find a suitable focal plane for your cells to serve as the center slice of the Z-stack.</p>
+<p>In the Multi-D. Acquisition window, ensure that <code>Z-Stacks (Slices)</code> is checked and that <code>Time Points</code>, <code>Multiple Positions</code>, and <code>Channels</code> are unchecked.</p>
+<p>Check the <code>Keep Shutter Open</code> checkbox to avoid rapidly turning the light on and off during the acquisition. Set the <code>Start Z</code> and <code>End Z</code> values to <code>-1</code> and <code>1</code>, respectively. Set the <code>Step size</code> to 0.1.</p>
+<p>You can keep the directory root and prefix values the same as before. Micro-Manager will append a number to the end of the folder to ensure that any existing data is not overwritten.</p>
+<p>Click <code>Acquire</code> to launch the acquisition.</p>
+<h3 id="step-7"><a class="header" href="#step-7">Step 7:</a></h3>
+<p>When you have finished, you may close Micro-Manager. The hardware is turned off in the reverse order that it was turned on.</p>
+<h3 id="step-8"><a class="header" href="#step-8">Step 8:</a></h3>
+<p>Push back the condenser tower. Remove the sample and insert from the stage. Clean the objective with lens cleaning tissue and ethanol as instructed.</p>
 
                     </main>
 
@@ -186,7 +229,7 @@
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../../chapter_image_acquisition/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../../chapter_live_cell_mito/questions.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -200,7 +243,7 @@
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../../chapter_image_acquisition/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../../chapter_live_cell_mito/questions.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
