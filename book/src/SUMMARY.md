@@ -7,6 +7,7 @@
   - [Start up the Microscope](./chapter_live_cell_mito/startup/README.md)
   - [Set up Köhler Illumination](./chapter_live_cell_mito/koehler/README.md)
   - [Image the Cells in Fluorescence](./chapter_live_cell_mito/fluorescence/README.md)
+  - [Discussion](./chapter_live_cell_mito/discussion/README.md)
   - [Questions](./chapter_live_cell_mito/questions.md)
 - [Microscope Optics and Image Acquisition](./chapter_image_acquisition/README.md)
   - [Set up the Camera](./chapter_image_acquisition/camera.md)
