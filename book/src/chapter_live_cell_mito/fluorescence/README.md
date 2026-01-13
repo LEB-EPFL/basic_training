@@ -73,10 +73,10 @@ You can keep the directory root and prefix values the same as before. Micro-Mana
 
 Click `Acquire` to launch the acquisition.
 
-### Step 7:
+### Step 7
 
 When you have finished, you may close Micro-Manager. The hardware is turned off in the reverse order that it was turned on.
 
-### Step 8:
+### Step 8
 
 Push back the condenser tower. Remove the sample and insert from the stage. Clean the objective with lens cleaning tissue and ethanol as instructed.
