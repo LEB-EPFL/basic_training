@@ -38,7 +38,7 @@ I think it's worth making explicit the logic in this example because it's centra
 
 ## But What Parameter Values should I Choose?
 
-The above discussion is fine from a theoretical perspective, but you're probably wondering how to set the actual value of the exposure time when at the microscope. Or, for that matter, how do you *actually* set any microscope property? After all, you're not going to have the nice simple plots that I drew above when making your decision. Rather, you're going to have only what you see in the images that you take.
+The above discussion is fine from a theoretical perspective, but you're probably wondering how to set the actual value of the exposure time when at the microscope. Or, for that matter, how do you *actually* set any microscope property? After all, you're not going to have the nice simple plots that I drew above when making your decision. Rather, you're going to have only what you see in the images.
 
 This is where imaging becomes a bit more art than science. Regardless, we can still approach the problem systematically.
 
@@ -52,7 +52,7 @@ With bounds established, you should next consider your requirements and constrai
 
 After having decided that your experiment is at least feasible, you'll need to develop a sense for what makes a "good" image dataset.
 
-One quality of good images is that they have high SNR. But how do you estimate SNR? By using the image histograms. As previously mentioned, a good SNR means the histogram center is as close as possible to its upper limit without saturating pixels. But keep in mind that this is not the same as measuring the SNR directly. So you will have to develop a feel for how to estimate image qualities indirectly from images and their histograms.
+One quality of good images is that they have high SNR. But how do you estimate SNR? By using the image histograms. As previously mentioned, a good SNR means the center of the distribution of pixel values in the histogram is as close as possible to its upper limit without saturating pixels. But keep in mind that this is not the same as measuring the SNR directly. So you will have to develop a feel for how to estimate image qualities indirectly from images and their histograms.
 
 Another quality of good images is that they satisfy your requirements. Do you image fast enough to see the thing that you want to study? How do you know what frame rate is required if you haven't looked yet? Here pilot experiments can help. You can try a range of exposure times and frame intervals on test samples and see roughly what range of values works. You may not arrive at exact values, but you can at least establish a rough order of magnitude.
 
@@ -68,7 +68,7 @@ I deliberately left these out of the discussion above to keep it simple, but the
 
 Spatial resolution is harder to adjust through microscope parameters alone since it depends heavily on the microscopy method itself. Still, improving SNR does slightly improve spatial resolution, and choice of microscope is just as important as anything else when designing an imaging experiment. Likewise for signal-to-background ratio. Lightsheet microscopes have become so popular because they efficiently solve the issues relating to SBR.
 
-**The key is to establish the requirements for your experiments in terms of these properties:**
+**The key is to establish the requirements for your experiments in terms of these qualities:**
 
 - spatial resolution
 - temporal resolution
@@ -83,9 +83,9 @@ Spatial resolution is harder to adjust through microscope parameters alone since
 - equipment available
 - expertise
 
-I'm going to say it again because it's so important: without any requirements or constraints, there is no way of doing meaningful, quantitative experiments on a microscope.
+I'm going to say it again because it's so important: without any requirements or constraints, there is no way of doing meaningful, quantitative experiments on a microscope because there is nothing to optimize.
 
-## Polyhedra of Feeling
+## Polyhedra of Democracy
 
 You might have heard of the "triangle of frustration", "pyramid of compromise," or similar terms. One such example looks like this ([source](https://academic.oup.com/biomethods/article/9/1/bpae075/7818344)):
 
