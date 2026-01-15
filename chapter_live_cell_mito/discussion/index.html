@@ -37,7 +37,7 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../../searchindex-44f3fe89.js";
+            window.path_to_searchindex_js = "../../searchindex-75f45fcb.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc-420ac955.js"></script>
@@ -199,14 +199,14 @@
 <li>We then solved for the exposure time that maximized the SNR.</li>
 </ol>
 <h2 id="but-what-parameter-values-should-i-choose"><a class="header" href="#but-what-parameter-values-should-i-choose">But What Parameter Values should I Choose?</a></h2>
-<p>The above discussion is fine from a theoretical perspective, but you’re probably wondering how to set the actual value of the exposure time when at the microscope. Or, for that matter, how do you <em>actually</em> set any microscope property? After all, you’re not going to have the nice simple plots that I drew above when making your decision. Rather, you’re going to have only what you see in the images that you take.</p>
+<p>The above discussion is fine from a theoretical perspective, but you’re probably wondering how to set the actual value of the exposure time when at the microscope. Or, for that matter, how do you <em>actually</em> set any microscope property? After all, you’re not going to have the nice simple plots that I drew above when making your decision. Rather, you’re going to have only what you see in the images.</p>
 <p>This is where imaging becomes a bit more art than science. Regardless, we can still approach the problem systematically.</p>
 <h3 id="feasibility"><a class="header" href="#feasibility">Feasibility</a></h3>
 <p>First, I recommend that you think broadly about what you’re imaging to set some bounds. A cell biologist looks at organelles, and from experience we know that these move on the order of milliseconds to tens of seconds. A developmental biologist studying embryo development, on the other hand, cares about timescales that are probably more on the range of hours to days. In these cases, you can conclude that frame rates are probably going to be somewhere between 1 and 10,000 frames per second (fps) for the cell biologist and much slower for the developmental biologist.</p>
 <p>With bounds established, you should next consider your requirements and constraints. CMOS cameras have exposure times anywhere between fractions of a millisecond to tens of seconds. If you want to study something faster than the camera can image, then you’ll need a different approach entirely.</p>
 <h3 id="parameter-tuning"><a class="header" href="#parameter-tuning">Parameter Tuning</a></h3>
 <p>After having decided that your experiment is at least feasible, you’ll need to develop a sense for what makes a “good” image dataset.</p>
-<p>One quality of good images is that they have high SNR. But how do you estimate SNR? By using the image histograms. As previously mentioned, a good SNR means the histogram center is as close as possible to its upper limit without saturating pixels. But keep in mind that this is not the same as measuring the SNR directly. So you will have to develop a feel for how to estimate image qualities indirectly from images and their histograms.</p>
+<p>One quality of good images is that they have high SNR. But how do you estimate SNR? By using the image histograms. As previously mentioned, a good SNR means the center of the distribution of pixel values in the histogram is as close as possible to its upper limit without saturating pixels. But keep in mind that this is not the same as measuring the SNR directly. So you will have to develop a feel for how to estimate image qualities indirectly from images and their histograms.</p>
 <p>Another quality of good images is that they satisfy your requirements. Do you image fast enough to see the thing that you want to study? How do you know what frame rate is required if you haven’t looked yet? Here pilot experiments can help. You can try a range of exposure times and frame intervals on test samples and see roughly what range of values works. You may not arrive at exact values, but you can at least establish a rough order of magnitude.</p>
 <p>Back of the envelope calculations help to pinpoint ranges of parameter values in some scenarios. For example, in tracking experiments, if you know the density of particles and their diffusion constants, then you can work out what frame rate is necessary to capture a certain number of frames before a collision occurs with another particle.</p>
 <h2 id="what-else-can-i-adjust-in-my-experiments"><a class="header" href="#what-else-can-i-adjust-in-my-experiments">What Else can I Adjust in my Experiments?</a></h2>
@@ -214,7 +214,7 @@
 <h2 id="what-about-photobleaching-phototoxicity-spatial-resolution-and-signal-to-background-ratio"><a class="header" href="#what-about-photobleaching-phototoxicity-spatial-resolution-and-signal-to-background-ratio">What about Photobleaching, Phototoxicity, Spatial Resolution, and Signal-to-Background Ratio?</a></h2>
 <p>I deliberately left these out of the discussion above to keep it simple, but they need to be considered as well. Phototoxicity and photobleaching ultimately limit the laser intensity (which in turn limits the SNR) and the length of your experiments. You won’t be able to avoid these effects entirely.</p>
 <p>Spatial resolution is harder to adjust through microscope parameters alone since it depends heavily on the microscopy method itself. Still, improving SNR does slightly improve spatial resolution, and choice of microscope is just as important as anything else when designing an imaging experiment. Likewise for signal-to-background ratio. Lightsheet microscopes have become so popular because they efficiently solve the issues relating to SBR.</p>
-<p><strong>The key is to establish the requirements for your experiments in terms of these properties:</strong></p>
+<p><strong>The key is to establish the requirements for your experiments in terms of these qualities:</strong></p>
 <ul>
 <li>spatial resolution</li>
 <li>temporal resolution</li>
@@ -229,8 +229,8 @@
 <li>equipment available</li>
 <li>expertise</li>
 </ul>
-<p>I’m going to say it again because it’s so important: without any requirements or constraints, there is no way of doing meaningful, quantitative experiments on a microscope.</p>
-<h2 id="polyhedra-of-feeling"><a class="header" href="#polyhedra-of-feeling">Polyhedra of Feeling</a></h2>
+<p>I’m going to say it again because it’s so important: without any requirements or constraints, there is no way of doing meaningful, quantitative experiments on a microscope because there is nothing to optimize.</p>
+<h2 id="polyhedra-of-democracy"><a class="header" href="#polyhedra-of-democracy">Polyhedra of Democracy</a></h2>
 <p>You might have heard of the “triangle of frustration”, “pyramid of compromise,” or similar terms. One such example looks like this (<a href="https://academic.oup.com/biomethods/article/9/1/bpae075/7818344">source</a>):</p>
 <p><img src="./triangle_of_frustration.png" alt=""></p>
 <p>The idea here is that you can move about within the pyramid by adjusting imaging parameters, the microscopy method, the sample preparation protocol, and more. In doing so, you improve on one of the qualities at the vertexes of the pyramid but necessarily sacrifice something at the other vertexes. Improving spatial resolution, for example, might mean decreasing temporal resolution and cell health.</p>
